@@ -1,29 +1,77 @@
-# Open Negative Initiative — releases
+# Open Negative Initiative
 
-Binaries and the Sparkle appcast for **Open Negative Initiative**, a native macOS app that converts
-and edits camera-scanned C-41 colour negatives.
+A native macOS app that converts and edits **camera-scanned C-41 colour negatives** — the RAW files
+you get from photographing film on a light panel, rather than from a film scanner.
 
-**No source code lives here.** This repository holds only `appcast.xml`, the release archives and
-this file. The application's source is a separate repository.
+It inverts in density, gives you per-channel gains, levels, curves and a finishing balance, and
+exports 16-bit TIFF or JPEG. Everything stays in floating point from the RAW to the file written.
 
-## What is served
+**Requirements:** macOS 15 or later, Apple Silicon.
 
-- `appcast.xml` — the Sparkle feed the app reads at
-  `https://5e1y.github.io/open-negative-initiative-releases/appcast.xml`
-- `*.zip` — one signed, notarised archive per release, plus Sparkle delta files when they help.
+---
 
-## Two guarantees, and they are deliberate
+## Download
 
-**A published version never leaves the feed.** The appcast is generated with `--maximum-versions 0`
-and old archives are kept. That is the only way back for someone who does not want the newest build.
+**[OpenNegative-0.1.0.dmg](./OpenNegative-0.1.0.dmg)** — open it, then drag the app onto the
+Applications folder sitting beside it.
 
-**Any release that moves an already-recorded rendering says so in the first line of its notes.**
-Sparkle shows those notes *before* installing, and the app never installs on its own
-(`SUAutomaticallyUpdate` is `false`) — so an unwanted change of rendering can always be declined.
+### If macOS refuses to open it the first time
 
-## Verifying an archive
+Two different messages, and they call for two different answers.
 
-Every archive is signed with a Developer ID, hardened, notarised and stapled, and the appcast entry
+- **"Apple could not verify…"** — that build was not notarised. Open **System Settings → Privacy &
+  Security**, scroll to the bottom, and click **Open Anyway** next to the app's name.
+  ⚠️ Right-click → Open does **not** do this any more on recent macOS; the item is gone.
+- **It simply opens** — that build was notarised and stapled, which is the normal case.
+
+---
+
+## This is an ALPHA
+
+Said plainly, because two consequences follow.
+
+**The rendering can change between versions.** That is deliberate: the app exists to be calibrated
+against real film, and a badly-chosen constant only ever shows up on somebody else's negatives. The
+promise is not that the picture never moves — it is that **it never moves without telling you**. Any
+release that shifts an already-recorded conversion says so in the first line of its notes, and the
+app never installs an update on its own: it shows you the notes and waits.
+
+**Your edits live next to your RAW files.** Each converted frame gets a small sidecar file beside the
+original. The RAW itself is never touched or moved — the app only ever reads it. Removing a photo
+from the library deletes its sidecar and its thumbnails and leaves the original exactly where it was.
+
+---
+
+## Updates
+
+The app looks for updates on its own and **never installs one by itself**. When one is waiting, the
+Export button at the right of the top bar becomes an **Update** button naming the new version.
+Export stays available on ⌘E and in the File menu.
+
+A published version never leaves the feed and its file is kept, so going back to an earlier build is
+always possible.
+
+---
+
+## Reporting something
+
+Open an issue here. Two things make a report usable:
+
+- **the version** — the About window reads it on its own, no need to hunt for it;
+- **the RAW file**, if it is a decoding or a colour problem. A screenshot shows the symptom; the file
+  is what reproduces it.
+
+If the app opened your file but the picture came out flat or nearly white, that is worth reporting
+even though nothing crashed — the app has a specific check for it and says so in its own diagnostics.
+
+---
+
+## What is in this repository
+
+Only the built app and the Sparkle update feed: `appcast.xml`, the release archives, and this file.
+**No source code lives here** — the application's source is a separate, private repository.
+
+Every archive is signed with a Developer ID, hardened, notarised and stapled, and each appcast entry
 carries an EdDSA signature. To check a download by hand:
 
 ```sh
@@ -31,5 +79,5 @@ codesign --verify --strict --verbose=2 "Open Negative Initiative.app"
 spctl --assess --type execute --verbose "Open Negative Initiative.app"
 ```
 
-The EdDSA **public** key is in the app's `Info.plist`; it is meant to be readable. The private key
+The EdDSA **public** key sits in the app's `Info.plist`; it is meant to be readable. The private key
 never leaves its author's keychain.
