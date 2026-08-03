@@ -1,0 +1,26 @@
+<p><strong>Correctif d'urgence. Le rendu de vos photos ne bouge pas : cette version ne
+change aucun réglage, aucune constante, aucun étage du pipeline. Les conversions déjà
+faites ressortent identiques.</strong></p>
+
+<p>La 0.0.1 <strong>ne démarrait pas</strong>, sur aucune machine sauf celle qui l'avait
+compilée. Elle cherchait ses icônes dans un dossier qui n'existe que sur l'ordinateur du
+développeur, et s'arrêtait net quand elle ne le trouvait pas — d'où une fenêtre de plantage
+sans le moindre rapport lisible. Si vous avez tenté la 0.0.1 et abandonné, c'était ça, et
+ce n'était pas votre installation.</p>
+
+<h3>Aussi dans cette version</h3>
+
+<ul>
+  <li>Les kernels graphiques étaient compilés pour une version de macOS plus récente que
+      celle que l'app annonce supporter. Sous macOS 26, tous les étages de traitement
+      disparaissaient en silence : l'image s'affichait sans conversion. Corrigé, et un
+      contrôle refuse désormais de construire une version qui recommencerait.</li>
+  <li>Le lecteur de fichiers TIFF et DNG ne vérifiait pas ce qu'il lisait : certains
+      fichiers pouvaient faire disparaître l'app, y compris en faisant simplement défiler
+      la galerie. Il borne maintenant tout ce qu'un fichier lui annonce.</li>
+  <li>Un export par lot pouvait, dans un cas précis, écrire par-dessus le scan d'origine.
+      C'est désormais refusé avant que quoi que ce soit soit écrit.</li>
+</ul>
+
+<p>Merci à celles et ceux qui ont signalé le plantage : c'est exactement à ça que sert une
+alpha.</p>
