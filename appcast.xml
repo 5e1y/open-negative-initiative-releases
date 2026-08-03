@@ -55,7 +55,7 @@ dira ici, avant l'installation, et vous pourrez la refuser.</p>
 problème de décodage ou de couleur, joignez le RAW — une capture montre le symptôme, le
 fichier le reproduit.</p>
 ]]></description>
-            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/OpenNegative-0.0.1.zip" length="9408522" type="application/octet-stream" sparkle:edSignature="LLyKBTWZ5g/jvUF0wQFEXKPOCAyJm6kdFsLV8PnDnxhdNgS0iozcGF20sGlgSYfeCumr+LUZvKBXnhQmSCgADA=="/>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.1.zip" length="9408522" type="application/octet-stream" sparkle:edSignature="LLyKBTWZ5g/jvUF0wQFEXKPOCAyJm6kdFsLV8PnDnxhdNgS0iozcGF20sGlgSYfeCumr+LUZvKBXnhQmSCgADA=="/>
         </item>
     </channel>
 </rss>
