@@ -3,6 +3,53 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.4</title>
+            <pubDate>Tue, 04 Aug 2026 05:41:28 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>536</sparkle:version>
+            <sparkle:shortVersionString>0.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Le rendu de vos photos ne bouge pas. Aucune constante, aucun étage du pipeline
+n'a changé : les conversions déjà faites ressortent identiques au pixel près.</strong></p>
+
+<h3>macOS Ventura suffit désormais</h3>
+
+<p>L'app demandait Sonoma (14) ; elle demande maintenant <strong>Ventura (13)</strong>.
+C'est deux versions de macOS de moins que la première publication, et ça vise une machine
+précise : un Mac qui ne peut pas monter plus haut.</p>
+
+<p>Une cinquantaine d'endroits du code utilisaient des fonctions apparues après Ventura.
+Elles ont été réécrites avec des moyens plus anciens qui font la même chose — et
+<em>partout</em>, pas seulement sur les vieux systèmes : une fonctionnalité écrite deux
+fois est une fonctionnalité vérifiée une seule fois. Les animations, notamment, ne sont
+plus demandées au système mais calculées ; l'équivalence a été mesurée au seizième chiffre
+après la virgule, et les mouvements sont identiques.</p>
+
+<p><strong>Ce que ça implique si vous êtes sur Ventura</strong> : vous êtes la première
+personne à y lancer l'app. Elle compile et passe ses 967 contrôles, mais aucun d'eux n'a
+tourné sur Ventura — personne n'en a sous la main ici. Signalez ce qui cloche, même un
+détail d'affichage.</p>
+
+<h3>Le paquet de courbes s'ouvre sur le contraste</h3>
+
+<p>Les six presets de contraste passent en première page et les six d'exposition en
+seconde. Les courbes elles-mêmes sont inchangées.</p>
+
+<h3>Un défaut d'affichage corrigé</h3>
+
+<p>Dans la galerie, les vignettes pouvaient rester sur un rouet indéfiniment et les tuiles
+ne réagissaient plus au survol — jusqu'à ce qu'un clic débloque tout d'un coup. Une
+optimisation de la 0.0.3 faisait considérer la grille comme inchangée alors qu'elle avait
+de quoi se redessiner.</p>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.4.zip" length="11753720" type="application/octet-stream" sparkle:edSignature="tXtMUDUOQu/ZIXwHpcotGx5o0tIT/YT+ODtI3Yjwxjze490aF+oikSR2xq2kulSUDMsHaUVgf8+COK9LwJHNDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative536-516.delta" sparkle:deltaFrom="516" length="1102846" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NKCSlFZofxq1gtOn3S1QFGhalMULrqpWhIq0EiQrTmm6J8fjB4lBRVIAOCru0wO6qWxlyDQixIMQSJUFjKBHDA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative536-495.delta" sparkle:deltaFrom="495" length="2285958" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="luzbhSA73CqQ71gXkcqQZGECVlWues9IGPun3k35m+xdh39JSCdKHfT8ooqnyi77cY0Tjzd0UO+GMA16vaNpBQ=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative536-482.delta" sparkle:deltaFrom="482" length="2286886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="N7M7knNTjQUG60+5IRkbVbkZDhu0tTzjc2qVB4FaLcgo/6qk2VT50q7OnE8jNrlHdnvL4iee1oIKd6Hu3OhFAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.3</title>
             <pubDate>Tue, 04 Aug 2026 03:43:15 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
