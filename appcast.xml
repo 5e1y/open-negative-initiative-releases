@@ -3,6 +3,54 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.3</title>
+            <pubDate>Tue, 04 Aug 2026 03:43:15 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>516</sparkle:version>
+            <sparkle:shortVersionString>0.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Le rendu de vos photos ne bouge pas. Aucune constante, aucun étage du pipeline
+n'a changé : les conversions déjà faites ressortent identiques au pixel près.</strong></p>
+
+<h3>L'app tourne beaucoup plus vite</h3>
+
+<p>Sur un négatif de 448 Mo, manier un curseur coûtait <strong>29 ms par image</strong> —
+34 images par seconde, et une image sur sept dépassait le seuil où l'œil voit une saccade.
+C'est maintenant <strong>4 à 5 ms</strong>, soit environ 230 images par seconde. Le geste
+est fluide, et l'histogramme suit la main au lieu de l'attendre.</p>
+
+<p>Trois causes, aucune dans le traitement d'image : les mesures d'histogramme se
+relançaient à chaque cran, l'historique d'annulation s'enregistrait à chaque cran, et la
+pellicule se redessinait entièrement alors qu'elle n'affiche que des vignettes.</p>
+
+<h3>Elle tourne sur plus de Mac</h3>
+
+<ul>
+  <li><strong>Mac Intel</strong> : l'app est désormais universelle. Elle ne démarrait pas
+      du tout sur ces machines.</li>
+  <li><strong>macOS Sonoma</strong> (14) au lieu de Sequoia (15).</li>
+</ul>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Un badge signale une source <strong>8 bits</strong> sous l'histogramme : ces scans
+      n'ont que 256 valeurs par canal, ce qui donne un tracé en peigne. Ce n'est pas un
+      défaut de l'app, et le badge est là pour que ça se lise comme tel.</li>
+  <li>L'app vérifie les mises à jour toutes les douze heures au lieu de vingt-quatre.</li>
+</ul>
+
+<p><strong>Si vous avez la 0.0.1</strong>, elle ne démarrait sur aucune machine sauf celle
+qui l'a compilée — retéléchargez plutôt que d'attendre une mise à jour, elle ne peut pas
+vous parvenir.</p>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.3.zip" length="11719862" type="application/octet-stream" sparkle:edSignature="+IA2dX9o8luHyOzdhoIqVdDXD5s/0fqSAiiDraGLhHW2lkppSmm/T/3wN/JV6p3rCogIowW5/cRnZP7a3pVIDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative516-495.delta" sparkle:deltaFrom="495" length="2136786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wBxECO/IjZjUGf5hppDQkaaUvmiLBo8v4k62Gwy1BS+jugTVRwIqV2tfG+Fd8c817W1//MqXV7KSoKpXOUsLAw=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative516-482.delta" sparkle:deltaFrom="482" length="2133182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wneRUl2NHFbUqLtTX9NRkMow+56WxlrPOkADVcfY7vI4wQQKAFgEC10aHVLEie+wkSQFkoe+a0kos4aWwtEaCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.2</title>
             <pubDate>Mon, 03 Aug 2026 23:23:48 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
