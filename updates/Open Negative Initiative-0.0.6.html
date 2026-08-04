@@ -1,0 +1,32 @@
+<p><strong>Le rendu de vos photos ne bouge pas. Aucune constante, aucun étage du pipeline
+n'a changé : les conversions déjà faites ressortent identiques au pixel près.</strong></p>
+
+<h3>La galerie défile enfin correctement</h3>
+
+<p>Faire défiler la grille ou la pellicule saccadait, et d'autant plus que le pointeur
+passait sur les vignettes. Trois causes, aucune dans le traitement d'image :</p>
+
+<ul>
+  <li><strong>Rien ne limitait le travail de fond.</strong> Chaque vignette qui apparaissait
+      lançait sa propre tâche : trente-six cellules à l'écran, c'était trente-six décodages
+      de RAW en même temps. Ils sont maintenant mis en attente, et surtout servis <em>en
+      commençant par les dernières demandées</em> — c'est-à-dire ce que vous regardez, au
+      lieu de ce que vous venez de dépasser.</li>
+  <li><strong>Une vignette qui arrivait faisait redessiner toute la galerie</strong>, deux
+      fois. Elle ne redessine plus que sa propre case.</li>
+  <li><strong>Les images étaient reconstruites à chaque affichage.</strong> Elles sont
+      décodées une fois, quand elles sont produites.</li>
+</ul>
+
+<p>Les vignettes sont aussi demandées à la taille où elles sont affichées, au lieu de
+toujours la plus grande : trois fois moins de pixels à la taille par défaut.</p>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Le survol d'une vignette ne fait plus travailler ses trente-cinq voisines.</li>
+  <li>L'app ne peut plus être lancée sous Rosetta par erreur sur un Mac Apple Silicon.</li>
+</ul>
+
+<p><strong>Si vous êtes sur macOS Ventura</strong> : toujours vrai, vous êtes les premiers à
+y lancer l'app et rien n'y a été testé ici. Signalez ce qui cloche, même un détail.</p>
