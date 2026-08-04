@@ -3,6 +3,46 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.5</title>
+            <pubDate>Tue, 04 Aug 2026 10:27:30 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>544</sparkle:version>
+            <sparkle:shortVersionString>0.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Le rendu de vos photos ne bouge pas. Aucune constante, aucun étage du pipeline
+n'a changé : les conversions déjà faites ressortent identiques au pixel près.</strong></p>
+
+<h3>Le retour vers la galerie ne bloque plus</h3>
+
+<p>En 0.0.4, fermer une photo pouvait figer l'app : l'image restait au centre de l'écran,
+floutée, les deux panneaux disparaissaient et la galerie n'apparaissait jamais. Il fallait
+quitter et relancer.</p>
+
+<p>La photo était animée d'un mouvement qui l'emmenait de sa vignette au canevas à
+l'ouverture, et refaisait le chemin inverse à la fermeture. C'est ce retour qui pouvait
+rester en l'air. <strong>Ce mouvement est supprimé</strong> — la bascule est maintenant
+immédiate, et seuls les deux panneaux latéraux s'animent, à l'ouverture comme à la
+fermeture.</p>
+
+<p>C'est un choix, pas un pansement : le mouvement était beau et compliqué, il valait mille
+lignes, et il produisait un blocage complet. La bascule instantanée ne peut pas rester en
+l'air.</p>
+
+<h3>Si vous êtes sur macOS Ventura</h3>
+
+<p>Rien de nouveau depuis la 0.0.4 sur ce point, mais ça reste vrai : vous êtes les
+premiers à y lancer l'app, et rien n'a jamais été testé sur Ventura ici. Signalez ce qui
+cloche, même un détail d'affichage.</p>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.5.zip" length="11666891" type="application/octet-stream" sparkle:edSignature="dsRuOgS1KSDsPgSTeABzxQ1x0xx4BGy6ob1FZKirSye8VkhJCdE+7l7f5KGJqiC5kinheqmuZ1g1PyILEySRDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative544-536.delta" sparkle:deltaFrom="536" length="776670" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xEpbUyVA52cG4K7RXNPA6Ce8dLO4CxfdyOe6IoUopoBSMqfJYcv1i/TKl/LCQTv75b4mXwmA5dyjg6HrROlaCA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative544-516.delta" sparkle:deltaFrom="516" length="1149490" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="W5vX2fLhHZHmDmxNRM0k6rUdULpcvJW+bZA9F2BGvYh6CujpnaVpionQhcInzowuSzCcoSj/CGbwzTto832KBg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative544-495.delta" sparkle:deltaFrom="495" length="2266734" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HOOso4iBwCMhpIRadmUQ9IA6X3fNThkFXngDngh+GRogqlOXX/Yk7iaY7g0JPnINj23Ry7b/e53yazDD6aEYAQ=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative544-482.delta" sparkle:deltaFrom="482" length="2259370" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dQJugws4MmmmgO6YCbSJvtrYJ3pvfGnNY3krNcadIh9vmNpwAwEnohynIoAnM6lMZEuirfKXfmUcNxsu5Kj8AQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.4</title>
             <pubDate>Tue, 04 Aug 2026 05:41:28 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
