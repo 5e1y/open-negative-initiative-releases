@@ -1,12 +1,12 @@
 # Open Negative Initiative
 
-A native macOS app that converts and edits **camera-scanned C-41 colour negatives** — the RAW files
-you get from photographing film on a light panel, rather than from a film scanner.
+A native macOS app that converts and edits **scanned colour negatives and colour positives**. It processes RAW, TIFF & DNG files
+you get from scanning film whatever your method.
 
 It inverts in density, gives you per-channel gains, levels, curves and a finishing balance, and
 exports 16-bit TIFF or JPEG. Everything stays in floating point from the RAW to the file written.
 
-**Requirements:** macOS 15 or later, Apple Silicon.
+**Requirements:** macOS 13 or later, Apple Silicon or Intel (universal).
 
 ---
 
@@ -70,14 +70,3 @@ even though nothing crashed — the app has a specific check for it and says so 
 
 Only the built app and the Sparkle update feed: `appcast.xml`, the release archives, and this file.
 **No source code lives here** — the application's source is a separate, private repository.
-
-Every archive is signed with a Developer ID, hardened, notarised and stapled, and each appcast entry
-carries an EdDSA signature. To check a download by hand:
-
-```sh
-codesign --verify --strict --verbose=2 "Open Negative Initiative.app"
-spctl --assess --type execute --verbose "Open Negative Initiative.app"
-```
-
-The EdDSA **public** key sits in the app's `Info.plist`; it is meant to be readable. The private key
-never leaves its author's keychain.
