@@ -1,0 +1,35 @@
+<p><strong>La réduction de bruit chroma est désactivée, sur les photos déjà importées comme
+sur les nouvelles. Elle teintait les contours en bleu au lieu de lisser la couleur, et
+d'autant plus que la résolution était basse. Si vous l'aviez réglée à la main, votre réglage
+est conservé et continue de s'appliquer — c'est seulement la dose que personne n'avait choisie
+qui cesse d'agir.</strong></p>
+
+<h3>Ce qui se passait</h3>
+
+<p>L'étage était censé lisser la couleur en laissant le grain intact. Sur certaines images il
+faisait l'inverse : au lieu de fondre les détails, il les dessinait, en bleu. Le défaut se
+voyait surtout sur les fichiers déjà réduits — scans en DNG linéaire, TIFF — et il empirait à
+mesure que la résolution baissait. Sur un RAW à pleine résolution il fallait pousser les deux
+curseurs au maximum pour le déclencher.</p>
+
+<p>La cause n'est pas encore établie. Plutôt que de livrer une correction devinée, l'étage
+cesse d'agir tant qu'on ne le lui demande pas : les deux curseurs partent de zéro, et un double
+clic y revient. Il reste entièrement disponible, à la main, pour qui veut l'essayer.</p>
+
+<h3>Pourquoi vos photos déjà traitées sont concernées</h3>
+
+<p>Mettre un réglage par défaut à zéro ne change rien aux photographies déjà importées : leur
+sidecar porte la valeur qu'avait la version où elles ont été ouvertes, et il la garde. Elles
+auraient donc continué de bleuir.</p>
+
+<p>Cette version reconnaît donc exactement les deux valeurs de repos que les versions
+précédentes posaient, et les relit à zéro. Toute autre valeur — celle que vous avez posée
+vous-même en déplaçant un curseur — est un choix, et elle survit intacte. Aucun autre réglage
+n'est touché.</p>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Le format des sidecars passe en version 2. Les fichiers écrits par cette version restent
+      lisibles par les précédentes, qui ignoreront simplement la mise à zéro.</li>
+</ul>
