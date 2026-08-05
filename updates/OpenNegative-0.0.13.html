@@ -1,0 +1,30 @@
+<p><strong>Your photographs render exactly as before. No stage changed shape and no setting changed
+value: a conversion already made comes back identical, pixel for pixel. This version fixes a memory
+leak that a tester hit at 19 GB.</strong></p>
+
+<h3>Browsing no longer holds what it opened</h3>
+
+<p>Opening one photograph after another kept about a full-resolution frame each time, and never gave
+it back. On a machine with plenty of RAM it stayed invisible for a long while; on a smaller one the
+app grew until the system started swapping. This is the defect behind the slowdowns reported after a
+long session.</p>
+
+<p>The cause was the preloading of neighbouring frames: the app decoded the previous and the next
+photograph in advance so an arrow key would cost nothing. Its reservation marker never actually
+stuck, so every open relaunched the same decodes, and the frames piled up.</p>
+
+<p><strong>The preloading is gone rather than patched.</strong> Measured over twenty consecutive
+opens, the footprint is now flat where it used to climb by about 1.9 GB per photograph. The price is
+stated plainly: an arrow key now decodes on demand instead of finding the frame ready, so moving
+along a roll is a little slower. A long session's memory comes before one key's comfort.</p>
+
+<h3>Under the hood</h3>
+
+<p>Nothing measured the app's memory before this, which is why the defect reached a user before it
+reached us. Two instruments now exist, and both run from the command line: one drives thousands of
+slider writes, the other opens photograph after photograph, and each reports the footprint alongside
+what Metal has allocated. A slider drag, measured over five thousand writes, holds nothing.</p>
+
+<p>Two smaller changes ride along: the curve pass no longer builds a callback on every evaluation,
+and each drawn frame now releases its temporaries at its own end rather than at the end of the run
+loop's turn.</p>
