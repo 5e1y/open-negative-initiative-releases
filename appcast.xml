@@ -3,6 +3,70 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.10</title>
+            <pubDate>Wed, 05 Aug 2026 15:39:15 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>636</sparkle:version>
+            <sparkle:shortVersionString>0.0.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Le rendu de vos photos ne bouge pas. Aucun étage du pipeline n'a changé de forme et
+aucun réglage n'a changé de valeur : ce que vous exportez aujourd'hui sort identique au pixel
+près. Cette version corrige ce que l'aperçu montrait de faux, et deux détails de la fenêtre.</strong></p>
+
+<h3>Le liseré autour de l'aperçu</h3>
+
+<p>Un cheveu clair bordait l'image à l'écran, présent depuis toujours, et la réduction de bruit
+chroma le transformait en cadre coloré. Il n'a jamais touché le fichier exporté ni la vue à
+100 % — c'était un défaut de l'aperçu seul, et il avait trois causes empilées, toutes corrigées.</p>
+
+<ul>
+  <li><strong>Le décodage réduit assombrissait sa rangée et sa colonne extérieures.</strong> Le
+      rééchantillonnage y couvre moins d'un pixel de la source : jusqu'à 10 % d'écart avec la
+      ligne voisine, mesuré. Inversé, cet écart de densité ressort en clair.</li>
+  <li><strong>Réduire l'image pour la faire tenir dans la fenêtre laissait son pixel de bord à
+      moitié couvert.</strong> À un ajustement de 0,73, il n'était couvert qu'à 7 % : il se
+      mélangeait donc au fond de la carte, et ce mélange dessinait le trait.</li>
+  <li><strong>Et surtout, le recadrage.</strong> Le cadre est calé sur la grille des pixels de la
+      pleine résolution, pour que l'écran et le fichier décrivent exactement le même rectangle —
+      on n'exporte pas un demi-pixel. Mais un cadre entier à 8368 px tombe forcément entre les
+      pixels d'un aperçu de 2000, et son bord sortait alors à 67 % de couverture. Les étages qui
+      lisent un voisinage — réduction de bruit, netteté, texture — recevaient là une couleur
+      faussée et la portaient vers l'intérieur sur la largeur de leur rayon. D'où une bande
+      colorée, et non un simple trait.</li>
+</ul>
+
+<p>Le bord est désormais reconstruit depuis la ligne juste à l'intérieur, uniquement sur les
+copies réduites. À pleine résolution le cadre tombe sur des entiers, donc rien n'y est touché :
+le fichier exporté garde son propre bord, tel que la pellicule le donne.</p>
+
+<h3>La fenêtre</h3>
+
+<ul>
+  <li><strong>En plein écran, la barre du haut reprenait le matériau du système et se dotait
+      d'un filet.</strong> Elle reste maintenant plate et sans filet, et le redevient à chaque
+      passage en plein écran — macOS y remet sa parure à chaque bascule.</li>
+  <li><strong>La carte de l'aperçu est à fleur des panneaux dans l'éditeur.</strong> La gouttière
+      qu'elle gardait sur ses côtés arrêtait les séparateurs du panneau de gauche avant l'image, et
+      donnait à la colonne de droite une marge plus large d'un côté que de l'autre. Elle ne sert
+      qu'à la galerie, où l'image serait sinon collée aux deux bords.</li>
+</ul>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Les vignettes se régénèrent une fois : celles en cache portaient encore le liseré.</li>
+</ul>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.10.zip" length="10774553" type="application/octet-stream" sparkle:edSignature="5ySPZJo/RD94eih2KEw3gOSVQOUMsfw2hgjQmawIEU20soOLe5LHXHzyHZdAhNMBhHIZCTUUsLrzhtWpCf/YCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative636-628.delta" sparkle:deltaFrom="628" length="623314" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fc5b1cZjowzjO46N05aZeyFhx2alpCMlPqR1FKGcx0LHHahoyINSK7jxi4rvByYaHprpRrDHEUj6hdCln5rWDg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative636-626.delta" sparkle:deltaFrom="626" length="641562" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LD8tLqV2OK0Wrw7+IgfXdTetDR0Wf6RPwcZzku0CZWvTFtAextd/KT8nPVlBtkPIaGv7E6KCtq6RRgXrlhc9Cg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative636-625.delta" sparkle:deltaFrom="625" length="656530" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wqqfWC64oR7lPI42Lq/+bwplTUSEc/+PPoErycu+tI7QxQ/yTrDoimJINSMpKfpPRhiiZQUfJdb1dY2FV39UAg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative636-552.delta" sparkle:deltaFrom="552" length="2807646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="YvLqruHTrFCRefVS9hwORzaO4PfmVVl+6nvd6hbc5PqMEZA8KLfznPhNViJwFNPHnfefXsz3D3qLfJvUXW8fDQ=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative636-544.delta" sparkle:deltaFrom="544" length="2875970" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IJlXtpHFFu2ku0cjVIxedkeRwQKKI/02rDvgFfBHb40c20TZzYXOjikS3ym9s899zcYlTDy9ysI3Bk68Aj1/Bg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.9</title>
             <pubDate>Wed, 05 Aug 2026 13:06:51 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
