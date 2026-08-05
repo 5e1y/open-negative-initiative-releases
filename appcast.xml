@@ -3,6 +3,66 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.12</title>
+            <pubDate>Wed, 05 Aug 2026 19:04:53 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>645</sparkle:version>
+            <sparkle:shortVersionString>0.0.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Your photographs render exactly as before. No stage changed shape and no setting changed
+value: a conversion already made comes back identical, pixel for pixel. This version adds a third
+mode next to Negative and Positive.</strong></p>
+
+<h3>A black-and-white mode</h3>
+
+<p><strong>B&amp;W</strong> joins Negative and Positive in the top bar, because it is the same kind of
+thing: what the frame <em>is</em>, not a treatment you dial. It inverts and rests exactly like a
+negative, because that is what it is — printed grey.</p>
+
+<p><strong>It adds no channel mixer, and that is deliberate.</strong> The three sliders in the
+<em>Colour</em> block already do that work: each places one point at the middle of its channel's
+curve, never touching the black or the white point. Push red and the sky darkens — that is the Tri-X
+yellow filter, reached with a control you already know. The projection to grey happens only at the
+very end, and does nothing but render what those curves prepared.</p>
+
+<p>Put differently: all the colour work still happens. It is what decides which grey.</p>
+
+<h3>What the mode takes away</h3>
+
+<p>Anything that only shapes colour leaves the screen rather than sitting there doing nothing:</p>
+
+<ul>
+  <li><strong>The Grade tab</strong> — the finishing balance and zone saturation act on a chroma the
+      last stage projects away regardless.</li>
+  <li><strong>The Mids and Highs buttons</strong> of the automatic balance: aligning medians or
+      highlights across channels shapes a cast. What remains is <strong>Equalise</strong>, which
+      places each channel's ends and gives a clean base.</li>
+  <li><strong>The Color density slider.</strong> Its value is kept and returns if you switch back to
+      colour.</li>
+</ul>
+
+<p>Cropping, the automatic balance, the three colours, the Lighting block, flat-field correction and
+the whole Detail tab all stay. The manual conversion is still there behind its door, called
+<em>manual equalisation</em> here.</p>
+
+<h3>Also</h3>
+
+<ul>
+  <li>A photo set to black and white and then opened by an earlier version opens as a negative
+      instead of refusing to open at all. Its settings are intact; only the mode is ignored by a
+      version that does not know it.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.12/OpenNegative-0.0.12.zip" length="10795973" type="application/octet-stream" sparkle:edSignature="DoJNy5DgMUSGmMEuL9a8ZM0Qr+pJKCiGPolugioGbSlRxwkNrYDdac1s8hdKr3m1Bzq3w7573vangScMDMTnDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.12/Open%20Negative%20Initiative645-639.delta" sparkle:deltaFrom="639" length="647330" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Cc6Ojd53YIiHM7/xoDFf3uEalzQQslaHsSSVbxQQB88nTy/e6mQwr+k9/kYR5zZrHlYELoKltS1SeKInv08VAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.12/Open%20Negative%20Initiative645-636.delta" sparkle:deltaFrom="636" length="713286" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fwwdm2BQch92dRPJTViuApdlGjChJThqvNreksXzc1Sz5RsltWV8ijsV//xwLl4dzabqMoZsoP2X5+kCcg6wDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.12/Open%20Negative%20Initiative645-628.delta" sparkle:deltaFrom="628" length="794686" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DmB/22rpDq2OWzS+soPQ1xJdkiq2VmLPPATYVN5g0iBUBoB/SFNchTX7fA9V1vLsaiP9/0ZDxOfei8XFU6PwDA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.12/Open%20Negative%20Initiative645-626.delta" sparkle:deltaFrom="626" length="827534" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lSZu3rZqtqMLtwYEam9MG+cMnAej9aq5EzjJX/QfyM0yxy1pcWoYkTJkjWFVL1zxObhiISOAu1k3tXBaLxrzCg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.12/Open%20Negative%20Initiative645-625.delta" sparkle:deltaFrom="625" length="831390" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3SaNW50xDhaSXpZtIf4O2vsq8VhVdVd3xOvkonVtW2rGn0j9j+fWJNbAN2fMcx/Ja9TB1cJKEI0alnU0fYGsAQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.11</title>
             <pubDate>Wed, 05 Aug 2026 16:23:44 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
@@ -515,8 +575,8 @@ vous parvenir.</p>
 ]]></description>
             <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.3/OpenNegative-0.0.3.zip" length="11719862" type="application/octet-stream" sparkle:edSignature="+IA2dX9o8luHyOzdhoIqVdDXD5s/0fqSAiiDraGLhHW2lkppSmm/T/3wN/JV6p3rCogIowW5/cRnZP7a3pVIDg=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.3/OpenNegative516-495.delta" sparkle:deltaFrom="495" length="2136786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wBxECO/IjZjUGf5hppDQkaaUvmiLBo8v4k62Gwy1BS+jugTVRwIqV2tfG+Fd8c817W1//MqXV7KSoKpXOUsLAw=="/>
-                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.3/OpenNegative516-482.delta" sparkle:deltaFrom="482" length="2133182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wneRUl2NHFbUqLtTX9NRkMow+56WxlrPOkADVcfY7vI4wQQKAFgEC10aHVLEie+wkSQFkoe+a0kos4aWwtEaCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.3/Open%20Negative%20Initiative516-495.delta" sparkle:deltaFrom="495" length="2136786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wBxECO/IjZjUGf5hppDQkaaUvmiLBo8v4k62Gwy1BS+jugTVRwIqV2tfG+Fd8c817W1//MqXV7KSoKpXOUsLAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.3/Open%20Negative%20Initiative516-482.delta" sparkle:deltaFrom="482" length="2133182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wneRUl2NHFbUqLtTX9NRkMow+56WxlrPOkADVcfY7vI4wQQKAFgEC10aHVLEie+wkSQFkoe+a0kos4aWwtEaCA=="/>
             </sparkle:deltas>
         </item>
         <item>
@@ -556,7 +616,7 @@ alpha.</p>
 ]]></description>
             <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.2/OpenNegative-0.0.2.zip" length="9409345" type="application/octet-stream" sparkle:edSignature="x+QFDhwxELkl6IVEfLRtxVQO7BfRdSYF+TiwWB77sNypC1Zs4zwUtC58NawW67HuTPNS0O54rE0PQ7p1+6BLBw=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.2/OpenNegative495-482.delta" sparkle:deltaFrom="482" length="232686" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gDats/HqYiV/mgOUTJ5vpI89f+80qJzwD0nknMvGBpexeNsu9z1c52Y7ZPGW9/J01FaXbs1uB7L1Q/YltyzgBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.2/Open%20Negative%20Initiative495-482.delta" sparkle:deltaFrom="482" length="232686" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gDats/HqYiV/mgOUTJ5vpI89f+80qJzwD0nknMvGBpexeNsu9z1c52Y7ZPGW9/J01FaXbs1uB7L1Q/YltyzgBA=="/>
             </sparkle:deltas>
         </item>
         <item>
