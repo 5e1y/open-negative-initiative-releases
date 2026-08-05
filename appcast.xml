@@ -3,6 +3,58 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.8</title>
+            <pubDate>Wed, 05 Aug 2026 12:43:27 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>626</sparkle:version>
+            <sparkle:shortVersionString>0.0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>La réduction de bruit chroma est désactivée, sur les photos déjà importées comme
+sur les nouvelles. Elle teintait les contours en bleu au lieu de lisser la couleur, et
+d'autant plus que la résolution était basse. Si vous l'aviez réglée à la main, votre réglage
+est conservé et continue de s'appliquer — c'est seulement la dose que personne n'avait choisie
+qui cesse d'agir.</strong></p>
+
+<h3>Ce qui se passait</h3>
+
+<p>L'étage était censé lisser la couleur en laissant le grain intact. Sur certaines images il
+faisait l'inverse : au lieu de fondre les détails, il les dessinait, en bleu. Le défaut se
+voyait surtout sur les fichiers déjà réduits — scans en DNG linéaire, TIFF — et il empirait à
+mesure que la résolution baissait. Sur un RAW à pleine résolution il fallait pousser les deux
+curseurs au maximum pour le déclencher.</p>
+
+<p>La cause n'est pas encore établie. Plutôt que de livrer une correction devinée, l'étage
+cesse d'agir tant qu'on ne le lui demande pas : les deux curseurs partent de zéro, et un double
+clic y revient. Il reste entièrement disponible, à la main, pour qui veut l'essayer.</p>
+
+<h3>Pourquoi vos photos déjà traitées sont concernées</h3>
+
+<p>Mettre un réglage par défaut à zéro ne change rien aux photographies déjà importées : leur
+sidecar porte la valeur qu'avait la version où elles ont été ouvertes, et il la garde. Elles
+auraient donc continué de bleuir.</p>
+
+<p>Cette version reconnaît donc exactement les deux valeurs de repos que les versions
+précédentes posaient, et les relit à zéro. Toute autre valeur — celle que vous avez posée
+vous-même en déplaçant un curseur — est un choix, et elle survit intacte. Aucun autre réglage
+n'est touché.</p>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Le format des sidecars passe en version 2. Les fichiers écrits par cette version restent
+      lisibles par les précédentes, qui ignoreront simplement la mise à zéro.</li>
+</ul>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.8.zip" length="10755327" type="application/octet-stream" sparkle:edSignature="koSpCjGXLEx2AwqexKFQu7CDVNQfVK3dvTHbgJcxWVd8ZNqe/C+nr72zqoayh2kr6Sq5K1LOCidRoZwKNiHYDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative626-625.delta" sparkle:deltaFrom="625" length="387002" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="C2Ht7dISqJuXR8pZOUfGRCi7cNNiWXYR4slLX/NRKN4ZyQ91e49PR6ZZBZ9Cp5yHtRGaU+r6RnI5d1b/7cmrAw=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative626-552.delta" sparkle:deltaFrom="552" length="2764114" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lKWZGJ37c+TNv5ASO322bmafM3I7iOsGhWRKWVbP7Vi9nw7BmVnZM6KTNJYKFHZzO11n9pev5jZ9X7jGuMqkCg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative626-544.delta" sparkle:deltaFrom="544" length="2839886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jQBTp4QqP01gMKMv0hKaC5zbSrAG7gaxqV9WfIZZp3xQxxQNtrSuQaw2TxIVQg4IABT8Y2dQHnffKeWVoapqBg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative626-536.delta" sparkle:deltaFrom="536" length="2890914" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="trGbSix+zTKtF5JOBNItsuFlY57k0RXWQEYIMsFe19u7TzKBu2+fYlw+etJEwXifBCYVLxtrZ6yHd5k2sj1uBA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative626-516.delta" sparkle:deltaFrom="516" length="3109318" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Uypr/PQt7/YdzyJf0e5NMYofQUKkGWL9WMpRn+Fiialp5dLVBk7ixtcW87CMOk7oZvtX631Ew+f+jIX9Kh/rBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.7</title>
             <pubDate>Wed, 05 Aug 2026 04:16:32 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
