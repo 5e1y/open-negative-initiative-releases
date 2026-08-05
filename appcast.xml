@@ -3,6 +3,71 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.9</title>
+            <pubDate>Wed, 05 Aug 2026 13:06:51 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>628</sparkle:version>
+            <sparkle:shortVersionString>0.0.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Le rendu change si vous aviez réglé la réduction de bruit chroma à la main : l'étage
+a changé de place dans la chaîne. Il n'agit plus sur le négatif avant inversion mais sur l'image
+finie, et il fait enfin ce qu'on lui demande. Les photos dont vous n'aviez pas touché ce réglage
+ne bougent pas.</strong></p>
+
+<h3>Le bleu fluo : la cause est trouvée</h3>
+
+<p>La version précédente désactivait la réduction de bruit chroma faute de comprendre pourquoi
+elle teintait les contours. C'est compris, et mesuré.</p>
+
+<p>L'étage remplaçait la couleur d'un pixel par celle de son voisinage, exprimée en valeur
+absolue. Or il agissait sur le négatif, <em>avant</em> l'inversion — c'est-à-dire avant un
+logarithme. Prendre la couleur d'un voisinage clair pour la poser sur un pixel sombre pouvait
+retirer au canal bleu davantage que ce canal ne contenait. Le résultat passait sous le plancher,
+et le logarithme le renvoyait saturé : un liseré bleu du côté sombre de chaque contour.</p>
+
+<p>Deux choses expliquent que ça se voyait surtout sur les scans en DNG ou en TIFF. Leur canal
+bleu part beaucoup plus bas — entre 0,04 et 0,10 quand le rouge est à 0,45 — parce que le masque
+orange du film l'écrase et que ces fichiers n'ont reçu aucune balance au décodage. Il n'avait donc
+presque aucune marge avant le plancher. Et l'effet se concentrait sur les contours, là où la
+couleur d'un pixel diffère le plus de celle de ses voisins : d'où cette impression d'accentuation
+colorée plutôt que de lissage.</p>
+
+<h3>L'étage rejoint la netteté et la texture, à la fin</h3>
+
+<p>Il agit désormais après l'inversion, en tête du groupe de finition. Trois conséquences :</p>
+
+<ul>
+  <li><strong>Il débruite pour de bon.</strong> Mesuré sur l'image telle qu'on la voit, il retire
+      la majeure partie du bruit de couleur ; à son ancienne place il en <em>ajoutait</em> sur les
+      fichiers les plus touchés, tout en paraissant bien travailler dans l'espace où on le
+      mesurait.</li>
+  <li><strong>Il ne peut plus produire de bleu saturé.</strong> Sans logarithme en aval, un
+      débordement devient au pire un point sombre, écrêté comme n'importe quel autre.</li>
+  <li><strong>On lisse la couleur qu'on voit</strong>, et non une couleur que les courbes, la
+      balance de finition et la saturation par zone vont ensuite redéformer.</li>
+</ul>
+
+<p>Les deux curseurs restent à zéro au repos. L'étage fonctionne, mais c'est à vous de le doser :
+la loupe de l'onglet Detail montre son effet à l'échelle réelle du fichier.</p>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Le contrôle automatique qui surveillait cet étage mesurait la bonne grandeur dans le mauvais
+      espace, et restait vert pendant tout le défaut. Il mesure désormais après l'inversion, et son
+      contre-exemple est l'ancien traitement reconstruit à l'identique.</li>
+</ul>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.9.zip" length="10758453" type="application/octet-stream" sparkle:edSignature="kKwlFWIlIq29Wx+3Eql0bQSSVHe+R91ZNLnKMIjwgWs7cScTdocnD6OR8l2k7CWqUXmzynp8ZOJ5aIFbeRcxCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative628-626.delta" sparkle:deltaFrom="626" length="363622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KQo6XXQ4Maws48Xh37P9IZoWj9pViwlLuz0QjooitW5Qtv2agJH17ZaIsezJZdKfvM/UgZSrtQrztwhUdlo8Aw=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative628-625.delta" sparkle:deltaFrom="625" length="425942" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="nbAuwY67v+DvOYNekDwD0WKoIYj/5oHoqDpw+wXNSn5K5v52MM3OteB7JeAGozGNtzxks3TS8q0pAQIcFh/MAw=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative628-552.delta" sparkle:deltaFrom="552" length="2766834" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2bGQ4g1gSl5QSiaI2AuqZIVpYHy7rgdBEzWDbqGMBny1Fsv8MjGpEhRBgIrJeOseC94tP1LQY6VDjcCKYv6YCA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative628-544.delta" sparkle:deltaFrom="544" length="2851266" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="R9Dc0Yj9r91VQHQ425O34tdyfUncoPm+97nMA9FCGARxmV7HH4TS/ArrX8qZs828utxRqOXeXcud+U4AZFAnDA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative628-536.delta" sparkle:deltaFrom="536" length="2889766" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="88uAQsy9D5sCo5376foxkipAhql/Sqh8eoSqIpzVNMYMmfkp2iW8dOF95PLCdD+7Wss7WkSvQv73nYcDPczBCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.8</title>
             <pubDate>Wed, 05 Aug 2026 12:43:27 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
