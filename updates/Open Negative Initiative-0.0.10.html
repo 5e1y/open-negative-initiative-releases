@@ -1,0 +1,47 @@
+<p><strong>Le rendu de vos photos ne bouge pas. Aucun étage du pipeline n'a changé de forme et
+aucun réglage n'a changé de valeur : ce que vous exportez aujourd'hui sort identique au pixel
+près. Cette version corrige ce que l'aperçu montrait de faux, et deux détails de la fenêtre.</strong></p>
+
+<h3>Le liseré autour de l'aperçu</h3>
+
+<p>Un cheveu clair bordait l'image à l'écran, présent depuis toujours, et la réduction de bruit
+chroma le transformait en cadre coloré. Il n'a jamais touché le fichier exporté ni la vue à
+100 % — c'était un défaut de l'aperçu seul, et il avait trois causes empilées, toutes corrigées.</p>
+
+<ul>
+  <li><strong>Le décodage réduit assombrissait sa rangée et sa colonne extérieures.</strong> Le
+      rééchantillonnage y couvre moins d'un pixel de la source : jusqu'à 10 % d'écart avec la
+      ligne voisine, mesuré. Inversé, cet écart de densité ressort en clair.</li>
+  <li><strong>Réduire l'image pour la faire tenir dans la fenêtre laissait son pixel de bord à
+      moitié couvert.</strong> À un ajustement de 0,73, il n'était couvert qu'à 7 % : il se
+      mélangeait donc au fond de la carte, et ce mélange dessinait le trait.</li>
+  <li><strong>Et surtout, le recadrage.</strong> Le cadre est calé sur la grille des pixels de la
+      pleine résolution, pour que l'écran et le fichier décrivent exactement le même rectangle —
+      on n'exporte pas un demi-pixel. Mais un cadre entier à 8368 px tombe forcément entre les
+      pixels d'un aperçu de 2000, et son bord sortait alors à 67 % de couverture. Les étages qui
+      lisent un voisinage — réduction de bruit, netteté, texture — recevaient là une couleur
+      faussée et la portaient vers l'intérieur sur la largeur de leur rayon. D'où une bande
+      colorée, et non un simple trait.</li>
+</ul>
+
+<p>Le bord est désormais reconstruit depuis la ligne juste à l'intérieur, uniquement sur les
+copies réduites. À pleine résolution le cadre tombe sur des entiers, donc rien n'y est touché :
+le fichier exporté garde son propre bord, tel que la pellicule le donne.</p>
+
+<h3>La fenêtre</h3>
+
+<ul>
+  <li><strong>En plein écran, la barre du haut reprenait le matériau du système et se dotait
+      d'un filet.</strong> Elle reste maintenant plate et sans filet, et le redevient à chaque
+      passage en plein écran — macOS y remet sa parure à chaque bascule.</li>
+  <li><strong>La carte de l'aperçu est à fleur des panneaux dans l'éditeur.</strong> La gouttière
+      qu'elle gardait sur ses côtés arrêtait les séparateurs du panneau de gauche avant l'image, et
+      donnait à la colonne de droite une marge plus large d'un côté que de l'autre. Elle ne sert
+      qu'à la galerie, où l'image serait sinon collée aux deux bords.</li>
+</ul>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>Les vignettes se régénèrent une fois : celles en cache portaient encore le liseré.</li>
+</ul>
