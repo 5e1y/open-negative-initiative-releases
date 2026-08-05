@@ -12,8 +12,9 @@ exports 16-bit TIFF or JPEG. Everything stays in floating point from the RAW to 
 
 ## Download
 
-**[OpenNegative-0.1.0.dmg](./OpenNegative-0.1.0.dmg)** — open it, then drag the app onto the
-Applications folder sitting beside it.
+**[Open Negative Initiative.dmg](./Open%20Negative%20Initiative.dmg)** — open it, then drag the app
+onto the Applications folder sitting beside it. The name carries no version: it is always the latest
+build, so the link never goes stale.
 
 ### If macOS refuses to open it the first time
 
@@ -66,7 +67,23 @@ even though nothing crashed — the app has a specific check for it and says so 
 
 ---
 
+## The source will be opened after the beta
+
+**Open Negative Initiative will be released as open source once it leaves beta.** Not before, and the
+reason is the alpha itself: the constants that decide how a negative is rendered are still being
+calibrated against real film, and several of them will move again. Opening a codebase invites forks
+and packagers; doing that while the render is still shifting would scatter versions that disagree
+about what a photograph should look like, with no way to tell which is which.
+
+So the order is deliberate — calibrate, stabilise the render, then open. What that changes for you in
+the meantime: nothing about the app, and everything about the reports. Until the source is out, an
+issue is the only way a defect reaches the code, which is why the two things asked for above matter
+as much as they do.
+
+---
+
 ## What is in this repository
 
 Only the built app and the Sparkle update feed: `appcast.xml`, the release archives, and this file.
-**No source code lives here** — the application's source is a separate, private repository.
+**No source code lives here** — the application's source is a separate repository, private until the
+beta ends.
