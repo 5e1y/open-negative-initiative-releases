@@ -3,6 +3,38 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.11</title>
+            <pubDate>Wed, 05 Aug 2026 16:23:44 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>639</sparkle:version>
+            <sparkle:shortVersionString>0.0.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Le rendu de vos photos ne bouge pas. Aucun étage du pipeline n'a changé, aucun réglage
+n'a changé de valeur : ce que vous exportez sort identique au pixel près.</strong></p>
+
+<h3>L'application dit qu'elle est en alpha</h3>
+
+<p>Une bulle orange s'affiche en permanence sous la barre, dans l'éditeur comme dans la galerie :
+<em>ONI is in Alpha, bugs are to be expected.</em> Elle porte un lien qui ouvre directement le
+formulaire de signalement.</p>
+
+<p>Elle est posée dans la bande que le rendu ne peut pas atteindre, donc elle ne couvre jamais un
+pixel de la photographie.</p>
+
+<p>Elle remplace le relevé des moyennes du négatif brut, qui affichait les valeurs R, V et B
+lues dans le fichier. C'était un instrument de mise au point du traitement, pas une information
+utile pour convertir une photographie.</p>
+]]></description>
+            <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative-0.0.11.zip" length="10777303" type="application/octet-stream" sparkle:edSignature="qr5HZgmfvEfCwbY7K1yWID1J1ySc/4CT2ecl6232aRy2A1nAjpAlHwf9L3zG0r8Zc7jESCYLi3vBMiEFHyLTAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative639-636.delta" sparkle:deltaFrom="636" length="544822" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ZVCChOm21bgIU/bh23KmdkU+rw1YRV7havshSgF2n+NdMWKOTN3nTJ6y2nB8k5MY5LHuZI8smVe7OveJSK5QAQ=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative639-628.delta" sparkle:deltaFrom="628" length="704566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="GLIBRRH97diZFNTV4fSUkXYgBuqnFIjjNxtQSyK8fZWeWVpmydQnZ7NSqjBkc3NceKmHaXYFu72xpRuOi6ZXAA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative639-626.delta" sparkle:deltaFrom="626" length="723302" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="35fnP1pd3JwTFjUBLQiQCBDWdbWSEkBjTv2sFMDhx1UV9Mf2JfAZsyZ8zKgvAzKeY0auQEGa31Mkv7QGBSIBDA=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative639-625.delta" sparkle:deltaFrom="625" length="717622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DlkDgenrJiVXK6OhNv40X9PksfyqFScuC29asZpbWIrto/QLTZVZJuE6rDYcliZzBGobqnhSQbXwO3ukGfrTAg=="/>
+                <enclosure url="https://5e1y.github.io/open-negative-initiative-releases/updates/Open%20Negative%20Initiative639-552.delta" sparkle:deltaFrom="552" length="2806382" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UUpM+KPsG4GPsA3q9G2JRbZ9D1PP+bNwFtVCSox5BJYNQ/adX+kvsp15hR3iIut4AH1DAxSfymFTyAaB0fdWCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.10</title>
             <pubDate>Wed, 05 Aug 2026 15:39:15 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
