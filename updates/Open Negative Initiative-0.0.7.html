@@ -1,0 +1,103 @@
+<p><strong>Le rendu de vos photos change. Trois étages du pipeline ont été corrigés, et
+les conversions déjà faites ne ressortiront pas identiques : la texture a changé de forme, la
+netteté et la réduction de bruit avaient des rayons trop petits pour agir, et les DNG linéaires
+étaient réduits d'une façon qui fabriquait du bruit couleur. Aucun réglage n'est perdu — vos
+sidecars se relisent tous — mais rouvrez une photo déjà traitée avant d'exporter.</strong></p>
+
+<p>Cette version refond aussi l'organisation des panneaux de fond en comble. C'est la mise à
+jour la plus large depuis le début.</p>
+
+<h3>Le panneau est réorganisé par usage, plus par ordre de traitement</h3>
+
+<p>Quatre onglets au lieu de trois, et ils suivent maintenant la façon dont on juge une
+photographie plutôt que l'ordre dans lequel la machine calcule :</p>
+
+<ul>
+  <li><strong>Frame</strong> — le cadrage, d'abord, pour que la balance automatique et
+      l'histogramme ne comptent que les pixels gardés.</li>
+  <li><strong>Color</strong> — arriver à une image juste : balance automatique, couleur,
+      densité, lumière.</li>
+  <li><strong>Grade</strong> — prendre parti sur une image juste : balance de finition et
+      saturation par zone.</li>
+  <li><strong>Detail</strong> — réduction de bruit, netteté et texture.</li>
+</ul>
+
+<p><strong>Les courbes sont devenues des curseurs.</strong> Trois couleurs et un contraste,
+là où il fallait poser des points à la main. Le contraste rejoint les niveaux dans un bloc
+<em>Lighting</em>, parce qu'il se juge contre l'exposition qu'il façonne et non tout seul. Ses
+libellés disent enfin ce qu'ils font : <em>Exposure</em>, <em>Black point</em>,
+<em>White point</em>, et pousser vers la droite éclaircit dans les trois cas.</p>
+
+<p><strong>La conversion manuelle passe à la fin, derrière une porte.</strong> Le chemin court
+vient en premier ; la balance de source et les niveaux par canal restent accessibles d'un clic,
+dans une boîte sombre qui dit qu'on est ailleurs. La correction de flat-field en sort, puisqu'elle
+corrige l'éclairage du banc de numérisation et non la photographie.</p>
+
+<h3>Color density, un réglage neuf</h3>
+
+<p>Un curseur qui écarte les trois canaux les uns des autres sans toucher à la saturation. Le
+gris est son point fixe : une zone vraiment neutre ne bouge pas, et tout ce qui s'en écartait
+s'en écarte davantage, proportionnellement à ce qu'il en était déjà loin. Une couleur ressort
+alors plus claire que le gris avec lequel elle était à égalité — ce sont les aplats qui gagnent
+en présence, pas la chroma qui monte.</p>
+
+<h3>Detail : une loupe, et une texture qui ne moutonne plus</h3>
+
+<p><strong>Une loupe remplace l'histogramme dans cet onglet.</strong> La réduction de bruit et
+la netteté agissent sur un rayon de deux pixels du fichier : aucun aperçu réduit ne peut les
+montrer, l'information n'y est pas. La loupe affiche la zone au centre de la vue à l'échelle
+réelle du fichier, 1:1 ou 2:1, avec exactement le dosage qui sera exporté. L'histogramme de
+sortie, lui, n'apprenait rien ici — aucun de ces trois étages ne déplace visiblement la
+distribution.</p>
+
+<p><strong>Texture</strong> est un contraste de bande médiane : ce que la netteté ne peut pas
+atteindre et ce que la clarté déborde. Elle a été entièrement refaite depuis sa première
+version, qui posait des plaques au lieu de dessiner. Elle repose maintenant sur une base qui
+suit les contours, ce qui divise le halo par cinq à l'endroit où il se voyait, et elle
+s'affiche dès l'aperçu au lieu d'exiger le zoom à 100 %.</p>
+
+<p><strong>La netteté perd son seuil</strong>, qui restait à zéro sans que rien ne prouve qu'il
+servait. Son rayon est ancré au milieu de sa course, là où le geste se fait réellement sur un
+scan de film.</p>
+
+<h3>Trois réglages qui ne faisaient presque rien</h3>
+
+<ul>
+  <li><strong>La netteté et la réduction de bruit chroma étaient trop faibles pour agir.</strong>
+      Leur rayon est une fraction de la taille de l'image, et il était descendu sous le seuil où
+      un flou gaussien rend son entrée inchangée. Sur un fichier de 8368 pixels la réduction de
+      bruit travaillait sur 0,84 pixel ; elle en couvre 8,4 maintenant.</li>
+  <li><strong>Le rayon suivait la largeur, pas le grand côté.</strong> Un scan en portrait
+      recevait jusqu'à trois fois et demie moins de dose que le même scan en paysage.</li>
+  <li><strong>La texture était purement sautée sur l'aperçu.</strong> Le curseur se réglait à
+      l'aveugle : il n'agissait qu'à 100 % de zoom et dans le fichier exporté.</li>
+</ul>
+
+<h3>Les DNG linéaires : un bruit couleur qui n'existait pas</h3>
+
+<p>Un DNG linéaire — un scan à trois canaux, non mosaïqué — était réduit en prenant un pixel
+sur <em>n</em>, sans moyenner. L'aperçu portait ainsi près d'une fois et demie l'énergie fine
+du fichier réel, et près du double en couleur : le bruit chroma qu'on cherchait à retirer était
+en partie fabriqué par cette réduction. Les vignettes et la mesure que lit la balance
+automatique étaient les plus touchées. Elles moyennent désormais toute la zone qu'elles
+remplacent.</p>
+
+<h3>La barre et les gestes</h3>
+
+<ul>
+  <li>Le <strong>avant/après</strong> devient une touche de la barre.</li>
+  <li>Un bouton coupe et rend le <strong>son des touches</strong>.</li>
+  <li>Nouvelle <strong>icône d'application</strong>.</li>
+  <li>Le quart de tour, le son et le avant/après ont des icônes qui nomment le geste et non
+      l'état.</li>
+</ul>
+
+<h3>Aussi</h3>
+
+<ul>
+  <li>La balance automatique lisait une mesure qui portait déjà la densité couleur et la
+      texture : elle se posait donc sur une image qu'elle avait elle-même modifiée.</li>
+  <li>Un export par lot demande confirmation avant de remplacer des fichiers existants, comme
+      le faisait déjà l'export d'une seule photo.</li>
+  <li>Plus aucun chemin du disque de développement dans le binaire livré.</li>
+</ul>
