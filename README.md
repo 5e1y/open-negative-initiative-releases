@@ -12,9 +12,13 @@ exports 16-bit TIFF or JPEG. Everything stays in floating point from the RAW to 
 
 ## Download
 
-**[Open Negative Initiative.dmg](./Open%20Negative%20Initiative.dmg)** — open it, then drag the app
-onto the Applications folder sitting beside it. The name carries no version: it is always the latest
-build, so the link never goes stale.
+**[OpenNegative.dmg](https://github.com/5e1y/open-negative-initiative-releases/releases/latest/download/OpenNegative.dmg)**
+— open it, then drag the app onto the Applications folder sitting beside it. The link always resolves
+to the newest release, so it never goes stale.
+
+Every version has its own [release](https://github.com/5e1y/open-negative-initiative-releases/releases),
+with its notes and its build. Going back to an older one is a download away — which is the recourse
+against a version that moves the rendering of photographs already adjusted.
 
 ### If macOS refuses to open it the first time
 
