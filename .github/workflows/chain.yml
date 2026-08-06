@@ -62,6 +62,71 @@ jobs:
           [ "$bad" -eq 0 ] || exit 1
           echo "$n enclosures, all answering"
 
+      - name: The signatures must verify — a bad one refuses to install, in silence
+        # THE failure that says nothing: Sparkle checks the EdDSA signature against the bytes it just
+        # downloaded, and refuses on mismatch without the user learning why. A single asset replaced
+        # or re-uploaded is enough, and the feed still looks perfect.
+        #
+        # Two depths, because verifying every archive would pull ~500 MB a day: the LENGTH of every
+        # enclosure, which catches any change of content for the price of a HEAD, and the full
+        # SIGNATURE of the newest build, which is the one everybody is about to install.
+        run: |
+          python3 -m pip install --quiet pynacl
+          python3 - <<'CHECK'
+          import base64, re, subprocess, sys
+          import nacl.signing, nacl.exceptions
+
+          KEY = "Sn54zBsnQ9IN6MZEyfAzYn4fQi03aUihVjaA5Ejn7qM="
+          feed = open("appcast.xml", encoding="utf-8").read()
+
+          # Attribute order is not guaranteed, so each enclosure is parsed as a whole rather than by
+          # a single expression that a reordering would silently stop matching.
+          enclosures = []
+          for tag in re.findall(r"<enclosure[^>]*>", feed):
+              url = re.search(r'url="([^"]+)"', tag)
+              length = re.search(r'length="(\d+)"', tag)
+              sig = re.search(r'sparkle:edSignature="([^"]+)"', tag)
+              if url and length and sig:
+                  enclosures.append((url.group(1), int(length.group(1)), sig.group(1)))
+
+          if not enclosures:
+              print("::error::no signed enclosure in the feed — this check would pass on nothing")
+              sys.exit(1)
+
+          bad = 0
+          for url, length, _ in enclosures:
+              head = subprocess.run(["curl", "-sIL", url], capture_output=True, text=True).stdout
+              served = [l.split(":", 1)[1].strip() for l in head.splitlines()
+                        if l.lower().startswith("content-length")]
+              if not served or int(served[-1]) != length:
+                  print(f"::error::{url.split('/')[-1]} is {served[-1] if served else '?'} bytes, "
+                        f"the feed announces {length}")
+                  bad += 1
+          print(f"{len(enclosures)} enclosures, {len(enclosures) - bad} matching their announced length")
+
+          newest = enclosures[0][0]
+          print(f"verifying the signature of {newest.split('/')[-1]}")
+          blob = subprocess.run(["curl", "-sL", newest], capture_output=True).stdout
+          signature = base64.b64decode(next(s for u, _, s in enclosures if u == newest))
+          key = nacl.signing.VerifyKey(base64.b64decode(KEY))
+          try:
+              key.verify(blob, signature)
+              print("signature verifies against the shipped public key")
+          except nacl.exceptions.BadSignatureError:
+              print(f"::error::{newest} does not match its signature — updates will refuse to install")
+              bad += 1
+
+          # The twin, adverse by construction: one flipped bit must be refused, or a verifier that
+          # accepted anything would make the line above true for nothing.
+          try:
+              key.verify(blob[:-1] + bytes([blob[-1] ^ 1]), signature)
+              print("::error::a modified archive verifies — the signature check proves nothing")
+              bad += 1
+          except nacl.exceptions.BadSignatureError:
+              print("and a single flipped bit is refused, so the check discriminates")
+          sys.exit(1 if bad else 0)
+          CHECK
+
       - name: The feed must name the latest release
         # Catches the half-publish: assets uploaded, feed never pushed. Updates then keep working on
         # the old version while the website hands out a newer one, and nobody notices for weeks.
