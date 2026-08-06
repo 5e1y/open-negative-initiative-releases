@@ -3,6 +3,44 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.15</title>
+            <pubDate>Thu, 06 Aug 2026 07:52:08 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>676</sparkle:version>
+            <sparkle:shortVersionString>0.0.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Your photographs render exactly as before. No stage changed shape and no setting changed
+value: a conversion already made comes back identical, pixel for pixel. This version settles what the
+app itself looks like.</strong></p>
+
+<h3>The app no longer follows the system's light appearance</h3>
+
+<p>Nothing pinned the interface's appearance, so a Mac set to Light dressed the app in a theme that
+was only ever half built. The canvas and the photograph tiles are fixed dark values by design — a
+photograph has to be the brightest thing on screen — while the panels, the title bar and the alerts
+took whatever the system handed them. Measured, a light system ringed a canvas at 0.106 with panels
+at 0.588: a fivefold mismatch, and nothing in the app could correct it.</p>
+
+<p>The app now sets its own appearance at launch, before the first window is drawn, so it looks the
+same whichever theme the system is on. Alerts, panels and the title bar follow, which the SwiftUI
+setting alone would have left behind on the system theme.</p>
+
+<h3>Under the hood</h3>
+
+<p>A check reads the launch code as text and fails if that pin is ever removed, so a later change
+cannot quietly hand the interface back to the system. The export sheet carried its own dark override,
+which existed only to survive the light theme; it goes with it.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.15/OpenNegative-0.0.15.zip" length="10894850" type="application/octet-stream" sparkle:edSignature="kLluHiPFUdEnKSGlluBShmvXs3VcmsmzYRFOVJocGWAwE8q+39CRQvNfTXptc46UWCYiueRl5NEVJJg+Jf7TAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.15/OpenNegativeInitiative676-674.delta" sparkle:deltaFrom="674" length="463926" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="L+Dq4cgeydnYuFKtDco9i8tEqsau1D7fE90VuJJym4Fd1FsF5AvtrV8S36J+EO4GhoJn44nZpCNhi8VOawH1AQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.15/OpenNegativeInitiative676-654.delta" sparkle:deltaFrom="654" length="740118" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="95uESSdx8AifuE8NvyjxxHAHK+WPwn1wQ1a7UbTkHHTnuBL0zUAigRFOnMaq06FAEHl122K153FLHVnYj1DSDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.15/OpenNegativeInitiative676-645.delta" sparkle:deltaFrom="645" length="925314" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rFS9KGPl+PrDERPNPHpjTGCRmuC3/lu1/WyQ8SFl4lIhEUOcU2s1ZkxIjosE6RTodS7d39//N/lSDLBYOfwkCw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.15/OpenNegativeInitiative676-639.delta" sparkle:deltaFrom="639" length="1006818" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="O4QA7jgoTsEKxHOhNT6bOn2pyZDx0ByiqekycUZza37Q8dz4M0zxqqQUg1K5CDJ8/GrJYvrD70tiKFWOPoQxCg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.15/OpenNegativeInitiative676-636.delta" sparkle:deltaFrom="636" length="1052370" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AY/GA2+7Ewtgm/k1pbWtv2KXN109BoMADH0idTExNWRpOg1gGH3u3frTurftQLwX6onjOa5Fb5Gc3QjFJs71CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.14</title>
             <pubDate>Thu, 06 Aug 2026 04:44:07 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
