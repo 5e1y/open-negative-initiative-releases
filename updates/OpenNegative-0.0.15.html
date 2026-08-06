@@ -1,0 +1,21 @@
+<p><strong>Your photographs render exactly as before. No stage changed shape and no setting changed
+value: a conversion already made comes back identical, pixel for pixel. This version settles what the
+app itself looks like.</strong></p>
+
+<h3>The app no longer follows the system's light appearance</h3>
+
+<p>Nothing pinned the interface's appearance, so a Mac set to Light dressed the app in a theme that
+was only ever half built. The canvas and the photograph tiles are fixed dark values by design — a
+photograph has to be the brightest thing on screen — while the panels, the title bar and the alerts
+took whatever the system handed them. Measured, a light system ringed a canvas at 0.106 with panels
+at 0.588: a fivefold mismatch, and nothing in the app could correct it.</p>
+
+<p>The app now sets its own appearance at launch, before the first window is drawn, so it looks the
+same whichever theme the system is on. Alerts, panels and the title bar follow, which the SwiftUI
+setting alone would have left behind on the system theme.</p>
+
+<h3>Under the hood</h3>
+
+<p>A check reads the launch code as text and fails if that pin is ever removed, so a later change
+cannot quietly hand the interface back to the system. The export sheet carried its own dark override,
+which existed only to survive the light theme; it goes with it.</p>
