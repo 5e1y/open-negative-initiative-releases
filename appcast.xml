@@ -3,6 +3,70 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.17</title>
+            <pubDate>Thu, 06 Aug 2026 12:04:49 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>696</sparkle:version>
+            <sparkle:shortVersionString>0.0.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Your photographs render exactly as before. No stage changed shape and no setting changed
+value: a conversion already made comes back identical, pixel for pixel. One thing does not survive
+going back, and it is named first.</strong></p>
+
+<p><strong>Presets are stored in a new form.</strong> Yours are read and converted on first launch,
+carrying exactly what they carried before. But a preset saved from this version is not readable by
+an earlier one: going back to 0.0.16 or below would show your presets carrying nothing. The photo
+settings themselves are untouched by this and read on any version.</p>
+
+<h3>A preset carries settings, not tabs</h3>
+
+<p>Saving a preset offered three tabs — Balance, Rendering, Detail — and each was all or nothing.
+It now offers the settings themselves, grouped and named as the panels name them: white balance,
+colour, lighting, flat-field, grade, detail. The box opens with exactly what you moved on that
+photograph ticked, so saving a look no longer drags every resting stage along with it.</p>
+
+<p>Three settings could not be carried by any preset at all, because no tab named them: colour
+density, texture and the flat-field reference. They can now.</p>
+
+<p>The white balance is one choice rather than two boxes, because manual and automatic write the
+same two settings. A preset can carry the values this photograph holds, or a <em>method</em> —
+Classic, Mids or Highs — which is measured on each photograph it is applied to rather than copied.
+Hovering such a preset shows the balance it will produce, not the preset without it.</p>
+
+<p>Saving now happens in the app's own window instead of a system alert, and the card's colour is
+chosen there rather than afterwards.</p>
+
+<h3>Copying settings adds, and no longer strips</h3>
+
+<p>A copy now carries only what the source photograph actually moved. Pasting can lend a look to a
+frame; it can no longer take one away because the source happened to leave a stage at rest. In the
+same move, the conversion mode stopped travelling: pasting from a negative no longer flips a
+positive scan, which it did silently on a mixed roll.</p>
+
+<h3>Smaller things</h3>
+
+<p>The negative/positive selector acts on what is selected in the gallery. It used to stay bound to
+the last photograph opened, so it wrote to that one whatever you had selected — and stayed lit
+after leaving the editor when nothing was selected at all.</p>
+
+<p>The gallery opens at the end of the library again, where the latest import sits.</p>
+
+<p>The loupe rests at 150 % and says so. Above 1:1 the pixels are interpolated: the sharpening dose
+is still the one that will be written, the pixels are no longer exact.</p>
+
+<p>Cropping no longer vibrates — there are no notches to feel on a frame's edges. Swiping between
+panels gives one tick at the point of no return instead of a run of them along the way.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.17/OpenNegative-0.0.17.zip" length="11012095" type="application/octet-stream" sparkle:edSignature="p8PLONmrgD9MolnTYVGmNuHcg7l/oywqlxYtvB8pCvtGIwMgV43ZT3Fa0q54pqISQCj9ApN11xnKfsX9CE5LCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.17/OpenNegativeInitiative696-679.delta" sparkle:deltaFrom="679" length="1017830" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IJn+86Is1g1fIbYO5syW8g1swZxsxyYnLXVzN/2u1+YAAPUSOgEmZKjZDdtwGaHKxsM3x/oAqt1o3+9+4XbiCw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.17/OpenNegativeInitiative696-676.delta" sparkle:deltaFrom="676" length="1032570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="S4bjyXO6Ca65JpxDFVhY+fd2DXFEcyAC6uK3nhh301HeFB6Eg596+x34Xe+9oBwGwKuiemlJW/vETHkFQBeoAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.17/OpenNegativeInitiative696-674.delta" sparkle:deltaFrom="674" length="1031790" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WBxqdx9Vls52YJmG+Cff9K93Wt7oqGbtL650HcDIfRS+yI9ARGxJekKdF8MV/zZTcRl2XRbSq6bvLtuOItbECQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.17/OpenNegativeInitiative696-654.delta" sparkle:deltaFrom="654" length="1146090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PfwSzp/X8HKU16AZf1/n8tW9IEDYOOhf4jfWQJvjVstkhxTRkpBYzpDz9qC72UlGKX/Foz39zS2VHzkpQpzTDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.17/OpenNegativeInitiative696-645.delta" sparkle:deltaFrom="645" length="1215042" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FjHkaErKMR1utBXztnR/7cyR0smyqXEX4yae7NW8d9o/OVFa/TBAK1JEBWoPVR5Me7wFKZb0mMhduS6Ok/XzBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.16</title>
             <pubDate>Thu, 06 Aug 2026 08:16:31 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
