@@ -3,6 +3,42 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.16</title>
+            <pubDate>Thu, 06 Aug 2026 08:16:31 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>679</sparkle:version>
+            <sparkle:shortVersionString>0.0.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Your photographs render exactly as before. No stage changed shape and no setting changed
+value: a conversion already made comes back identical, pixel for pixel. This version is about the
+button holding the far end of the bar.</strong></p>
+
+<h3>The gallery imports where the editor exports</h3>
+
+<p>That button now carries the gesture that finishes the surface you are on: importing in the
+gallery, exporting in the editor. Each face has its own fill, so the colour states which gesture the
+slot is holding rather than leaving you to read the label.</p>
+
+<p>Exporting from the gallery has not gone anywhere. It stays on the File menu and on the shortcut,
+count of targeted photographs included, and the import button says so on hover — the bar is one of
+four places that gesture is reachable from, never the only one.</p>
+
+<h3>A waiting update still outranks both faces</h3>
+
+<p>When a new version is waiting, that same button offers it, in orange, on either surface. The
+gallery is where the app lands, so a face hidden there would be hidden altogether. It still installs
+nothing without a click.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.16/OpenNegative-0.0.16.zip" length="10900352" type="application/octet-stream" sparkle:edSignature="WxTObgzXZq0VLtMiq2+6UTNLo5njRw+aYvTPKW9D2XDyBIxBttxYfiB2XT45Mzjl8N4FPXCz4chB8sXnjZz3Dw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.16/OpenNegativeInitiative679-676.delta" sparkle:deltaFrom="676" length="530394" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LyoLmoQBIXXzV3Zw9K5aph6iUoQLBjSUiMZ18TcSpt8baFtKIGbW8AZXB/HirOtizYcbtxYEl/mBfsgwkWUaDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.16/OpenNegativeInitiative679-674.delta" sparkle:deltaFrom="674" length="567598" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Ai/hY9J9C2x0G7KhXu2M/hHRO5DB7XhWsWUZujRMxEl9sXXC3X1WxTUXIHC70wGyEHQ9h2lT8tI7MdT3MC0uCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.16/OpenNegativeInitiative679-654.delta" sparkle:deltaFrom="654" length="772718" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="d4MVsHJ4PjiSgCiGReozmVjBS6JvpC5jkA/FLmH+BIOs74jNJtQ+nwC/a+txxHGrd8dPq6NdqTuwbTBYT+oCBg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.16/OpenNegativeInitiative679-645.delta" sparkle:deltaFrom="645" length="956110" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WwICgWUCbM3aN9fnnHlnFHPy07tFwub3srUiZtcKHlL8kd2lEsyVploViB3/9XC7rns0hS5LibSA+D57TNIuCg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.16/OpenNegativeInitiative679-639.delta" sparkle:deltaFrom="639" length="1029174" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fCGh64zFFEA863er4b6DXdYWwz2rISDls9V8kmaKpkGsXHYA2qUy8ahN7pFw3QsoHrpAJFhd3MG3zqHd8ingCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.15</title>
             <pubDate>Thu, 06 Aug 2026 07:52:08 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
