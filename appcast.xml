@@ -3,6 +3,81 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.19</title>
+            <pubDate>Sun, 09 Aug 2026 16:08:59 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>767</sparkle:version>
+            <sparkle:shortVersionString>0.0.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Your photographs render exactly as before. The new stage added here is skipped, bit for
+bit, until you move one of its points, so a conversion already made comes back identical. Nothing
+in this version needs a migration and nothing is lost by going back.</strong></p>
+
+<p><strong>One habit does change on the first click.</strong> A photograph you have already worked
+on now opens on the Color panel instead of the framing view. A scan you have never touched still
+opens on framing, which is what a fresh negative wants.</p>
+
+<h3>Spectrogram finishing: the colour mixer, as a wheel</h3>
+
+<p>Photoshop and Lightroom put a colour mixer behind rows of sliders, where reading which colour you
+are steering means reading a label. It is the same control here, drawn as the thing it describes:
+eight points on a wheel, one per colour range, at the top of the Grade panel.</p>
+
+<p>Each point carries three things. Its <em>angle</em> is that colour's hue, its <em>distance from
+the centre</em> its saturation, and a second point riding the same spoke its <em>luminance</em>.
+Click a point, then use the arrow keys — left and right turn the hue, up and down steer whichever
+point you are holding. Tab walks the wheel clockwise, Option-Tab the other way. Four keys under the
+graph do the same for a hand that would rather not leave the mouse, and a slider sets how far one
+press moves.</p>
+
+<p>Double-clicking a point puts its own axes back to rest, and only its own: clearing a hue does not
+quietly undo the luminance the other point on that spoke is carrying.</p>
+
+<p>What the wheel promises is that a band reaches its own colours and no others. Pushing red to the
+end of its travel leaves a blue pixel where it was, exactly — not nearly. The luminance point is a
+gain in stops, so a colour can be taken four times down without ever reaching black, and the hue and
+the saturation ratio come through it untouched.</p>
+
+<h3>Lighting, on black and white</h3>
+
+<p>The block offered two tabs, RGB and Luma. On a monochrome render that distinction has already
+collapsed — everything becomes one channel at the end of the chain — so the two were the same
+control under two different laws, one of them labelled RGB on a grey image, and their effects added
+up. Monochrome now offers the one set, and the tab bar goes away with the choice.</p>
+
+<p>The Exposure handle also sat two thirds along its track while reading its resting value, on black
+and white only, which reads as already pushed. It rests at mid-travel now, in every mode. Only the
+handle moved: the stored value and the rendering did not.</p>
+
+<h3>Framing has a button</h3>
+
+<p>Cropping and straightening was a panel among others. It is now a key at the head of the toolbar,
+and while you are framing that key turns green and carries a check: press it and you are back where
+you were working, or on Color if you had not been anywhere yet. ⌘K does the same, and the gesture is
+in the View menu like every other one the bar carries.</p>
+
+<h3>The zoom follows you between photographs</h3>
+
+<p>Opening the next frame refitted the view, so walking a roll at 100 % to compare grain from one
+frame to the next was not possible. The zoom is now kept, and so is the fitted state if that is what
+you were on; only the pan is dropped, since it describes a picture you have left. The blurred
+stand-in shown while the next frame decodes is drawn at that same zoom instead of flashing back to
+fitted.</p>
+
+<h3>What it runs on</h3>
+
+<p>macOS 13 Ventura or newer, on Apple Silicon or Intel — one universal build for both.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.19/OpenNegative-0.0.19.zip" length="12165089" type="application/octet-stream" sparkle:edSignature="oa0lR/LOCFJc7+CHilszKrO29PpaRwrpWoqOdP3SVke40gpZrx+g+8KQFOHskkAyp1gum99d3JVNPgaAqY3cCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.19/OpenNegativeInitiative767-754.delta" sparkle:deltaFrom="754" length="1248090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="glKG/2EvV5OoOLbittWYnZtzvPx1bkotvG/EXwIPP/FgcS5lUguLcqCpcubOONwWUOfUT0X+cwf2zuGK2LF2AA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.19/OpenNegativeInitiative767-696.delta" sparkle:deltaFrom="696" length="2555090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="djG/onAATfD4e+Mz7sAYqROtR9QEkxRfnsny97LGlZjRMFGUQbk8ULylBtQgxaRCdhf4vpey/D1ZuHTt1KrKBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.19/OpenNegativeInitiative767-679.delta" sparkle:deltaFrom="679" length="2662102" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DYeZTr8P/jBWm/fpGwBwRpN28dO9QIWJMODwocGKnATtjldSiBNaR6L3gNC+A9y83tDwjcSTs0sdNs92Pr1lAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.19/OpenNegativeInitiative767-676.delta" sparkle:deltaFrom="676" length="2649530" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7p8woYDSJ9OS9TxJX2JdsJz5+htZEev/sj8QKJwYaAC9UxQ006DVCZYMc8Y83CaZoM5pVAks8wdCXtC5mgzjAg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.19/OpenNegativeInitiative767-674.delta" sparkle:deltaFrom="674" length="2658946" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NnmblMU5hTiT/q1qLYf8HoAGnw6OqQ9yCIwJPNw8qUhL6x4MChQDCtJje5Hwr5vjluLQ4kHanXYrg1xkAau6Dw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.18</title>
             <pubDate>Sun, 09 Aug 2026 02:04:46 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
