@@ -3,6 +3,165 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.18</title>
+            <pubDate>Sun, 09 Aug 2026 02:04:46 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>754</sparkle:version>
+            <sparkle:shortVersionString>0.0.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>One thing moves the rendering of photographs you have already adjusted, and it is named
+first. Sharpening and chroma denoise are now dosed in pixels of the full-resolution scan instead of
+a fraction of its width. On a scan whose long side is 8368 px — what the old fraction was
+calibrated on — nothing moves at all. On any other size it does: measured on scans of 6000 to
+6240 px, the dose lands 34 to 39 % higher than before. Everything else comes back identical.</strong></p>
+
+<p><strong>Two consequences worth knowing before you install.</strong> Every thumbnail is rebuilt
+once, on the first import or launch, behind a progress step — after that they are never rebuilt
+again. And a photograph adjusted in this version opens <em>read-only</em> in 0.0.17 and below:
+going back loses nothing, but the older version will not let you move a handle. Every published
+version stays in the feed, so going back remains possible.</p>
+
+<h3>The gallery no longer freezes</h3>
+
+<p>Dragging the scroll bar froze the app for two to five seconds, and macOS reported it as not
+responding. The cause was the container itself: it filled contiguously, so reaching frame 600 built
+all 600 on the way, and it paid that cost again on every switch between the grid and the editor.</p>
+
+<p>The grid is now computed rather than measured — every tile's rectangle and the document's height
+are arithmetic, and only the cells the visible band touches are drawn. Landing on the last frame of
+a 600-photograph day builds 78 cells instead of 600. The scroll bar can be dragged end to end, and
+the scroll bar itself is honest, because the height is computed rather than estimated.</p>
+
+<h3>Thumbnails are written once</h3>
+
+<p>They were regenerated when the app opened, when the gallery reopened, and when the window was
+resized. They are now written once, at a fixed size, kept in the app's own files, and rebuilt only
+after you edit the photograph. Deleting a photograph deletes its thumbnails with it.</p>
+
+<p>What you see: a step with a progress bar the first time, then a gallery that opens immediately
+and stays that way.</p>
+
+<h3>The gallery groups by capture date</h3>
+
+<p>It grouped by import date, so re-importing or re-scanning part of a roll split it across two
+headings. It now reads the capture date from the file. A roll stays together whatever evening you
+scanned it.</p>
+
+<h3>Six columns, or twelve</h3>
+
+<p>A strip of film is cut into six frames, so a row is a strip; twelve is that strip doubled, for
+sorting a roll rather than judging one frame. ⌘− and ⌘+ walk between the two, and the change is
+crossed with a fade instead of photographs sliding to new places.</p>
+
+<p>Both are fully responsive: the count is what you choose, and the tile is what takes the room. On
+a wide screen the tiles are large. There is no width at which the grid rearranges itself behind
+your back.</p>
+
+<h3>The conversion works in density</h3>
+
+<p>Inverting a negative by <em>1 − x</em> on linear data crushes everything into the first few
+percent of the range, which is why the handles felt unusable at one end and violent at the other.
+The whole chain now works in density, where a stop is a stop.</p>
+
+<p>What changes for you: the three per-channel level windows read a density with three decimals
+instead of a percentage, and their track runs from −0.35 to 3. A black point can be placed
+<em>under zero</em>, which is where a channel transmitting past 1 actually lands — previously
+unreachable. Your existing adjustments were converted exactly; the arithmetic is an identity, and
+it is verified pixel for pixel against the frozen previous version.</p>
+
+<h3>A new control: Density ceiling</h3>
+
+<p>Scans differ in what they left under zero. The top of the density axis was a fixed constant that
+suited eight measured films differently, so it became a control — resting exactly on the old
+constant, so nothing moves until you touch it.</p>
+
+<p>Raising it buys separation in a burnt patch, at the cost of pulling up whatever the scanner left
+under zero. It is the one handle that reaches a channel piled flat against the floor, which no gain
+and no black point can separate.</p>
+
+<h3>Colour is now Temperature and Tint</h3>
+
+<p>Colour was a single gesture that was hard to aim. It is now two named sliders, in the order and
+the sense every other application uses: pushing right warms. They are shouldered, so the travel is
+fine near the middle and never runs into a wall at the end.</p>
+
+<p>They stay a <em>finishing</em> gesture and are deliberately independent of the balance gains
+above them: a finishing move must not displace the conversion, nor the answer an automatic button
+just gave. Colour density now sits with them, under the same heading, since it belongs to the same
+decision.</p>
+
+<h3>Lighting gains Shadows and Highlights</h3>
+
+<p>Exposure and White moved the two ends, and one gamma moved everything between them. That single
+exponent cannot fold two problems at once: after the medians are aligned, crossed dye curves leave
+the quarter-tones and the three-quarter-tones apart.</p>
+
+<p>Two sliders now steer those two zones directly, and the same pair was added to the per-channel
+level windows. The ends stay pinned, so a black and a white placed on data keep their meaning
+whatever the inner three carry. Everything rests where it did, so nothing moves until you move it.</p>
+
+<h3>Three more automatic balance buttons</h3>
+
+<p>None of them is right on every photograph, and that is the point — each wins films the others
+lose, in a measured way. <em>Whites</em> places the white point on a higher quantile than
+<em>Highs</em>. <em>Body</em> moves both ends together so the tenth and ninetieth quantiles land on
+green's. <em>AVG</em> is the average position of all five handles across the other five buttons.</p>
+
+<p>AVG is first on nothing and last on nothing, which is what it is for: it is the one to press when
+you do not want to try five. The buttons that assume nothing about the scene's colour are tinted
+apart from the ones that align a statistic across the channels.</p>
+
+<h3>Sharpening and chroma denoise are dosed in pixels</h3>
+
+<p>Both radii were a fraction of the image's width, calibrated on one scanner's output. The same
+setting therefore meant a different real dose on a scan of another size, silently.</p>
+
+<p>They are now full-resolution pixels: a slider reading 3 px puts 3 px in the export. This is what
+moves the rendering, and only on scans whose long side is not 8368 px. Their ranges were tightened
+to what a preview can actually show — the bottom of the sharpening track is now the smallest radius
+a fitted preview can display at all, so no part of the gesture is inert on screen while still
+reaching the export. Use the loupe to judge the real dose: a fitted preview cannot show it, whatever
+the unit.</p>
+
+<h3>Navigating the photograph</h3>
+
+<p>Dragging now follows the pointer instead of moving against it. The wheel zooms in sixteen steps
+across the range rather than the barely perceptible amount it moved before. A double click goes to
+100 %, and 100 % now really shows the pixels at any window size — the readout used to say
+"100 % · preview" on a large display while showing a reduced copy.</p>
+
+<h3>Explanations moved into the panels</h3>
+
+<p>Notes under blocks are gone. A question mark now sits to the right of each section title and
+opens a bubble on hover, drawn above the panel and confined to the picture area, so it never covers
+the control it describes. Every sentence was rewritten to say what the control does for you rather
+than how it works.</p>
+
+<h3>Smaller things</h3>
+
+<p>A resized export no longer leaves a translucent rim around its edge.</p>
+
+<p>The window can no longer be dragged narrower than its own contents, which used to cut the
+interface off on the right instead of refusing.</p>
+
+<p>Lighting's Shadows and Highlights sliders lighten to the right, like Exposure and White beside
+them. Only the handle was reflected: the stored value, the sidecar and the rendering do not move.</p>
+
+<h3>What it runs on</h3>
+
+<p>macOS 13 Ventura or newer, on Apple Silicon or Intel — one universal build for both. The
+interface is dressed for recent macOS; on older systems it is the same app with a plainer toolbar.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.18/OpenNegative-0.0.18.zip" length="12027709" type="application/octet-stream" sparkle:edSignature="t73MDXtUQ0Mulqh7kpzdduoPs7benGPhw1f1mTL8IIL9jE8P8gNJjTJRmBOpwbKlKR1hUsu10ZI2YWNHqb+ICg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.18/OpenNegativeInitiative754-696.delta" sparkle:deltaFrom="696" length="2397498" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="h9+UVhjJ45UtYRJiyaa8uPfOvcmDfYxivAkamWPe1ls0gs6ynkqJdI313CyhK99fPjHDw2sGa4VgfBCVrRkvCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.18/OpenNegativeInitiative754-679.delta" sparkle:deltaFrom="679" length="2503354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wjcyUXzl3FMWdn0lFGFPSgZqZsfN3cx5k2HpTHWMeJQNXP6aWyovwrelRPtIyOEmFCzFcLNR/4EdVj0Ly1inCw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.18/OpenNegativeInitiative754-676.delta" sparkle:deltaFrom="676" length="2506874" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9b5l/6WyA49oa6YfKoOJ8L0UiqiO7RMa7RGne+lqdtJUfkhUL+iPNx3f2asXVbXfSErrzc2289At3+2zOfa6BQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.18/OpenNegativeInitiative754-674.delta" sparkle:deltaFrom="674" length="2513250" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9xq9KRoB1IMp8RImZ+SlBCec6uFBNhN3gsnuN4jSqEC+FHHCH+U7No4/Xf5UqblndaZme7R4d+Jz4QI+28b7DA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.18/OpenNegativeInitiative754-654.delta" sparkle:deltaFrom="654" length="2556086" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4H2EQw3uM5m5KMJeOXZY9hZ6upWPjfPSRzN9jWjkhjKF6A3AUo+RFYPIAZNhSQqXOb7GxBSHwzvCzQsRwii3Bg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.17</title>
             <pubDate>Thu, 06 Aug 2026 12:04:49 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
