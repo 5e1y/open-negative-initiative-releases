@@ -40,13 +40,37 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: The published feed, waited for rather than caught mid-build
+        # Pages rebuilds for about a minute after a push, and publishing creates the release BEFORE
+        # pushing the feed — so a run fired by either reads the previous feed and reports a
+        # half-publish that is not one. Every release since v0.0.14 failed exactly there. Waited
+        # for on the same terms `make publish` waits: twenty tries, fifteen seconds apart.
+        run: |
+          feed=https://5e1y.github.io/${{ github.event.repository.name }}/appcast.xml
+          latest=$(gh release view --repo ${{ github.repository }} --json tagName --jq .tagName)
+          n=0
+          while :; do
+            curl -sf "$feed?n=$n" -o appcast.xml \
+              || { echo "::error::the feed itself is unreachable at $feed"; exit 1; }
+            grep -q "releases/download/$latest/" appcast.xml && break
+            n=$((n + 1))
+            # The wait is bounded, and running out is a REAL half-publish: the assets went and the
+            # feed never followed, which leaves every installed app on the version before.
+            if [ "$n" -ge 20 ]; then
+              echo "::error::the feed still does not name $latest after five minutes"
+              exit 1
+            fi
+            sleep 15
+          done
+          echo "feed names $latest after ~$((n * 15))s"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Every enclosure the update feed advertises must be fetchable
         # A dead enclosure stops updates for everyone and reports nothing: Sparkle simply fails to
         # download, quietly, on each machine. Deltas count as much as the zips — they are what it
         # reaches for first.
         run: |
-          feed=https://5e1y.github.io/${{ github.event.repository.name }}/appcast.xml
-          curl -sf "$feed" -o appcast.xml || { echo "::error::the feed itself is unreachable at $feed"; exit 1; }
           urls=$(grep -oE 'url="[^"]*\.(zip|delta)"' appcast.xml | cut -d'"' -f2)
           n=$(printf '%s\n' "$urls" | grep -c . || true)
           # Reporting success on an empty list is the failure mode of every check of this shape.
@@ -128,15 +152,16 @@ jobs:
           CHECK
 
       - name: The feed must name the latest release
-        # Catches the half-publish: assets uploaded, feed never pushed. Updates then keep working on
-        # the old version while the website hands out a newer one, and nobody notices for weeks.
+        # The half-publish this whole job exists for: assets uploaded, feed never pushed. Updates
+        # then keep working on the old version while the website hands out a newer one. The step
+        # above is what waits; this one only states the conclusion, so a green line means the feed
+        # really carries the release and not that nobody looked yet.
         run: |
           latest=$(gh release view --repo ${{ github.repository }} --json tagName --jq .tagName)
-          version=${latest#v}
           if ! grep -q "releases/download/$latest/" appcast.xml; then
             echo "::error::the feed does not mention $latest — the release was published without it"
             exit 1
           fi
-          echo "feed carries $version"
+          echo "feed carries ${latest#v}"
         env:
           GH_TOKEN: ${{ github.token }}
