@@ -29,7 +29,9 @@
   <a href="https://github.com/5e1y/open-negative-initiative-releases/releases">All versions</a>
 </p>
 
-<!-- SCREENSHOT GOES HERE -->
+<p align="center">
+  <img src="assets/screenshot.png" alt="The editor, showing a negative before and after conversion">
+</p>
 
 ---
 
