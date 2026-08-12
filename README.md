@@ -5,7 +5,7 @@
 <h1 align="center">Open Negative Initiative</h1>
 
 <p align="center">
-  Convert and edit scanned film — negatives and positives — on macOS.<br>
+  Convert and edit scanned film (negatives and positives) on macOS.<br>
   Free, native, and floating point from the RAW to the file it writes.
 </p>
 
@@ -37,10 +37,10 @@
 
 ## What it does
 
-- **Inverts in density, not `1−x`.** The sliders behave linearly in stops, so a correction reads
+- **Inverts in density.** The sliders behave linearly in stops, so a correction reads
   like an exposure change instead of a curve fight.
 - **Nothing decides on its own.** No film-base detection, no preset applied on import. The
-  automatic balance runs on a click, draws what it proposes on hover, and ⌘Z undoes it.
+  automatic balance runs on a click, your scanned film's personality comes out naturally.
 - **Camera scans and flatbed scans.** RAW, DNG and TIFF in, a linear Rec. 2020 working space
   throughout, 16-bit TIFF or JPEG out in the colour space you pick.
 
