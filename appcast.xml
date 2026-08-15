@@ -3,6 +3,48 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.21</title>
+            <pubDate>Sat, 15 Aug 2026 12:53:38 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>812</sparkle:version>
+            <sparkle:shortVersionString>0.0.21</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing in this version changes the rendering of a photo you have already
+adjusted.</strong> One fix, on the thumbnail cache alone. Your settings, your rolls and your
+presets are untouched.</p>
+
+<h3>Thumbnails survive an unplugged drive</h3>
+
+<ul>
+  <li><strong>Launching with the originals' drive disconnected no longer empties the thumbnail
+      cache.</strong> The tidying pass built its list of claimed files by reading each original,
+      and silently dropped every one it could not reach — so a whole library on an external drive
+      was read as files nobody wanted, and deleted. Measured on a 632-frame library: the 592
+      frames on the external drive lost their thumbnails, the 40 on the internal drive kept
+      theirs.</li>
+  <li><strong>An unreachable original now keeps its files</strong>, claimed through the
+      fingerprint the index holds, which survives the drive going away. And an index that does not
+      yet account for every member of the library deletes nothing at all: without knowing who is a
+      member, no file can be called an orphan.</li>
+  <li><strong>The tidying itself still works.</strong> A superseded thumbnail of an original that
+      really was read is still removed, and so are the files of a photo taken out of the library.
+      The fix is a rule about proof, not the housekeeping switched off.</li>
+</ul>
+
+<p>Version 0.0.20 announced that thumbnails had stopped being thrown away. That was half true: the
+rebuild stopped inventing fingerprints, but the pass that sweeps unclaimed cache files kept
+reading an unreachable original as an unwanted one. This is the other half.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.21/OpenNegative-0.0.21.zip" length="12617163" type="application/octet-stream" sparkle:edSignature="kldl9jgS08T6vXOg2C8WjWzb4Dk/MKxWhTB6B0Qbd4SFRS3fCyyBBQ6NtA1FYVPwMHR1/vNUO3zW2p9DtJQ4AA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.21/OpenNegativeInitiative812-809.delta" sparkle:deltaFrom="809" length="590394" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zXEXlneNuXaOdSfoGrHGHVUfotef9ORb3oKXTpy2a7VoYKgvzqU2/De6jkWrzBWYMNSXyUOwQRkirA56YCloCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.21/OpenNegativeInitiative812-767.delta" sparkle:deltaFrom="767" length="2291662" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="l2NIg/iEC3vobQ1+rQkEN+B6XD5LcdHMhQ2rtGudr3RLwLMxEQKxjXaaybLoheRChH2p3GWOPqqeFbyOQpSZBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.21/OpenNegativeInitiative812-754.delta" sparkle:deltaFrom="754" length="2449166" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LcyRVzFzhzejoIELx944bmCkgITFATBEwjeocULQLgjCvHBuXumD4Sf0POKq3xpplfUKu+V8l7nl25Hl+P1vAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.21/OpenNegativeInitiative812-696.delta" sparkle:deltaFrom="696" length="3168298" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hNNV20DFhwZ7WmbyeS9D000GVCIyVfCdQNra5aot6445B66Ykqq/N6lK8ACN9w3ULsDapKhGTLf1/z3AtY9MBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.21/OpenNegativeInitiative812-679.delta" sparkle:deltaFrom="679" length="3240466" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+ZP6+edG/6LorDNvCbaq7g/MvkFcit8CtJGT81RXPBokNoKLhOAMeUHPh8OLCi735oh69dxXyj8ng3ZfRagQAQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.20</title>
             <pubDate>Tue, 11 Aug 2026 10:54:40 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
