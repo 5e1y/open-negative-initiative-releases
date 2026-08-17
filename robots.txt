@@ -1,0 +1,19 @@
+# This host publishes an update feed, not a website. Nothing here is meant to be indexed.
+#
+# The site that IS meant to be found is https://open-negative-initiative.com — this page duplicates
+# its wording from the README, so indexing both would put two copies of the same text in front of the
+# same search, and the one with less standing usually wins.
+#
+# ⚠️ The real reason is the feed. `appcast.xml` lists 123 absolute URLs to binaries. Measured on
+# 18 August 2026, every one of them sat at ~78 downloads, on a repository with 40 unique visitors in
+# a fortnight — one of whom opened the releases page. Nothing there was a person: what walks a list
+# of 123 links and fetches each one is a crawler, and this host handed it the list.
+#
+# ⚠️ This does NOT stop the downloads themselves. Release assets live on github.com, under a
+# robots.txt this repository does not control. What goes away is the DISCOVERY: this is the only
+# public page that enumerates those URLs in one place.
+#
+# ⚠️ Sparkle never reads this file. Update checks are unaffected — they ask for appcast.xml directly,
+# and a crawler directive is not access control.
+User-agent: *
+Disallow: /

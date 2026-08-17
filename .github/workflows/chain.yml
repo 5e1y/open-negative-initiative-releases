@@ -66,6 +66,41 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: The feed the APP asks for, which is no longer this one
+        # Since 18 August the app's SUFeedURL points at the website, which proxies this feed in order
+        # to count update checks — `download_count` cannot tell a running copy from a crawler, and it
+        # was measured doing exactly that. The proxy is therefore a new link in the update chain, and
+        # an unwatched link is the whole reason this workflow exists: if it stops answering, every
+        # installed copy silently stops updating and nothing reports it.
+        #
+        # Waited for on the same terms as the Pages step above, because the Worker caches the upstream
+        # for two minutes: right after a publish it can still be serving the previous feed while Pages
+        # already carries the new one. Failing there would be crying wolf over a perfect release.
+        run: |
+          proxied=https://open-negative-initiative.com/appcast.xml
+          latest=$(gh release view --repo ${{ github.repository }} --json tagName --jq .tagName)
+          n=0
+          while :; do
+            code=$(curl -s -o proxied.xml -w '%{http_code}' "$proxied?n=$n")
+            [ "$code" = 200 ] || { echo "::error::the app's feed answers $code — $proxied"; exit 1; }
+            grep -q "releases/download/$latest/" proxied.xml && break
+            n=$((n + 1))
+            if [ "$n" -ge 12 ]; then
+              echo "::error::the app's feed still does not name $latest after three minutes"
+              echo "installed copies ask THIS url, not Pages — they are stuck on the previous version"
+              exit 1
+            fi
+            sleep 15
+          done
+          # Byte for byte: a proxy that rewrote anything would break the signatures the feed carries.
+          cmp -s proxied.xml appcast.xml || {
+            echo "::error::the proxied feed differs from the one Pages publishes"
+            exit 1
+          }
+          echo "the app's feed names $latest and matches Pages byte for byte"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
       - name: Every enclosure the update feed advertises must be fetchable
         # A dead enclosure stops updates for everyone and reports nothing: Sparkle simply fails to
         # download, quietly, on each machine. Deltas count as much as the zips — they are what it
