@@ -119,6 +119,19 @@ A picture that opens flat or nearly white is worth reporting even though nothing
 ## Source code
 
 **Not in this repository** — this one holds the builds and the update feed. The app is licensed
-**GPL-3.0** and its source will be published when it leaves beta: the constants that decide how a
-negative renders are still being calibrated against real film, and forks of a moving render would
-scatter versions that disagree about what a photograph should look like.
+**GPL-3.0**, and **every release carries its own source archive**, attached to that release as
+`OpenNegative-<version>-source.zip`. The versions published before the archive existed have been
+given one too, so there is no build you can install and not read.
+
+**Take the file with `-source` in its name**, not the "Source code (zip)" GitHub attaches on its
+own: that one archives *this* repository — binaries and an update feed — and holds no Swift at all.
+
+Each archive is built in the same pass as the binary it ships with, so what you read is the tree
+that produced the build you are running and not whatever it became afterwards. Inside: the Swift
+sources, the Metal kernels, the resources, the package manifest and the Makefile — and none of the
+tooling that is specific to my own machine.
+
+**One piece is missing, and it is worth knowing before you start.** The keycap button component
+lives in a separate private repository, so the archive does not compile as it stands: drop the
+`Keycap` dependency from `Package.swift` and put plain SwiftUI buttons in its place first. That is
+about an hour of work, and everything else builds with `make app`.
