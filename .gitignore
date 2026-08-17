@@ -1,0 +1,16 @@
+# Le dossier des mises à jour ne part PAS dans git, et ce n'est pas une négligence.
+#
+# ⚠️ **Ce dépôt est publié par GitHub Pages, qui n'a besoin d'y servir qu'un seul fichier :
+# `appcast.xml`.** Sparkle lit le flux ici, mais télécharge les binaires depuis les *Releases* —
+# vérifié le 2026-08-17, les 117 enclosures du flux pointent toutes vers `github.com/.../releases/
+# download/`, aucune vers Pages. Les 145 fichiers d'`updates/` étaient donc republiés à chaque
+# déploiement sans que personne ne les lise jamais : 399 Mo sur les 412 du site, pour un XML.
+#
+# ⚠️ **Le dossier RESTE sur le disque, et il est précieux.** `generate_appcast` le parcourt pour
+# construire le flux ET pour calculer les deltas entre versions consécutives. Le perdre ne casse
+# aucun lien publié, mais empêcherait de produire les deltas des prochaines versions : il faudrait
+# alors retélécharger les zips depuis les Releases pour le reconstituer.
+#
+# ⚠️ **Retirer ces fichiers du suivi ne réduit PAS `.git`**, qui garde leurs objets dans son
+# historique (481 Mo mesurés). Seule une réécriture d'historique le ferait, au prix de tous les SHA.
+updates/
