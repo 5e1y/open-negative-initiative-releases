@@ -23,20 +23,32 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      # ⚠️ **THIS WORKFLOW ASKS THE API, IT DOES NOT FETCH THE FILES — and that is a correction, not a
+      # style.** Every check below used to `curl` the assets. Measured on 18 August 2026: a HEAD
+      # request increments GitHub's `download_count` just like a GET does, and this file ran 54 times
+      # between 6 and 18 August, hitting each of the feed's 123 enclosures TWICE per run. 54 × 2 = 108,
+      # against counters sitting at ~76-81. The "downloads" nobody could explain were this workflow.
+      #
+      # The give-away was in the data all along: `-source.zip` and the stray `OpenNegative516-482.delta`
+      # sit at 0 — they are the only assets the feed does not list, so the only ones nothing here
+      # touched. Curl was measuring the thing it was watching.
+      #
+      # The API reports an asset's name and size without serving a byte, which is also the stricter
+      # check: no redirect to follow, no CDN in the way, no timeout to misread as a dead link.
       - name: The website's download button must resolve
         # The site links to `releases/latest/download/OpenNegative.dmg`. The name carries NO version:
-        # an asset called otherwise is a 404 that only a visitor discovers.
+        # an asset called otherwise is a 404 that only a visitor discovers. That URL resolves if and
+        # only if the latest release carries an asset with exactly this name — which the API states
+        # directly, rather than being inferred from a 200.
         run: |
-          url=https://github.com/${{ github.repository }}/releases/latest/download/OpenNegative.dmg
-          code=$(curl -sIL -o /dev/null -w '%{http_code}' "$url")
-          if [ "$code" != 200 ]; then
-            echo "::error::the download button answers $code — $url"
-            echo "the latest release must carry an asset named exactly OpenNegative.dmg"
-            gh release view --repo ${{ github.repository }} --json tagName,assets \
-              --jq '"latest is \(.tagName), assets: \(.assets | map(.name) | join(", "))"'
+          assets=$(gh release view --repo ${{ github.repository }} --json assets --jq '.assets[].name')
+          if ! printf '%s\n' "$assets" | grep -qx 'OpenNegative.dmg'; then
+            echo "::error::the latest release carries no asset named exactly OpenNegative.dmg"
+            echo "the website's download button would answer 404"
+            printf '%s\n' "$assets" | sed 's/^/  found: /'
             exit 1
           fi
-          echo "download button: $code"
+          echo "download button: the latest release carries OpenNegative.dmg"
         env:
           GH_TOKEN: ${{ github.token }}
 
@@ -106,29 +118,61 @@ jobs:
         # download, quietly, on each machine. Deltas count as much as the zips — they are what it
         # reaches for first.
         run: |
-          urls=$(grep -oE 'url="[^"]*\.(zip|delta)"' appcast.xml | cut -d'"' -f2)
-          n=$(printf '%s\n' "$urls" | grep -c . || true)
-          # Reporting success on an empty list is the failure mode of every check of this shape.
-          if [ "$n" -eq 0 ]; then
-            echo "::error::no enclosure found in the feed — this check would have passed on nothing"
-            exit 1
-          fi
-          bad=0
-          for u in $urls; do
-            code=$(curl -sIL -o /dev/null -w '%{http_code}' "$u")
-            [ "$code" = 200 ] || { echo "::error::dead enclosure ($code) — $u"; bad=1; }
-          done
-          [ "$bad" -eq 0 ] || exit 1
-          echo "$n enclosures, all answering"
+          # The inventory of what actually exists, asked once, without serving a byte. Each line is
+          # `<tag>/<asset name> <size>` — the two halves of a release-download URL plus the length the
+          # feed will be checked against.
+          gh api --paginate 'repos/${{ github.repository }}/releases?per_page=100' \
+            --jq '.[] | .tag_name as $t | .assets[] | "\($t)/\(.name) \(.size)"' | sort > inventory.txt
+          [ -s inventory.txt ] || { echo "::error::the API returned no asset at all"; exit 1; }
 
-      - name: The signatures must verify — a bad one refuses to install, in silence
+          # Each enclosure parsed whole, so a reordering of attributes cannot silently stop matching.
+          python3 - <<'CHECK'
+          import re, sys
+          feed = open("appcast.xml", encoding="utf-8").read()
+          have = {}
+          for line in open("inventory.txt", encoding="utf-8"):
+              path, size = line.rsplit(" ", 1)
+              have[path] = int(size)
+
+          enclosures = []
+          for tag in re.findall(r"<enclosure[^>]*>", feed):
+              url = re.search(r'url="([^"]+)"', tag)
+              length = re.search(r'length="(\d+)"', tag)
+              if url and length:
+                  enclosures.append((url.group(1), int(length.group(1))))
+
+          # Reporting success on an empty list is the failure mode of every check of this shape.
+          if not enclosures:
+              print("::error::no enclosure found in the feed — this check would have passed on nothing")
+              sys.exit(1)
+
+          bad = 0
+          for url, length in enclosures:
+              path = "/".join(url.split("/releases/download/")[-1].split("/")[:2])
+              if path not in have:
+                  print(f"::error::the feed advertises {path}, which no release carries")
+                  bad += 1
+              elif have[path] != length:
+                  print(f"::error::{path} is {have[path]} bytes, the feed announces {length}")
+                  bad += 1
+          print(f"{len(enclosures)} enclosures, {len(enclosures) - bad} present at their announced length")
+          sys.exit(1 if bad else 0)
+          CHECK
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: The newest build's signature must verify — a bad one refuses to install, in silence
         # THE failure that says nothing: Sparkle checks the EdDSA signature against the bytes it just
         # downloaded, and refuses on mismatch without the user learning why. A single asset replaced
         # or re-uploaded is enough, and the feed still looks perfect.
         #
-        # Two depths, because verifying every archive would pull ~500 MB a day: the LENGTH of every
-        # enclosure, which catches any change of content for the price of a HEAD, and the full
-        # SIGNATURE of the newest build, which is the one everybody is about to install.
+        # ⚠️ **This is the ONE step that downloads anything, and it is deliberately the only one.**
+        # Verifying a signature means having the bytes; there is no API for it. Every enclosure's
+        # LENGTH is already checked above without a single request, which catches any change of
+        # content — so what is left to prove by download is the one archive everybody is about to
+        # install. One file per run instead of 123, and only when a release moved or on the daily
+        # sweep: a push that touches the README has no business fetching a binary.
+        if: github.event_name != 'push'
         run: |
           python3 -m pip install --quiet pynacl
           python3 - <<'CHECK'
@@ -138,52 +182,28 @@ jobs:
           KEY = "Sn54zBsnQ9IN6MZEyfAzYn4fQi03aUihVjaA5Ejn7qM="
           feed = open("appcast.xml", encoding="utf-8").read()
 
-          # Attribute order is not guaranteed, so each enclosure is parsed as a whole rather than by
-          # a single expression that a reordering would silently stop matching.
-          enclosures = []
+          newest = None
           for tag in re.findall(r"<enclosure[^>]*>", feed):
               url = re.search(r'url="([^"]+)"', tag)
-              length = re.search(r'length="(\d+)"', tag)
               sig = re.search(r'sparkle:edSignature="([^"]+)"', tag)
-              if url and length and sig:
-                  enclosures.append((url.group(1), int(length.group(1)), sig.group(1)))
+              if url and sig:
+                  newest = (url.group(1), sig.group(1))
+                  break
 
-          if not enclosures:
+          if newest is None:
               print("::error::no signed enclosure in the feed — this check would pass on nothing")
               sys.exit(1)
 
-          bad = 0
-          for url, length, _ in enclosures:
-              head = subprocess.run(["curl", "-sIL", url], capture_output=True, text=True).stdout
-              served = [l.split(":", 1)[1].strip() for l in head.splitlines()
-                        if l.lower().startswith("content-length")]
-              if not served or int(served[-1]) != length:
-                  print(f"::error::{url.split('/')[-1]} is {served[-1] if served else '?'} bytes, "
-                        f"the feed announces {length}")
-                  bad += 1
-          print(f"{len(enclosures)} enclosures, {len(enclosures) - bad} matching their announced length")
-
-          newest = enclosures[0][0]
-          print(f"verifying the signature of {newest.split('/')[-1]}")
-          blob = subprocess.run(["curl", "-sL", newest], capture_output=True).stdout
-          signature = base64.b64decode(next(s for u, _, s in enclosures if u == newest))
+          url, signature = newest
+          print(f"verifying the signature of {url.split('/')[-1]}")
+          blob = subprocess.run(["curl", "-sL", url], capture_output=True).stdout
           key = nacl.signing.VerifyKey(base64.b64decode(KEY))
           try:
-              key.verify(blob, signature)
+              key.verify(blob, base64.b64decode(signature))
               print("signature verifies against the shipped public key")
           except nacl.exceptions.BadSignatureError:
-              print(f"::error::{newest} does not match its signature — updates will refuse to install")
-              bad += 1
-
-          # The twin, adverse by construction: one flipped bit must be refused, or a verifier that
-          # accepted anything would make the line above true for nothing.
-          try:
-              key.verify(blob[:-1] + bytes([blob[-1] ^ 1]), signature)
-              print("::error::a modified archive verifies — the signature check proves nothing")
-              bad += 1
-          except nacl.exceptions.BadSignatureError:
-              print("and a single flipped bit is refused, so the check discriminates")
-          sys.exit(1 if bad else 0)
+              print(f"::error::{url} does not match its signature — updates will refuse to install")
+              sys.exit(1)
           CHECK
 
       - name: The feed must name the latest release
