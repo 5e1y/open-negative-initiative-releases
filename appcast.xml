@@ -3,6 +3,73 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.23</title>
+            <pubDate>Mon, 17 Aug 2026 23:58:26 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>815</sparkle:version>
+            <sparkle:shortVersionString>0.0.23</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes the rendering of photographs you have already adjusted in Positive
+mode.</strong> A slide or a scan set to Positive opened almost white until now, and it opens on a
+picture instead. If you graded a positive around that paleness, your handles are where you left them
+but the image under them has moved. <strong>Negative and B&amp;W do not move at all</strong> — that
+was measured on a full-resolution negative, before and after, and every figure came back identical.
+Version 0.0.22 stays in the feed if you would rather not take this one.</p>
+
+<h3>Positive mode was leaving a logarithm in the picture</h3>
+
+<p>Converting a negative works in density, which means taking a logarithm. Positive mode gave up the
+inversion that follows it and kept the logarithm — correctly, because that is what keeps the sliders
+linear in stops. What it never did was undo that logarithm before showing you the result.</p>
+
+<ul>
+  <li><strong>The symptom was a frame with no blacks in it.</strong> On a 16-bit scan of a slide, the
+      median pixel came out at 224 / 227 / 246 of display code where the file itself holds
+      113 / 122 / 198, and the darkest thousandth of the picture opened in mid-grey, at 159 instead
+      of 10. Over the brightest decade the app was rendering a quarter of the contrast the file
+      carried.</li>
+  <li><strong>No automatic button could fix it.</strong> The balance keys write the three
+      per-channel levels and never the RGB set, which is the one carrying the gamma — so pressing
+      Classic left the medians at 219 / 221 / 241, still white.</li>
+</ul>
+
+<h3>What a positive now rests on</h3>
+
+<ul>
+  <li><strong>The three black points start on the film base rather than under it.</strong> A
+      physical black opens on black instead of on a grey veil, and nothing is clipped to get there.</li>
+  <li><strong>The RGB midtone slider rests at 0.670 instead of 0.500.</strong> That is what undoes
+      the encoding. The same scan now opens on 0.463 / 0.503 / 0.809 where it used to open on
+      0.747 / 0.769 / 0.919.</li>
+  <li><strong>The rest stops short of matching the file exactly, on purpose.</strong> Landing on it
+      takes the midtone handle to the very end of its travel, leaving nothing to add contrast with.
+      A positive is meant to open on a usable starting point, not on a finished picture.</li>
+</ul>
+
+<h3>What happens to a positive you already adjusted</h3>
+
+<p>Its settings file is read onto the new resting point, so the fix reaches frames already in your
+library and not only the next import. A handle you actually placed is left exactly where you put it:
+only the ones still sitting untouched are moved. A negative or a B&amp;W frame is read through
+without a single key being altered.</p>
+
+<h3>Also in this version</h3>
+
+<ul>
+  <li>The film probe used for diagnostics now reports what the whole chain makes of a frame in
+      Positive as well as in Negative, and reports quantiles alongside the extremes.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.23/OpenNegative-0.0.23.zip" length="12629445" type="application/octet-stream" sparkle:edSignature="1NQeQCMSodvRcb1UTph5ZEqMSc1fEjAqDAr+17iDb9RViVA+irRp5QkeKgj3M3s6Rf0lWNj/Gsf3wn0wI7K3Bw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.23/OpenNegativeInitiative815-813.delta" sparkle:deltaFrom="813" length="767710" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1QF72lR/Odph4vAqemeKO4eiJb+EFHuVdGsLpPEExolMWXOV702b4tzWKzFLHZdVzTzXiWJidcg0SkDFjXsNBg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.23/OpenNegativeInitiative815-812.delta" sparkle:deltaFrom="812" length="763566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="thnTTr8MrGmBU7DA/lb7bUpBY8tU0whhW0Me7yAU9tBJRoqAZIkznIte32CqpZcc7jP9sBRNROAfyuOspoddBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.23/OpenNegativeInitiative815-809.delta" sparkle:deltaFrom="809" length="839154" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9M1idlTuUQO0auaLt/TWGyix0GXSsh6orO+EacplHWpy2/GNWAzWav2UQFWCFMlcsGoSpSXpi7VY83Twbu6kCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.23/OpenNegativeInitiative815-767.delta" sparkle:deltaFrom="767" length="2321638" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0y3FdBc13vEloD4TWrkjywFkVA9v0zxyKn5WfJFc1e1k2y6DCxt3GvSG5bXtBKjjdo/j0jfqE/hMBburajs5Dw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.23/OpenNegativeInitiative815-754.delta" sparkle:deltaFrom="754" length="2461562" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vIxjdAEWT66R5db7UrhHLXZlVAV9JAcW/i64nVVBLpWeaqHBl7dMr8ki7iVMnJjfABNTRSXM+SKVuFv6HK1wBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.22</title>
             <pubDate>Mon, 17 Aug 2026 17:10:00 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
