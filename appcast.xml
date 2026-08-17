@@ -3,6 +3,47 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.22</title>
+            <pubDate>Mon, 17 Aug 2026 17:10:00 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>813</sparkle:version>
+            <sparkle:shortVersionString>0.0.22</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing in this version changes the rendering of a photo you have already
+adjusted.</strong> No control moved and no default changed. The only difference is what ships
+alongside the application.</p>
+
+<h3>The source code now ships with every release</h3>
+
+<ul>
+  <li><strong>Every release from this one on carries its own source archive</strong>, named
+      <code>OpenNegative-&lt;version&gt;-source.zip</code>. It holds the Swift sources, the
+      resources, the Metal kernels, the package manifest and the Makefile: what you need to build
+      this exact version, and nothing from my own machine.</li>
+  <li><strong>Do not confuse it with the "Source code (zip)" GitHub attaches on its own.</strong>
+      That one is an archive of the release repository, which holds binaries and an update feed,
+      and it contains no Swift at all. The file to take is the one with <code>-source</code> in
+      its name.</li>
+  <li><strong>One piece is still missing, and it was missing before too.</strong> The keycap
+      button component lives in a separate private repository, so the archive does not compile as
+      it stands: replace it with a plain button first. That is about an hour of work, and it is
+      spelled out on the site.</li>
+</ul>
+
+<p>The licence has not changed, and neither has what it gives you. GPL-3.0 asks for the source
+that corresponds to the binary you were handed; until now that source existed but you had to ask
+me for it, which is not the same thing.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.22/OpenNegative-0.0.22.zip" length="12617110" type="application/octet-stream" sparkle:edSignature="iRCYbrqkld/8bfxCmuxSowU2RbDVi4eY3/gtTWDN4NFTGHhc2JfcFHudHeLkf+oWQVxo8w+09RBJnvl06bt3AA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.22/OpenNegativeInitiative813-812.delta" sparkle:deltaFrom="812" length="12882" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6wWJTeMHU03yZTHhavv3aTYX/N3poOZZPGxUwCJV7HL3CLqyiXUdcW5CmcwHJkBYGTOgPI/zL85i6lzxEYdnBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.22/OpenNegativeInitiative813-809.delta" sparkle:deltaFrom="809" length="590282" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5AhQ7p6Z8Ty56xJLs1PMXBsNrrDDJWB2tKrHh0dOi9lo11zRok1L47nqgWIDXrB+0se3vqzbblPTORYDvGDHBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.22/OpenNegativeInitiative813-767.delta" sparkle:deltaFrom="767" length="2293554" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="sFnVprurF1OB75/Xi3bMmI7poi8lJrNjePy8prCXrqDWFwdlxivdRg6yTJ5yXZ6X9oRwY+U65XxrfeX5xV1LCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.22/OpenNegativeInitiative813-754.delta" sparkle:deltaFrom="754" length="2448182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vW3zJlcB2viN4gwNWE6ly6UJJmdNgiOwskvD38R4hi0LksejV1MGstpQLS7O4WffzmfZaI30KsEhUfJB0NjEBg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.22/OpenNegativeInitiative813-696.delta" sparkle:deltaFrom="696" length="3164582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gaC0T60oIsdeEsoe75hHHzAnA6sSAS4zfW5f6TDfgCL9E0NlL/KmdADqfpYFnBvnYrfb2mQ37nak/U2oh9UgDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.21</title>
             <pubDate>Sat, 15 Aug 2026 12:53:38 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
