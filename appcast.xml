@@ -3,6 +3,41 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.27</title>
+            <pubDate>Wed, 19 Aug 2026 00:24:11 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>826</sparkle:version>
+            <sparkle:shortVersionString>0.0.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing here changes how a photograph is rendered or exported.</strong> This version only
+adds to what the app can say about itself when it stops responding.</p>
+
+<p>Three explanations for the crop freeze have now been ruled out by measurement rather than argument:
+memory, a file on a network volume, and the canvas cache — squeezed to a quarter of what the affected
+machine has, it still behaved. The log from 0.0.26 dates a block but does not name what is inside it,
+and that is what this version adds.</p>
+
+<ul>
+<li><strong>Past one second of being unresponsive, the app now reads its own main thread</strong> and
+writes the function it is stuck in, with the frames above it. This is what a system spindump does; it
+runs from a thread that is not the blocked one, so the reading survives a forced quit.</li>
+<li>One reading per block, six per session, forty frames deep. A log nobody can read answers nothing.</li>
+</ul>
+
+<p>Same routine as before, and it is the last thing needed: <strong>Help → Show Console</strong> before
+reproducing, work until it happens, then Copy — or send the file the window names. What matters this
+time is the block of lines beginning <code>stack ·</code>.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.27/OpenNegative-0.0.27.zip" length="12730245" type="application/octet-stream" sparkle:edSignature="pf3zJrpb1aPpiTquGaAtZecT535r2R7RS3e9lgVodRtrUcsj8adQRygdF7lw5QwK7bz0EsM5SgZCIFhrgRFjAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.27/OpenNegativeInitiative826-824.delta" sparkle:deltaFrom="824" length="678974" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="LZMs1XGnVAp/i64loQ8BKqJ0TK5NttScbpcsxc3nglM77TzpJrDY913rOqwJL15f6rGhQ0amhejtcoIR7vWaCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.27/OpenNegativeInitiative826-822.delta" sparkle:deltaFrom="822" length="1072994" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IrvT9/5JL5XDrVCFc4KoQcW0zirLh4xknsNTsAyq0fkjeSZPu8n1AqctGq59a9HSYIGbs6RJkhfMqe0x5eHlBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.27/OpenNegativeInitiative826-819.delta" sparkle:deltaFrom="819" length="1139362" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NQsPiD6QeAVgp60RKZgRy5pIuue5tZ6ZSUc/SR5Dxm5ZOxbRkWm6wEKzPxQ8uUGh8KAri7u3fxbVPK3193FhDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.27/OpenNegativeInitiative826-815.delta" sparkle:deltaFrom="815" length="1155342" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7FesTcE11mbALs9td8BFLXySlGtffAfVqIhCRDeH0DDrWRK02YSLUF2CrDLUYU+19o/aqdBOiVGJCo5h+75LCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.27/OpenNegativeInitiative826-813.delta" sparkle:deltaFrom="813" length="1243038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8IgRAPBD1rtP1+0BBDt+YknUBdJ2hxPVS32dQaBaRE1Fd5hw6mKLt1f67eO28OXFE2HzaGCFFu2rTi3jCn0OCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.26</title>
             <pubDate>Tue, 18 Aug 2026 22:57:01 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
