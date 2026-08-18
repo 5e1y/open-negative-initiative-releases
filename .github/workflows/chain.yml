@@ -52,6 +52,26 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: The README's download button, which now goes through the counter
+        # The button above links to the website's `/dl`, which records the click and redirects here.
+        # That put a hop in front of the most visible download link this project has: if it stops
+        # answering, the README's button is dead and nothing else would say so.
+        #
+        # ⚠️ `?probe=1` is served but NOT recorded, and `-I` does not follow the redirect. A check that
+        # entered its own measurement would repeat exactly the defect fixed in this file — and one that
+        # followed through to the asset would inflate `download_count`, the other half of it.
+        run: |
+          probe='https://open-negative-initiative.com/dl?probe=1'
+          head=$(curl -sI "$probe")
+          code=$(printf '%s' "$head" | head -1 | awk '{print $2}')
+          [ "$code" = 302 ] || { echo "::error::the README button answers $code — $probe"; exit 1; }
+          printf '%s' "$head" | grep -qi 'location:.*OpenNegative\.dmg' || {
+            echo "::error::the README button redirects somewhere other than OpenNegative.dmg"
+            printf '%s' "$head" | grep -i '^location:'
+            exit 1
+          }
+          echo "README button: 302 to OpenNegative.dmg"
+
       - name: The published feed, waited for rather than caught mid-build
         # Pages rebuilds for about a minute after a push, and publishing creates the release BEFORE
         # pushing the feed — so a run fired by either reads the previous feed and reports a

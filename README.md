@@ -21,7 +21,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/5e1y/open-negative-initiative-releases/releases/latest/download/OpenNegative.dmg">
+  <!-- Through the website, which counts the click and redirects — the file still comes from this
+       repository's latest release. Measured 18 August 2026: `download_count` counts bytes served to
+       anything that asks, and could not tell this button apart from a crawler or from Sparkle
+       updating an existing copy. `t=readme` names this button; the referring host separates the
+       GitHub page from the Pages one, so both surfaces are told apart without a second link. -->
+  <a href="https://open-negative-initiative.com/dl?t=readme">
     <strong>↓ Download for macOS</strong></a>
   &nbsp;·&nbsp;
   <a href="https://open-negative-initiative.com/">Website</a>
