@@ -3,6 +3,46 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.26</title>
+            <pubDate>Tue, 18 Aug 2026 22:57:01 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>824</sparkle:version>
+            <sparkle:shortVersionString>0.0.26</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing here changes how a photograph is rendered or exported.</strong> Frames you have
+already adjusted open and export exactly as they did, and no cached thumbnail is thrown away.</p>
+
+<p>This version exists to find one fault rather than to fix it. Cropping a photograph, clicking to
+apply, and having the app stop responding has been reported twice and reproduced neither time — so
+the app now records what it was doing when it stops.</p>
+
+<ul>
+<li><strong>Help → Show Console.</strong> Open it BEFORE reproducing the fault, work until it
+happens, then press Copy. The window is frozen while the app is, so it also names a file: everything
+it holds is written to disk as it happens, and a forced quit keeps all of it.</li>
+<li><strong>A watchdog on its own thread</strong> records how long the app went unresponsive and what
+it was drawing at the time. It writes that line during the block, not afterwards.</li>
+<li>The log also states which volume a photograph lives on, and whether a file provider owns it —
+a file that looks local in the Finder is not always a file the disk can hand over quickly.</li>
+</ul>
+
+<p>Two real faults on that same path are fixed on the way: applying a crop no longer reads the disk
+on the thread that draws, and the crop gesture now defers the work that follows it the way every
+slider already did.</p>
+
+<p>If it happens again, two things settle it: the console log, and the report macOS writes by itself
+in Console under Crash Reports, named for this app and ending in <code>.hang</code>.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.26/OpenNegative-0.0.26.zip" length="12724394" type="application/octet-stream" sparkle:edSignature="hK3pNYCnPda6nIZH2iHsKH6ez1qrZa2QnfsKJcNMqTcLjOSyEMEFptvqf37T0fB2PGaxPALfpxlfMlI3W8GWBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.26/OpenNegativeInitiative824-822.delta" sparkle:deltaFrom="822" length="1043378" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MM9KSOtx8S7/Pj+R3u8TZq/2ZcY7E8UnL8U7aKm2g3z3kQR9Botwg6KGN87LNvmyYBNI7YaxkK9R74KGFnccAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.26/OpenNegativeInitiative824-819.delta" sparkle:deltaFrom="819" length="1100234" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="yDmlEH9dR8Wk2/s0SFBIQTy2uKrGw4TZ5o5sqSle7T8tJHB41wF49CUWZJwp1P15eHluIDMreMCz1F/ADwzhAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.26/OpenNegativeInitiative824-815.delta" sparkle:deltaFrom="815" length="1116894" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="riua/KrQWenZZafmnf94r0fBGK8TiOkbUbihyM2sQfnHNQPJ+KjWoVEO+3NwOi8OW6Jt2+iiiO84eh8gYFHgCw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.26/OpenNegativeInitiative824-813.delta" sparkle:deltaFrom="813" length="1209118" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2qj2siyLtvWY5Sh1RqE4b1Ovt9buGB9+eNDBxYXcRUmm2tfa+OhiULzSow3LSs8zIvKSD9m7AJP1Q9Kn9LN9Bg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.26/OpenNegativeInitiative824-812.delta" sparkle:deltaFrom="812" length="1207778" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+xSydRrRYj8L61rarPJLpYXIUYdU9QIaY6SDvXVXi5FvTC7t8qe3IDoyAd4cNHN2lpIWGpJJzLkdCnSb6nSIDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.25</title>
             <pubDate>Tue, 18 Aug 2026 21:54:29 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
