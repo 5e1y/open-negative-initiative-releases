@@ -3,6 +3,50 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.25</title>
+            <pubDate>Tue, 18 Aug 2026 21:54:29 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>822</sparkle:version>
+            <sparkle:shortVersionString>0.0.25</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing here changes how a photograph is exported.</strong> Frames you have already
+adjusted come out of the export bit for bit as they did. What can change is what the canvas shows
+while you work: on a Mac with less memory, the reduced preview is now held at zoom levels where the
+app used to decode real pixels. That is sharpness on screen, never in the file.</p>
+
+<p>Three faults reported by testers turned out to be one. Past a certain zoom, or a crop tighter than
+about two thirds of a side, the canvas switches to the full-resolution frame — and that path asked the
+GPU for as much on a 16 GB laptop as on a 96 GB desktop, never handed the memory back, and said
+nothing at all when an allocation was refused.</p>
+
+<ul>
+<li><strong>The canvas now reads what the machine can actually give</strong> and caps itself at 4 GB.
+A large Mac is handed what it was already using, so nothing there renders differently. A smaller one
+is handed less, which is the whole point.</li>
+<li><strong>A refused frame falls back to the preview instead of going black.</strong> One tester saw
+photographs simply vanish above roughly half zoom; that was an allocation being refused and the
+refusal being swallowed.</li>
+<li><strong>Memory is handed back when the system says it is short</strong>, rather than held until
+the app quits.</li>
+<li><strong>Exporting no longer needs a restart to work again.</strong> A render refused for want of
+memory is retried once with the session caches dropped — which is exactly what relaunching the app
+used to do by hand.</li>
+</ul>
+
+<p>If a crop or a deep zoom still stalls on your machine, the app can now say what it was drawing
+when it happened: run it with <code>--fps</code>, work until it stutters, quit, and send
+<code>/tmp/oni-fps.txt</code>. It names the source and the crop, which earlier reports could not.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.25/OpenNegative-0.0.25.zip" length="12655212" type="application/octet-stream" sparkle:edSignature="DGEV5HQrkYyAMNbOa0GtoF5Y83WDfAG16WmXEAnWgkIlCwjTWyw3xzCIGU1FC/a4jPJA4jUCjJ9JVmH+tJofAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.25/OpenNegativeInitiative822-819.delta" sparkle:deltaFrom="819" length="818850" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MbapO5XTwqKGM/TrdZMWqZzDNd6nBRM6/5Q4pLf788Dh8f02TE5EAXvH19CFNeZ0vPCBWqbpgV3bREgQPXlqAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.25/OpenNegativeInitiative822-815.delta" sparkle:deltaFrom="815" length="858026" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="GGFqPvSMfi8AlL98C7SjdVE1AZQINTMkMkU81hvrDhldsXA/BNhdi49TXP9ALbLd/bxRNUP2T2yFMNmTl58PCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.25/OpenNegativeInitiative822-813.delta" sparkle:deltaFrom="813" length="983202" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="l8ADSURasIyvOug2KNGcZiLTTtBQIuD9OB8RfeVGdDnHOtozTqjbwFBcJMWmgsmdwhYZp0ZBfmlOOAhmWqLPCw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.25/OpenNegativeInitiative822-812.delta" sparkle:deltaFrom="812" length="983586" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3Pp8AHCvbnqtL3iPucYymHP5Xh3lr324A1feiNNhBYkANt0AyN4y3uud6+1GAZjZf+fx9d/L6RVi/sydqc5ICw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.25/OpenNegativeInitiative822-809.delta" sparkle:deltaFrom="809" length="1024542" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9Bx0jOtcxVFEENrHCdpP+pC9igrMYQnjd06ieqpftSO3X0a+Ds7KOPLkslDjdUnDDB6b+vdF37JpBtvOjMRUCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.24</title>
             <pubDate>Tue, 18 Aug 2026 02:24:25 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
