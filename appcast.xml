@@ -3,6 +3,29 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.24</title>
+            <pubDate>Tue, 18 Aug 2026 02:24:25 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>819</sparkle:version>
+            <sparkle:shortVersionString>0.0.24</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing here changes how a photograph is rendered.</strong> Frames you have already
+adjusted open exactly as they did.</p>
+
+<p>Installs are now counted. On the first launch after an update, the app sends its version number
+and nothing else; what is kept is that number and the country the request came from. No identifier,
+no address, nothing that singles anyone out.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.24/OpenNegative-0.0.24.zip" length="12635375" type="application/octet-stream" sparkle:edSignature="RInE+JTxFwX4zf1LujITPWzVXVfF3M6/hYlvM04dlmtgsizarx3AZIIYh2YZG/6NgY+oLuulY5fxNmuXz6lfBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.24/OpenNegativeInitiative819-815.delta" sparkle:deltaFrom="815" length="671618" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="iscIqJlQsw5XXyRS4RFRUjqHG17Zc52YPYDqq1wKleccQqcELbrF0TARxPd9qJXNZ5yrO8Z0hGVqhoBbyNDoDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.24/OpenNegativeInitiative819-813.delta" sparkle:deltaFrom="813" length="850526" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="QQ/RnTzHpDyBlddg3syXHhWqgSlS/zk2OPTLUSsanwW1fvBlAVFmlXRZTbDbvqEz5QtEKOaZ6VomFcu5tCJIBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.24/OpenNegativeInitiative819-812.delta" sparkle:deltaFrom="812" length="849090" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Rn7PKTuJBS3EuVELGXb5CJLM1gTxeToqP0MZYKhz8ziYXJm34deAhzAxp0SVW/Ij901VKIfGFqXH63oXTkatDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.24/OpenNegativeInitiative819-809.delta" sparkle:deltaFrom="809" length="880534" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fxPkjO7ygaD/vA3VhijVkQa6PwVDaCWcqqcUGD1wnlBLsvU+X3DXy8ielh2xi1d5DBMZbctE8sEmKo/u02oIDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.24/OpenNegativeInitiative819-767.delta" sparkle:deltaFrom="767" length="2328150" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vh/83rzQp+2Ce/5AWZVcGXWFgM7Yvf3y348ZU+vHGwDVfCfejOoeQjGDlS48lysW4XvVh+DpNxRV6U7SG9bzCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.23</title>
             <pubDate>Mon, 17 Aug 2026 23:58:26 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
