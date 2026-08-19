@@ -3,6 +3,66 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.28</title>
+            <pubDate>Wed, 19 Aug 2026 18:24:48 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>843</sparkle:version>
+            <sparkle:shortVersionString>0.0.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Exports and saved edits render exactly as before. One thing changes on screen: while a
+slider is held past 100&nbsp;% zoom, the canvas shows the stretched preview — soft during the
+gesture, sharp again the moment you release.</strong> That trade closes a serious latent leak.</p>
+
+<p><strong>The leak, first.</strong> Holding a Colour slider past 100&nbsp;% zoom made the app file
+full-resolution working buffers on every notch and never re-use them — gigabytes within seconds,
+however much memory the machine has, and the less it has the sooner everything stops answering.
+Every version to date carried it. The preview-under-the-hand rule above removes the mechanism
+entirely; a twenty-second worst-case drag now holds flat where it used to take the whole machine.</p>
+
+<p><strong>Editing feel, measured on a real hand rather than a script.</strong> Recorded before and
+after over the same erratic session: seventeen freezes over 200&nbsp;ms in fifteen seconds became
+one in a whole session; the worst five percent of frames went from 6 to 35 per second.</p>
+
+<ul>
+<li><strong>Adjusting by trackpad scroll now counts as a held hand</strong>, as dragging always did
+— so the heavy work every control defers during a drag is deferred for the scroll too. This was the
+single biggest cause of stutter, and it had been there since the scroll gesture shipped.</li>
+<li><strong>The histograms follow the hand at about sixty refreshes a second</strong>, and a
+finished measurement is never thrown away again — the plot used to only catch up after the gesture
+ended.</li>
+<li><strong>Full-resolution drags stopped rebuilding their cache on every notch</strong>; the
+region is rebuilt once, when you release.</li>
+<li><strong>Nothing a drag starts can outlive it and pile up any more</strong> — one measurement in
+flight at a time, the newest settings win.</li>
+</ul>
+
+<p><strong>Also in this version:</strong></p>
+
+<ul>
+<li>Applying a crop happens in two beats — the cropped frame renders first, the panel travels next
+— so slower machines no longer take both on one breath.</li>
+<li>The Straighten slider now works from the frame the gesture started on: sweeping out and back
+returns exactly where you began, instead of ratcheting the crop tighter.</li>
+<li>Launch no longer re-reads the whole library's EXIF twice per photograph; a large library opens
+without the disk churn.</li>
+<li>While a photograph's first measurement is still running, the auto-balance plate says so instead
+of sitting grey unexplained.</li>
+<li>Walking a roll with the arrow keys no longer builds full-resolution frames for photographs you
+have already left — on scan libraries this reached nineteen gigabytes.</li>
+<li>The diagnostics console now stamps every watchdog line with the app's memory footprint, so a
+report tells the whole story on its own.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.28/OpenNegative-0.0.28.zip" length="12750760" type="application/octet-stream" sparkle:edSignature="3DWYuNSrXe2+6byrC3X5leHM3oPyalw2s/piaEaxA2G8+pluafliPEDFESSnE8KpFBbVLrHdapMvRcoLU7+DCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.28/OpenNegativeInitiative843-826.delta" sparkle:deltaFrom="826" length="2398426" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cM32G3jgbuV2bjft0w0fZr+qBVJG14cgxGZoIOPYFmAxpxyOMANtOc7qr1JazKZh3AeEA8r7gsB5n/0Rt1IYBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.28/OpenNegativeInitiative843-824.delta" sparkle:deltaFrom="824" length="2411698" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="llRSfQkJJzKOvksxG0OEJG+ZRTfD9EfkIarNsZugR2UINv5JvyfCVkURWjgUSxhgt//5FpY2h4981pRtmSObDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.28/OpenNegativeInitiative843-822.delta" sparkle:deltaFrom="822" length="2591238" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="h7zdtKQBX+iclt1Ff71VGHvMNPpBrWAOgjnd346LGkpKjpHjzbLyntQx1jAoCAH+dQVz/XOkryNc3IvpIVmPDA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.28/OpenNegativeInitiative843-819.delta" sparkle:deltaFrom="819" length="2651370" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ynR86xXNZZTZyBfPhE0vfyo0IjR3gUYvCF4rNYV0UfoRhd6NF/lqetZkdf19pwD12MSxVyoQnixgDAGB9MYYBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.28/OpenNegativeInitiative843-815.delta" sparkle:deltaFrom="815" length="2641114" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="PnLwScUkQjA18qF7OqpYmb8aSqa8R50Q02Myf6ThA9mtsYXoHrH20JzR775ElpsTi9fSfjdmiabenA5XKmcRBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.27</title>
             <pubDate>Wed, 19 Aug 2026 00:24:11 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
