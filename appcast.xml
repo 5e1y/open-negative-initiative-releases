@@ -3,6 +3,50 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.29</title>
+            <pubDate>Thu, 20 Aug 2026 15:09:59 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>850</sparkle:version>
+            <sparkle:shortVersionString>0.0.29</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing changes in how an already-adjusted photograph renders — exports and saved edits
+are pixel-identical to 0.0.28.</strong> This version is entirely new ground: organizing and finding
+photographs, not converting them.</p>
+
+<p><strong>A sidebar next to the gallery</strong> lists every roll and every capture day as its own
+row, mirroring exactly what the gallery already headers itself with. Click a row to see only that
+group; click "All Photos" to see everything again. Double-click any name — a roll or a bare day, in
+the sidebar or in the gallery's own heading — to rename it on the spot.</p>
+
+<p><strong>Rolls can now nest inside boxes</strong> — virtual containers, never real folders on
+disk, purely a way to arrange a growing library. Select several rolls or days and group them into a
+box from the sidebar's own menu, or drag one roll onto another to form one automatically. Drag a
+roll onto a box to move it in; drag a box onto another to nest it. "Unbox" dissolves a box back into
+whatever held it, keeping every roll inside it exactly where it was, one level up.</p>
+
+<ul>
+<li>A medal filter sits in the top bar in gallery mode, in the mode tab's own slot: one button
+cycling ALL &rarr; BRONZE &rarr; SILVER &rarr; GOLD &rarr; ALL, showing exactly that tier and no
+other.</li>
+<li>Negative/Positive, the framing button and the compare button no longer sit greyed out in
+gallery mode — they only ever did anything on an open photograph, so they are hidden there instead.
+</li>
+<li>Fixed: double-clicking a roll's name in the gallery to rename it usually did nothing, because
+the header under the pointer during a scroll was a decorative copy with no gesture of its own.</li>
+<li>Fixed: the sidebar's "All Photos" row drew a faint border no other row had; it was the only one
+built as a real button rather than a plain click target.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.29/OpenNegative-0.0.29.zip" length="13212366" type="application/octet-stream" sparkle:edSignature="vwkSJo825cfONw4xAOyCojsq5dvQOmBUPrH2wg4uZasGv0fZsPJCKA02bn8d7+aVnDy99/nAOQJLA1nYq9vYBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.29/OpenNegativeInitiative850-843.delta" sparkle:deltaFrom="843" length="2926934" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="jEuWf6uDPJJWccDTNH2AFmWqfW84lBtAqVLoLpq9awSU0Vm/3MpLALJaKk5m3cUYKj1lkH5mcdUa6YZ8L751CA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.29/OpenNegativeInitiative850-826.delta" sparkle:deltaFrom="826" length="1803046" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="k688q3Ok59+/gdC3gFDVcswtrY4BTBRKiONpp9T08LYMYbcjgX+sbqlFEprMLJ3aJ9ttYzihCC+1cT3ahNJ+DA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.29/OpenNegativeInitiative850-824.delta" sparkle:deltaFrom="824" length="1800630" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dDYLHqV2Q6HOzupK/MLqF9N3uJFCrf9ZluhaPnqXUwEEtclld1+HJcCTVih8ZnpyVybpLS/M3CXI7/W5jAP0Dw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.29/OpenNegativeInitiative850-822.delta" sparkle:deltaFrom="822" length="1918502" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="OxNA0kxDNxpMoHW8MLg+gi5rxTzr6l14aND1cksS0TAJFqERjUQL/q6tDD41mFTIZ9lVfTuExrIgRUnbeIfCAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.29/OpenNegativeInitiative850-819.delta" sparkle:deltaFrom="819" length="1947106" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gRRTmwWWoDnEvIRnEfHkxhxBunwQZgVR3zqjvZsJXKFK82y1gRjpdr99SF6HZ0xd5GZZadzBsh4TeSu9EwZJAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.28</title>
             <pubDate>Wed, 19 Aug 2026 18:24:48 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
