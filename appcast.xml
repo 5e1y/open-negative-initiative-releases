@@ -3,6 +3,37 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.30</title>
+            <pubDate>Thu, 20 Aug 2026 18:20:09 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>852</sparkle:version>
+            <sparkle:shortVersionString>0.0.30</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing changes in how an already-adjusted photograph renders — exports and saved edits
+are pixel-identical to 0.0.29.</strong> This version refines the sidebar that shipped last time.</p>
+
+<p><strong>A small arrow now leads every roll, day and box row</strong> in the sidebar, separate
+from the rest of the row: click it to expand or collapse, click anywhere else to select — the two
+no longer do both at once. It sits flush against the sidebar's own left edge, no wasted margin
+before it.</p>
+
+<ul>
+<li>"Ungroup" now takes the whole selection at once, however mixed: a roll among the selected rows
+falls back to its own capture day, a box among them dissolves back into whatever held it — one
+command instead of picking through each row's own menu.</li>
+<li>Fixed: "All Photos" drew a faint line underneath it that no other row had.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.30/OpenNegative-0.0.30.zip" length="13248253" type="application/octet-stream" sparkle:edSignature="7/mkRcpsAeQlwNXWB6wDAMCK+o+H9n3aAeRg7fEjVznOS0Uwnt5egwZHokknNVO+yVVzTtCnNzMmhOYB2cdFAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.30/OpenNegativeInitiative852-850.delta" sparkle:deltaFrom="850" length="956242" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0fmnBHLZq2+1Tq+nSy/jo2ex6TtDoq7FyM3H/+B5c3oOW2LQ+YjXFeLrGz2o6dBrpIQIr1A3uawFKykkw2fUCw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.30/OpenNegativeInitiative852-843.delta" sparkle:deltaFrom="843" length="2960714" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IxELvO9yX1QXJmK86IrSU6/ncviTq1Q3ubJ2Uc0LgNXmScgKHtU9lnElux6NTyhAJaWgeOOoWj5oTGtyJRWhCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.30/OpenNegativeInitiative852-826.delta" sparkle:deltaFrom="826" length="1813290" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ww+Cm4u8mBJDszN+qs4RfWZTDjaWTv7jYTKGA8xnhzYIE8HyvBtd7rm/Uk9U3+NgC5J0VcDJL68vj6ybjo7TBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.30/OpenNegativeInitiative852-824.delta" sparkle:deltaFrom="824" length="1842886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="waX84xmC0JYeKc7hNtocqw2CX56ytJEoh3dx/uwVWixUNX1hSIDNeDC3rjVJsNoYbF+smWT3m0w0Pdom9eTdAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.30/OpenNegativeInitiative852-822.delta" sparkle:deltaFrom="822" length="1936670" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="I+s1A4aXIDudJ63Mh4SkIe1AhkUPxTb3nHzIjN/Cc7pLW6l8uAD+MLA8vCdH4O1NBkTUYGb27Gd8PaJItNIkCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.29</title>
             <pubDate>Thu, 20 Aug 2026 15:09:59 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
