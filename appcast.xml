@@ -3,6 +3,49 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.31</title>
+            <pubDate>Sat, 22 Aug 2026 13:22:51 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>857</sparkle:version>
+            <sparkle:shortVersionString>0.0.31</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing changes in how an already-adjusted photograph renders — exports and saved edits
+are pixel-identical to 0.0.30.</strong> This version gives a roll its own identity, adds seven film
+stocks, and fixes several selection, hover and comparison issues.</p>
+
+<p><strong>A roll can now carry its own film stock, shot date and camera body</strong>, editable
+from the info panel — the shot date is three plain fields (month, day, year) instead of a calendar
+picker, sized to match the toolbar's own buttons. Rolls and boxes can be reordered by dragging them,
+at the root or nested inside another box. An unassigned day is promoted to a real roll the moment it
+is imported, rather than staying a stand-in category.</p>
+
+<p><strong>Seven new film stocks</strong>: AgfaPhoto APX, Foma Fomapan 200, Fomapan 400, Fomapan 401,
+Lucky Color 200, Mira Color 400 and Mira Color 800.</p>
+
+<ul>
+<li>Fixed: selecting a roll or a box in the sidebar sometimes stayed marked after the ring moved to
+a photo selected elsewhere, showing two things selected at once.</li>
+<li>Fixed: hovering the gallery grid or the sidebar tree could land on the wrong row, or flicker,
+depending on exactly how the pointer crossed between cells.</li>
+<li>A box's rolls now show inside the gallery grid too, not only in the sidebar — as a larger
+title, never a separate background or an expand arrow, so it reads as a bigger heading rather than
+a different kind of thing.</li>
+<li>Fixed: the Before/After comparison measured against the bare, un-corrected negative — after
+dialling in white balance and levels, that comparison had nothing useful left to show. It now
+compares from the corrected image instead, and respects the frame's own negative/positive/monochrome
+mode, which it previously ignored.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.31/OpenNegative-0.0.31.zip" length="13905171" type="application/octet-stream" sparkle:edSignature="vMnEyDReGJ8v4Ku1Adcqz6Sc254mshRPSEIO1lvWx8FCqknSrRItRETzCfjGDObMRGVntAikvPg8p4RqUpTfBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.31/OpenNegativeInitiative857-852.delta" sparkle:deltaFrom="852" length="2257402" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="cEjuedvbNPmJ8+TRL6jvKWK9SZctuNP2oiwHXqA4soWTMXNksiy81wqgHiu7n8G4NdsP7gvamXrh3S0XzAXDDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.31/OpenNegativeInitiative857-850.delta" sparkle:deltaFrom="850" length="2278234" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gp5kKf0q6hf6z1cMPA6ktPG/SmS4mmTVkRg36q1VecZW/dIKPtI8ZX9PeWmJF2+0K1AGPEWUtaJ3DpOsBckdBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.31/OpenNegativeInitiative857-843.delta" sparkle:deltaFrom="843" length="3831954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KQlOx71XOrNKDgH57H/gYeADJKDR/1iUm+SA43AOqCBYTe3HezgMqAnKv/eVkojpYiLerwxDox69m1mlEYaQDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.31/OpenNegativeInitiative857-826.delta" sparkle:deltaFrom="826" length="2668730" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NeWjXnIGxhqFMIHuL/EFl2v9pcmw6c5u44xFtnSah9VshJHOvPp3EhEiOXvMDM0eU9Prz7ig/6Vag0uTGG94DA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.31/OpenNegativeInitiative857-824.delta" sparkle:deltaFrom="824" length="2693162" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="66gDjdnnwXl0qkqFCP0oO22/ZCxP6/T6Y6c9R+DsjXDb1ddUjmCsMMTFsPpq4wpzt7bnCoqKYY2ssp2DnsCdBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.30</title>
             <pubDate>Thu, 20 Aug 2026 18:20:09 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
