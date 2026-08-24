@@ -3,6 +3,37 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.32</title>
+            <pubDate>Mon, 24 Aug 2026 17:46:33 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>877</sparkle:version>
+            <sparkle:shortVersionString>0.0.32</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>If you use Contrast and Colour (Temperature/Tint) together, their combined look shifts
+slightly in this version</strong> — Contrast now applies on its own, ahead of Colour, instead of
+being baked into the same table. Using only one of the two is unaffected.</p>
+
+<p><strong>Dust and scratch removal is rebuilt from the ground up</strong>: a classical, GPU-based
+search finds a matching patch elsewhere in the same photo — no neural network, nothing decided
+without a brush stroke. A manual curves editor also returns to the Color pane, five channels,
+drawn by hand.</p>
+
+<ul>
+<li>Fixed: right-clicking a thumbnail in the gallery only opened its menu over the right half of
+the image.</li>
+<li>Fixed: thumbnails reloaded on every launch instead of once.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.32/OpenNegative-0.0.32.zip" length="12663808" type="application/octet-stream" sparkle:edSignature="Ama4zcAg/oL75v4J5/9nPqMjAfYl2SagUT9mbtnkKRXaXHRZ+/FDlIficKA8oYbeHtt26nbnTHpUi4DgdAg3Bg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.32/OpenNegativeInitiative877-857.delta" sparkle:deltaFrom="857" length="3104482" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="yuFx/FMlgqp8WtlxVtLIfAtLbbkZsLHY5jlh79udeC+WCdg9YOCLMij99Vnrsv7sBOh8aaRcl1JF9zGiLlvTCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.32/OpenNegativeInitiative877-852.delta" sparkle:deltaFrom="852" length="3960502" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="/m0cMzUOKdyU3QhUfcaH93BVe8upDhsyaEYz1Inz4yqFLO0b7aixaY2xQa6PDB33lAaiqAWWWEIVplkbt0SMAg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.32/OpenNegativeInitiative877-850.delta" sparkle:deltaFrom="850" length="3990374" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fzxnAPpbzDnnoqMgLx8x+uR44yaLe8mDO5+lftGq5xQoLNy8Rm+3pcFZtSxsrC3KBvh0nCZ5qlL/qGBJDgKIDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.32/OpenNegativeInitiative877-843.delta" sparkle:deltaFrom="843" length="4218234" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XJp6RkzGG32fXEbwlQI7zxut9Svfe4M6PVYrY7p+II/KTe/BqdIRUN87E+zxVlZoW682McSC2tcne6Y3ahpWDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.32/OpenNegativeInitiative877-826.delta" sparkle:deltaFrom="826" length="4320394" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5nguiELu2LEgHDvFuUMzUq9m4DB7BbO6TjNQ1jJjv7yeGelUq/W2Xj7CND9HWV0vjaxCzn0MNRSpe1/9qFnjBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.31</title>
             <pubDate>Sat, 22 Aug 2026 13:22:51 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
