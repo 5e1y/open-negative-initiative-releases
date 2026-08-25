@@ -3,6 +3,50 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.33</title>
+            <pubDate>Tue, 25 Aug 2026 22:45:32 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>891</sparkle:version>
+            <sparkle:shortVersionString>0.0.33</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>Drag and drop got a proper pass this release: move a photo into any roll or day by dropping
+it directly there, including between two photos that belong to a different group — that used to
+fail silently. Import works the same way now too: drag files or a whole folder from Finder
+anywhere in the library window, no need to open the file picker.</p>
+
+<h3>A hand tool for the correction brush</h3>
+
+<p>Painting dust and scratches used to leave no way to pan a zoomed-in photo — the brush took
+every drag. Hold Space to pan instead, exactly like Photoshop's hand tool: an open hand while
+held, a closed hand while dragging, and the brush's own preview circle steps aside so it never
+looks like it is about to paint.</p>
+
+<h3>The preset deck stopped grabbing the bottom edge</h3>
+
+<p>It used to rise from far away and leave an invisible strip above its own peek that intercepted
+clicks — corrections and crop handles along the bottom of a zoomed-in photo could miss for no
+visible reason. It now answers only where it is actually shown.</p>
+
+<h3>Also</h3>
+
+<ul>
+  <li>A persistent status bar under the photo: name and pixel dimensions, or how many photos are
+      selected, with three medal buttons that label the current photo or the whole selection at
+      once.</li>
+  <li>The mirror buttons in Geometry now survive leaving the photo — they used to silently reset.</li>
+  <li>A new app icon.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.33/OpenNegative-0.0.33.zip" length="13157083" type="application/octet-stream" sparkle:edSignature="L7umNktqrlTgKQ2jrs7bYtauIxfdijj8w+RGak7un4iRFPEBqSjWgu4Zl3sNFuTv1inrrIR81damzAZllsGeDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.33/OpenNegativeInitiative891-877.delta" sparkle:deltaFrom="877" length="3155134" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Y3PmMJ8/YVzZrBAsX9ISMRDNmWbvpRUv+Z2A737gAJw1GRLk9QUu9sCwzfEqLkh2UJSSShBA60Pckt7lOP03Aw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.33/OpenNegativeInitiative891-857.delta" sparkle:deltaFrom="857" length="3681862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2ejqEgtEfmcIZHqY1pt/sEiExwqlgN7S+r6TOTArFd4Z4pw4eWjQF6G3fwIaHXZX3h4QwiWY8BjV9xzhfL7UAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.33/OpenNegativeInitiative891-852.delta" sparkle:deltaFrom="852" length="4459978" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0CoDoBnWkH13X10GpDIBIdmMkihUSxkX+7u4bqLEErdlUdX4sq2wk4fJ90hnOWk7V93YwUKG564qCsLDwOSBDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.33/OpenNegativeInitiative891-850.delta" sparkle:deltaFrom="850" length="4476734" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="i3fC7Ku1edMRD/mdg6nVV2IItmgA1WeXOxChN1ukd6SHvZphxSpNxELmyKTPSSWWDeqzje4dPvb+JjcExOrgAg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.33/OpenNegativeInitiative891-843.delta" sparkle:deltaFrom="843" length="4680582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="uwa7b6m5NfV+5wp9rSnZabQEZ3dPXF2T5EETuuqgvur8wvbNVyWdWgcJ4h2BPZsqhsPG0nehV0QAcJVnpLrzBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.32</title>
             <pubDate>Mon, 24 Aug 2026 17:46:33 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
