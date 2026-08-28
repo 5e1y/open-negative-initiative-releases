@@ -3,6 +3,46 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.35</title>
+            <pubDate>Fri, 28 Aug 2026 19:36:12 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>895</sparkle:version>
+            <sparkle:shortVersionString>0.0.35</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Camera RAW decoding is more accurate now, and existing photos are affected too.</strong>
+Every RAW you've already edited has had its balance nudged automatically to compensate, so most
+will look the same or very close to before. If one still looks a touch off, a press of your usual
+balance button settles it.</p>
+
+<h3>Truer colour, especially on unusual film</h3>
+
+<p>The old decode assumed every colour negative sat behind an orange base and quietly corrected
+for it. Films that don't, Harman Phoenix among them, were fighting that assumption instead of
+benefiting from it. RAWs now decode neutrally for every file, and the app's own colour tools do
+the actual correcting, exactly as they always did.</p>
+
+<ul>
+  <li>Scanner files (TIFF, JPEG, PNG, HEIC, linear DNG) were never affected by this.</li>
+  <li>A preset carrying Source balance may need a quick re-save if it lands wrong on a RAW now.</li>
+</ul>
+
+<h3>Also</h3>
+
+<ul>
+  <li>A project's filmstrip now follows the same order as its grid, instead of silently
+      regrouping a hand-picked, cross-roll order by roll.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.35/OpenNegative-0.0.35.zip" length="13935655" type="application/octet-stream" sparkle:edSignature="U/+30C36pstQ5j+3bvclVHVZJsK42vAZv0vLC66Xx2SulLSNJAsXFfapM83IVb2v6+base8ZdsUkX2gkpj70CQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.35/OpenNegativeInitiative895-892.delta" sparkle:deltaFrom="892" length="1287142" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fUooAVHCcSlhwHk0anDw8xTOquAxD9sgAldg+zbpx6sT7Mx7EwkmMTJ7zs8XlHsNmYK8Jc7BYWQU+WcLdYBxBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.35/OpenNegativeInitiative895-891.delta" sparkle:deltaFrom="891" length="2556838" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vXf+zCyDrT8Jzz2isDJ7NIciB5O/f8AnwypFn2/9QPBjOiXEGeao63k2YyRO6LkmHczgBhnu3egkYfUsxkiCBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.35/OpenNegativeInitiative895-877.delta" sparkle:deltaFrom="877" length="4268182" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KJrCTMxTW4dBDbXGwDHb7xquS72SaUOr9vbYEnM+7hfX8JhQpuWQq3vgDS7GGV2CYX9C/3EbHQS5XH4vkflOAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.35/OpenNegativeInitiative895-857.delta" sparkle:deltaFrom="857" length="4716806" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="X41ccIK0WWif6CTi/AiDCKve7rlS1RrMaONBgaw4W5JpPDTVxYNg0dm/q6mXHLH7Kg6uUwy62r1/h+UWVVyhDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.35/OpenNegativeInitiative895-852.delta" sparkle:deltaFrom="852" length="5216982" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Lvh2/UShczUJxfMcj+WqVRqF9s+Z/iYb9FLrVwLli/+rqmoJNs4X/OgLmGVxPYg9BQrv4Di/kAgfJqoowdpSDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.34</title>
             <pubDate>Fri, 28 Aug 2026 10:56:29 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
