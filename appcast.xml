@@ -3,6 +3,51 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.0.34</title>
+            <pubDate>Fri, 28 Aug 2026 10:56:29 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>892</sparkle:version>
+            <sparkle:shortVersionString>0.0.34</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>The photo grid and the sidebar tree both got a serious speed pass this release. A library
+with hundreds of photos, dense grid columns, and every roll expanded in the sidebar used to slow
+scrolling and hovering to a crawl — both now stay smooth by only drawing what is actually on
+screen, instead of holding everything live at once.</p>
+
+<h3>Drag to reorder actually reorders now</h3>
+
+<p>Dragging a photo to a new position inside a scanned roll could silently do nothing, because
+scanned frames often share one capture time for the whole roll and the app had no other number to
+place them by. It now finds a real gap to drop into regardless, and undoing or redoing a reorder
+correctly updates the grid instead of leaving it showing the old order.</p>
+
+<h3>Projects get a real info panel</h3>
+
+<p>Selecting a project's photo used to leave the right panel showing nothing useful, or the wrong
+roll's details. It now shows the project itself: its name, a stacked preview of its first photo,
+every film stock among its photos, and an editable description. Anchoring on one of its photos
+from the grid also opens the right project in the sidebar now, even when it was collapsed.</p>
+
+<h3>Also</h3>
+
+<ul>
+  <li>Add to Project and Remove from Project, from the grid's own context menu, for a single photo
+      or a whole selection.</li>
+  <li>New icons for a project group and a project box.</li>
+  <li>The info panel's own separators now reach the full width of the panel instead of stopping
+      short of its edge.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.34/OpenNegative-0.0.34.zip" length="13905903" type="application/octet-stream" sparkle:edSignature="JL6jxSgirREMB0orhNK5QAze5N4i59QfRnC72ctd0eTQaILEBUofXb8mCYZ81zAkOF0+J87vm4/9Ep5HzCnTDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.34/OpenNegativeInitiative892-891.delta" sparkle:deltaFrom="891" length="2461930" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fZoyxA1Q/KPt2UR6lpB+qWSGQvn3V35Zft2nmavJooryB5wv/Pwxelzws3BoA6InDlM5vSRIkpS7vAgUeZZhAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.34/OpenNegativeInitiative892-877.delta" sparkle:deltaFrom="877" length="4180190" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="c+zmL78HLZ2a3GntQUMv0bT3NDGY7+h1Ml22yqXW98WJuzWo3ixwy+/1ahikLgBHLVspObOt00t91JGe1N+SBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.34/OpenNegativeInitiative892-857.delta" sparkle:deltaFrom="857" length="4646934" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4yVZ6PZ95a8tdJTh570usd9TtoO4/GiwpJmnyJ03flzn2+EMsZ6dnhTi2LvdfofPKXqWZhBulby28PuOTzX1Dg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.34/OpenNegativeInitiative892-852.delta" sparkle:deltaFrom="852" length="5163538" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="erAoAZJbhWzkASUsnZSBi7jIr5gXpwjXZ8Hi5L/hDE9wedk5yEobMf1MSthHiO3+APD7It9tTKDLuAwCrktMDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.0.34/OpenNegativeInitiative892-850.delta" sparkle:deltaFrom="850" length="5191758" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="CmdKm6NuX6OFw+PNNYG/Xlod2KIMUmdEcuoEnNOGvIJTRqO1dnqsGfLWqgudvN2E+p/9byJDDhBKpJOFjwsJBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.33</title>
             <pubDate>Tue, 25 Aug 2026 22:45:32 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
