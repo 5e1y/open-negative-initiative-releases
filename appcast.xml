@@ -3,6 +3,73 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.0</title>
+            <pubDate>Sat, 05 Sep 2026 19:47:09 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>931</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Nothing in this version changes the rendering of a photo you have already adjusted.
+What changes is what an exported file can contain: a new HDR switch adds a gain map to a JPEG,
+and each frame now carries the EXIF you set for it. Both are off or empty until you touch them.</strong></p>
+
+<h3>Open Negative Initiative leaves alpha</h3>
+
+<p>This is 0.1.0, the first beta. The orange "ONI is in Alpha" notice is gone from the card: the
+major defects reported through it have been fixed, and the export — the one part that still had
+to be reworked before saying so — has been rebuilt from the ground up. Bugs are still to be
+expected; please keep reporting them.</p>
+
+<h3>Export is a screen of its own</h3>
+
+<p>Export no longer opens a dialog. The photos about to be written take the whole card, one per
+row, and their settings sit in a panel on the right. Cancel and <strong>EXPORT</strong> are at the
+bottom right; Escape leaves, ⌘E confirms; a batch can be stopped between two files. The mode you
+came from — gallery or editor — is where you return.</p>
+
+<p>Three presets — <strong>Instagram</strong>, <strong>Display</strong>, <strong>Print</strong> —
+set every row at once and lock none of them. The size is typed as width × height, linked by the
+frame's shape: the edge you type is the one the ceiling rides on every photo of the batch, so
+Instagram's "1440 px on the short edge" lands a landscape and a portrait alike. Exports never
+enlarge. Your export settings are remembered between launches; the default is now JPEG in sRGB,
+the space every reader — Instagram included — agrees on.</p>
+
+<h3>The HDR hack</h3>
+
+<p>A checkbox on JPEG exports, on in the Instagram preset. It changes no pixel: the file gets a
+flat gain map, so an HDR screen — a recent phone, an XDR Mac — shows the picture up to two stops
+above the page's white, while every other reader sees exactly the same picture as without it.
+It is written in the form Instagram, Threads and X keep through their re-encode: post the file
+uncropped, from a desktop browser at original ratio. Whether Instagram accepts a given file is
+Instagram's to decide, and not published; the file matches what is known to pass.</p>
+
+<h3>EXIF, frame by frame</h3>
+
+<p>Beside each preview sits the frame's own line: its file name, camera, lens, film (picked from
+the catalogue), ISO, date, artist and copyright. It opens on the scanner's own EXIF — the body,
+ISO and date of the camera or scanner you digitised with — so you can see these are not the
+photograph's, and replace them. What you type is kept with the frame for the next export. Nothing
+of the scanner is written unless you leave it there. The naming pattern is gone: the name is a
+field of the frame's line.</p>
+
+<h3>Also</h3>
+
+<ul>
+  <li>A roll's film stock can no longer be unpicked by clicking the active one again: a roll was
+      shot on some film.</li>
+  <li>Export previews render at 1600 px instead of 500, so the picture can be judged.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.0/OpenNegative-0.1.0.zip" length="14296271" type="application/octet-stream" sparkle:edSignature="UUeGJ7bIyZKrgmtZoY8XSB+OEkD75NPoZGOYGuOWkG6xXDLcsQBs+/Pk2eSQU7o0hfvv64DMMfVRMlwWTpH2Dw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.0/OpenNegativeInitiative931-907.delta" sparkle:deltaFrom="907" length="2041882" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="EzI7OVmQV/0Z9Nk3P+XDmiuCfcKe5tHesyBCQiJGqiXlr+iRXgvgEvTd8RKhiB4I3Q75vgzspnAr1GsYuxS3AQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.0/OpenNegativeInitiative931-895.delta" sparkle:deltaFrom="895" length="2331794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="tGQnqk+2Srt11dL37CkxTg8kcxZ/lXQ3WTnzPyLxUDQTLM3D/bAuRlGjRj1KpjMAZyUmc46VVthxhBIZOze7AA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.0/OpenNegativeInitiative931-892.delta" sparkle:deltaFrom="892" length="2374342" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8eEn2fuVGorBVC1paPnEwAksFjtQNUZBicJUCgi5OzlyRbJFsd8rmm/7DtnJ8Lc+pJot7T1/Bc2/1WkbcrdWAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.0/OpenNegativeInitiative931-891.delta" sparkle:deltaFrom="891" length="3174326" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bUcb2SboKjaTD2y50VJU7p1SVTSsRqFb3mMoFOSSkNX/NMt4A4nhntYJIRYeffubF8+Pbr9j0a7Vqz6yp0MOAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.0/OpenNegativeInitiative931-877.delta" sparkle:deltaFrom="877" length="4847734" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="3pk5pDH8NcLq4spnkSeWCHDdC1IL6WPG0BSdFeWudKi6n7G4jGnnKex+WIrBEgntYQiID4pCS/3FHPXSjQOfDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.0.36</title>
             <pubDate>Wed, 02 Sep 2026 16:31:42 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
