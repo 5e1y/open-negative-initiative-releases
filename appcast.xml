@@ -3,6 +3,58 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.1</title>
+            <pubDate>Sun, 06 Sep 2026 17:27:08 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>934</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes the rendering of photos that carry dust or scratch corrections:
+their patches are now copied pixel for pixel and come out as sharp as the area they were taken
+from, where they were slightly soft before, and a small correction now shows in full on the fitted
+preview. Nothing else moves on a photo you have already adjusted: the two new controls rest at
+zero until you touch them.</strong></p>
+
+<h3>Corrections</h3>
+
+<p>A correction painted on a dust speck used to look blurred next to the grain around it, and a
+small one barely showed unless the photo was viewed at 100 %. Both are fixed: the patch is an exact
+copy of its source, and the fitted preview applies it fully whatever the brush size, cropped or
+turned frames included. The number of a correction now sits off the top-right of its ring instead
+of covering the pixels you are judging, and stays readable at any zoom. While the brush is over the
+picture, the system cursor hides and only the brush's circle remains.</p>
+
+<h3>Film fade</h3>
+
+<p>A new slider at the end of the Grade panel: the matte of a print that has aged. Blacks lift a
+little, whites come down, the highlights roll off into them, and the mid-tones stay exactly where
+your grade put them. It acts on the three channels alike, after the finishing balance, so very
+light tints set on the whites are compressed along with everything else up there.</p>
+
+<h3>Vignette</h3>
+
+<p>Also in Grade, in stops: darkens the corners of the print without shifting their colour, on an
+ellipse that follows your crop. Below zero it lightens them instead. The fade's floor bounds it,
+so a corner never falls under the faded black.</p>
+
+<h3>Automatic balance and flat-field</h3>
+
+<p>The automatic balance, the histogram under the levels and the marks shown on hover no longer
+see the flat-field mask: they read the frame before the correction, which is what you got by
+switching the mask off, clicking, and switching it back on. The picture and the output histogram
+keep the mask. A black point you place by hand on that histogram therefore describes the frame
+before the division, whose corners render a little lighter than the plot shows.</p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.1/OpenNegative-0.1.1.zip" length="14356908" type="application/octet-stream" sparkle:edSignature="f3Czd0mQAB7nV0PEavwwmrrFVjHWzFEdqBOQQxZ9j+8XHhUaY207Pf2GCHDoeHtiEPY1wOHmqeAbDChZpuBEBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.1/OpenNegativeInitiative934-931.delta" sparkle:deltaFrom="931" length="1451862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="iiuVy6reRvDY16DtgxylYCJtwoPx3yiCAVGPZw1nVsjYuCZnfZ8oiEG61tULZlwQNwQX6SuoVAe7kbi9Z3cNBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.1/OpenNegativeInitiative934-907.delta" sparkle:deltaFrom="907" length="2238210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hAGW1ylqlDrTTk/F/xfPgnawmVGozefGXKbM3UmaOXCJnmIu4I4Z4RugcBrO81jBz+nu+wX07yi+hEFoACmADQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.1/OpenNegativeInitiative934-895.delta" sparkle:deltaFrom="895" length="2498622" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TIDIadgMS+fi0XMe0YugBc1XDrxM8nQzo1mEMToVoCRbcboC7zoUZ8sktQvTB+eaTfbUQgn59jGPhGjoJi/BCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.1/OpenNegativeInitiative934-892.delta" sparkle:deltaFrom="892" length="2528850" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4Fub+aKZC8DfnkUmYxbOb3KvGOLr0qJ7cVF5qH080XF1YOzh41Yb+dCKgFw7qLYT3poZimMAK1C6Y3Ao3uZaCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.1/OpenNegativeInitiative934-891.delta" sparkle:deltaFrom="891" length="3339138" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WLSBl3tbCVrGfYvA1g3lL2AFfCelkBXhE1jA/Vc6EXd0HY8wiHRJt3tQRjNtyXnQlCbHlUuyP4DboUQuJB7iBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Sat, 05 Sep 2026 19:47:09 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
