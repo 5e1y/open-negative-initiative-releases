@@ -3,6 +3,40 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.2</title>
+            <pubDate>Sun, 13 Sep 2026 18:36:15 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>987</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Added a white balance measurement window: a cyan frame you place on the photo, and the
+automatic balance and the levels histogram read only what it holds. It follows the crop until you arm
+it, and travels with the framing copy and paste.</strong></p>
+
+<ul>
+<li>Added copy and paste of the framing — crop, straightening, rotation, mirrors and measurement window — onto the whole selection.</li>
+<li>Added an Effects block in Color, holding Contrast, Vignette and Film fade.</li>
+<li>Added Return to validate framing and the measurement window.</li>
+<li>Changed the slider tracks: half as tall, recessed, with a keycap knob that lifts under the pointer.</li>
+<li>Changed the Frame panel: aspect ratio first, rotation and mirrors on one row, copy and paste beside the block's reset.</li>
+<li>Changed the automatic balance keys into one plate, with the measurement window keys and a crop reminder on it.</li>
+<li>Fixed the bar's reset erasing the framing: the crop, the straightening and the window now stay.</li>
+<li>Fixed a new preset carrying the photo's white balance unasked: the save sheet opens on Not carried, and every preset label says what it carries.</li>
+<li>Fixed the vertical mirror key turning the whole key instead of its glyph.</li>
+<li>Fixed a photo belonging to several projects: it sits in one, the most recent, and joining another moves it.</li>
+<li>Fixed a stutter when hovering rolls and boxes with many photos in the gallery sidebar.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.2/OpenNegative-0.1.2.zip" length="14208363" type="application/octet-stream" sparkle:edSignature="mKPW6ulsNgqJEk/p8quB9nO/F7F1Hd5kT8EgIOBeVM3SAMff0unuyVHj3Jfv3DaRljG+hAdhn6lbxiSAEMM0CA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.2/OpenNegativeInitiative987-934.delta" sparkle:deltaFrom="934" length="2174710" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="O5ogKBx+W5D2I0TaaYMNonDG9c9KrL/FqM+3armYeMJ5ZY5/J158V18Cx7kAjSKP+2w5i4LKBZ9e6koFkLKQCg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.2/OpenNegativeInitiative987-931.delta" sparkle:deltaFrom="931" length="2299766" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dclx6qN6g5iQ2Iu0j3/UjwOsCEA1SWUOYoeqv7M4XbJJKVNMk7AA2SQoRCUFW9oNMy21pKxu9tEOdfn5ePteAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.2/OpenNegativeInitiative987-907.delta" sparkle:deltaFrom="907" length="2816294" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1KrRw23ieyZRc4gEGCScyCx1loeNbpRXOVuPj/aCAEtX438OtpZvTIYtOyM92P9yPXYlGitfHnI0dFQN/jMfBg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.2/OpenNegativeInitiative987-895.delta" sparkle:deltaFrom="895" length="2898002" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xSmIy621xqpq809eVob162w8ovAOZ+L3BnXKBTbmV+Dhi7FgSWUjK3NcfsDGcVX1sE3T4btiTYfgd1Zmw9yKDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.2/OpenNegativeInitiative987-892.delta" sparkle:deltaFrom="892" length="2936126" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="tHFkCo27CFModkUvbdYLlequkhCCKIcwFWGlU7sJlLN9YByquqB5fC0jJc2yUJR+sLuMUDY6wyPXHXUtR9dKDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Sun, 06 Sep 2026 17:27:08 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
