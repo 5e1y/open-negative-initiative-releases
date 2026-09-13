@@ -3,6 +3,25 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.5</title>
+            <pubDate>Mon, 14 Sep 2026 00:13:45 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>996</sparkle:version>
+            <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Fixed ⌘A in the editor's project filmstrip: it now selects the whole project instead of only
+the roll the current photo or selection sits in.</strong></p>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.5/OpenNegative-0.1.5.zip" length="14272095" type="application/octet-stream" sparkle:edSignature="GSZ8BKEry13KqXhonUNyKmrFw/dKCCgUFwIVaOX1L9xPv7gTaiQs7H2dkJeg0JDULEsrSf9MchvfX80ykxfiBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.5/OpenNegativeInitiative996-994.delta" sparkle:deltaFrom="994" length="1039886" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="R+aDr7/EF/AzV3dqkv7JTPpi47udzxTUAHwlglS/cZnkbzs+JvHmJCwru8cXBOZDBjjFl9C7E9gOdsRtlQLDAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.5/OpenNegativeInitiative996-991.delta" sparkle:deltaFrom="991" length="1300970" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ymnI6cXBpu09OfrgXqfRMsL3jlQPZSNYrWUPdZI7/RTjvjt2jUHN/Pl5iabYeE/4xr6WZIMhvMp1HmYeFcb0AA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.5/OpenNegativeInitiative996-987.delta" sparkle:deltaFrom="987" length="1429062" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rOY4qxGPr597vkEL2zaNYrrwz8Dw8U0fTAo3p03wZjFzk0teDPAQUdnDv4UC/IFgy9hlm/kmkM5jH3g4ABETBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.5/OpenNegativeInitiative996-934.delta" sparkle:deltaFrom="934" length="2319038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="SU8szra0b4dzru2R2yyYp7XTNxalj3TXDOcOBZ/8vOr+XrPm2JNaIwTtdK81gG6JMoKc3FO//T61SE4gDxFiAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.5/OpenNegativeInitiative996-931.delta" sparkle:deltaFrom="931" length="2414154" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="u/mCExkZ5kjCZWIuBrP1VN+fwyAw0nGjmFE0LurpkP109L5NdxsrKUoXAN8N6nlleAAS7kKkCjVZlr+L00P7AQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.4</title>
             <pubDate>Sun, 13 Sep 2026 21:27:37 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
