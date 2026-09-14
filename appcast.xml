@@ -3,6 +3,44 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.7</title>
+            <pubDate>Mon, 14 Sep 2026 18:44:14 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1025</sparkle:version>
+            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>The canvas now renders in your display's own colour space instead of sRGB, so saturated
+colours that used to clip on a wide-gamut screen now show. Exports and sidecars are unchanged, and
+View → Canvas Colour Space switches it back.</strong></p>
+
+<p><strong>The automatic balance reads on blocks: the measuring window is cut into 48 rows of square
+cells, each read by its median, so dust and specks never set a point, and the black and white points
+are placed on each cell's own tails, so a small light keeps its value. The pixel reading and its
+threshold are gone; the grid is drawn while the custom measuring window is armed.</strong></p>
+
+<p><strong>Exposure, in stops, is the first slider of the Lighting block: ±4 EV, hue held. What a stop
+adds or removes rolls into each pixel's distance to white, so a white stays a white in both
+directions and the mid-tones carry the stop: an under-exposed frame comes up without its highlights
+clipping, an over-exposed one comes down without greying. The colour density is compensated 20 % per
+stop both ways so colours keep their saturation. The luma gamma beside it is now named
+Midtones.</strong></p>
+
+<ul>
+<li>The bar's reset keeps the flat-field mask and the dye family: they describe the rig and the film, not the look.</li>
+<li>The balance keys no longer preview on hover; the marks under the levels show the balance applied by the last click, and the click runs off the main thread.</li>
+<li>The dye separation can be shouldered for comparison with the launch switch ONI_SEPARATION_SHOULDER=1.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.7/OpenNegative-0.1.7.zip" length="14381636" type="application/octet-stream" sparkle:edSignature="NCUSGIzd6vXxdGpHMh2BLD2BMcFOsR/FLP0eF4IVPB+h2k4jRlYjUohE7x03Zd1i6+j1QT70qt74Eku2sLxuCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.7/OpenNegativeInitiative1025-1003.delta" sparkle:deltaFrom="1003" length="1765162" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BW9V6Xyw66Nuo2jtr1NtjqiEDbOOkzwiVm1MexGe1EW7FqUGFV5wdfWIynkG0LgWz715ofsCeUak/+g87qJKAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.7/OpenNegativeInitiative1025-996.delta" sparkle:deltaFrom="996" length="1876398" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="nq4VqBazRH3M0so/EV6RavmIJLguaW69/8Mdx75R9VHFktKeehdas/AvCohgri0h4B86ZNkAEJYueExgwbU8Dw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.7/OpenNegativeInitiative1025-994.delta" sparkle:deltaFrom="994" length="1861650" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="oPFY/ZhOzlhYjfrEIJz3tUlhh9rQGA4KlwRXsJilyoUulHFmkfvtd+mvRJy2OUVrUYGqzb1AmkXf0axhzEY9AA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.7/OpenNegativeInitiative1025-991.delta" sparkle:deltaFrom="991" length="1948038" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6x14vG4ILiBBIfn0xdcGN3ukIq6Vbpy8lEbsxPD9B7aLvUI8hUJaw477Bqpxg9lk/Ow7ae00PtS9pGCIzRimAg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.7/OpenNegativeInitiative1025-987.delta" sparkle:deltaFrom="987" length="2016426" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="K4joEPS/2Q6ypWsYbXwIdVfWxVTBT/u64MbxLmJzuVXykfX/NfF4ugqvObQC0+/HQnoECItX9mOivPsag1XuAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.6</title>
             <pubDate>Mon, 14 Sep 2026 12:03:44 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
