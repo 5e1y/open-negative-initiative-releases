@@ -3,6 +3,30 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.9</title>
+            <pubDate>Mon, 14 Sep 2026 23:37:13 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1032</sparkle:version>
+            <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Reading the library no longer blocks. The index pass, a whole rebuild as much as a repair,
+shows on the status bar with its counter, and the gallery stays usable while the originals are
+read.</strong></p>
+
+<ul>
+<li>A member the pass could not read — an original on an unplugged disk, a moved file — made "Reading the library" appear on every medal, paste or reorder. It is now read again only when the library changes or on an explicit recheck.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.9/OpenNegative-0.1.9.zip" length="14398211" type="application/octet-stream" sparkle:edSignature="XYkJq31vKOXUdGtaMVhjBXSh5TySOfND/xPdc000DPBjl1nOLFKmoNxn4Wara/1ej9yIVJtkoT4zd0PHB7PKAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.9/OpenNegativeInitiative1032-1029.delta" sparkle:deltaFrom="1029" length="1111386" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="RIsYkGhld6mJf97/pb6E/oQRsaqScZFSZBfoyX31WTsNQgnX4DygkMtt0o8UIaf9dKGrHIvixjZDGQ8X50cmDA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.9/OpenNegativeInitiative1032-1025.delta" sparkle:deltaFrom="1025" length="1358226" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ybf5H/B/zmzxSo063AuizzElXnvW6bmXqwV8ce26P3P8fB9KB9APR5WaIvAB0ICFeihYTnZLseYSOsvBCqqiDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.9/OpenNegativeInitiative1032-1003.delta" sparkle:deltaFrom="1003" length="1863998" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0xsvHIQHQS708/hoaGFT+8s7e6sKgburBDG3e+CUzj4cQw1tbz8xEnFPibMFXCjvl6S1SUQsNkYrMNbe1rE0BQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.9/OpenNegativeInitiative1032-996.delta" sparkle:deltaFrom="996" length="1955006" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="V74oNqI9T0xAmWU08hPt3TXsDvCYuLmwcKH00oxDhC9IZ4TME95N7jOwjZ9rtj0s6d9iCYVjKodpv6lSHspGBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.9/OpenNegativeInitiative1032-994.delta" sparkle:deltaFrom="994" length="1989338" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="VTWCuMAp1G+NZpU2LDeGVUj4Fnf05Uz1jV5aOUk3K0a/R6+FdeqIMbL8ZTpBHyfZBE7FeWYgLqYXODwPczZ9AQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.8</title>
             <pubDate>Mon, 14 Sep 2026 22:03:19 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
