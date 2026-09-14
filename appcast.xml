@@ -3,6 +3,33 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.1.8</title>
+            <pubDate>Mon, 14 Sep 2026 22:03:19 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1029</sparkle:version>
+            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>The automatic balance on a contact sheet reads the roll, not its worst frame. Each frame's
+window is read on a copy fine enough to give it 24 rows of cells, and the black and white points are
+taken at the tenth across frames, so one blank or under-exposed frame no longer sets every other's
+black, and a speck in one frame no longer pulls one channel's white.</strong></p>
+
+<ul>
+<li>A cropped contact sheet lost every frame window and read its black margins as picture, which put the black point on them; the sheet is now rebuilt from the crop and its frames kept.</li>
+<li>The block grid's cell is a fixed 19 px of the measuring copy: a sheet's frame no longer shrinks to 2 px cells whose extremes were single pixels.</li>
+<li>With the measuring window armed on a sheet, every frame's window and grid is drawn, cut exactly as the balance reads them.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.8/OpenNegative-0.1.8.zip" length="14406426" type="application/octet-stream" sparkle:edSignature="Fg09JNvqbBMedHENQQI4W9Aa34hYBr1fv8WUH0ybaXNhhaW+j3CkrU3DO/DKOexHju0jJCnT2UDUNHUHDEEKDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.8/OpenNegativeInitiative1029-1025.delta" sparkle:deltaFrom="1025" length="1277710" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="5ldkwccRmH1lhjDsUc5zEiK9D5oEwfc+GVwKZOOjwnE7hU/cv7W/FUe8qF4vX9mbcEPQRsvCFqpzEVjr93NvBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.8/OpenNegativeInitiative1029-1003.delta" sparkle:deltaFrom="1003" length="1835222" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HTOypYiXnhdA6oxYw/I8AxoonNLs9HKc3qArN/G47WXCFG7tQi93SkyLhuqzVtVVnatZg+rht325/xn4eAUOAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.8/OpenNegativeInitiative1029-996.delta" sparkle:deltaFrom="996" length="1908826" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="2eb1VDNIslfEy84muW+e+5sf6FIU2Kp+VWI4ZX33RZlTpPtxqYpHGpO7OQEAOcnARztgGc8uvCN6lM62KMxlCg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.8/OpenNegativeInitiative1029-994.delta" sparkle:deltaFrom="994" length="1949726" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Gp3p1UU8ggxuEUQZKq4siPmvOv5Cx3or8xWrdi+RZ5yAZ5zI7ekhK4KypColceRze6cZ4w3uJDceRMUMaHCbCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.1.8/OpenNegativeInitiative1029-991.delta" sparkle:deltaFrom="991" length="2002914" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gW4a6cVVHZHel1ykfR/lFPditIECVqQnveQr1po06ZiMWJzIdGMGYoOS6len+2M/1sLAb+Lhr2SONjJoEOi+Aw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.7</title>
             <pubDate>Mon, 14 Sep 2026 18:44:14 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
