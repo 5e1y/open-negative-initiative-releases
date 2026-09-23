@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <!-- Through the website, which counts the click and redirects — the file still comes from this
+  <!-- Through the website, which counts the click and redirects; the file still comes from this
        repository's latest release. Measured 18 August 2026: `download_count` counts bytes served to
        anything that asks, and could not tell this button apart from a crawler or from Sparkle
        updating an existing copy. `t=readme` names this button; the referring host separates the
@@ -69,92 +69,92 @@ macOS 13 Ventura or later, on Apple Silicon or Intel: one universal build for bo
 
 **Converting**
 
-- **Negative, positive, black &amp; white** — the frame's own nature, set in the top bar, not a preset.
-- **Automatic balance, six ways** — Classic, Mids, Highs, Whites, Body and their average. Each wins
+- **Negative, positive, black &amp; white.** The frame's own nature, set in the top bar, not a preset.
+- **Automatic balance, six ways.** Classic, Mids, Highs, Whites, Body and their average. Each wins
   on films the others lose; none is right everywhere, which is why there are six. They read the
   measuring window in square cells, each taken by its median, so dust and specks never set a point.
-- **A measuring window of your own** — a cyan frame you place on the photograph, after which the
+- **A measuring window of your own.** A cyan frame you place on the photograph, after which the
   balance and the levels histogram read only what it holds. It travels with the framing copy and paste.
-- **Source balance** — per-channel gains, ±3 stops, where a dichroic head would act.
-- **Per-channel levels** — black, shadows, midtone, highlights and white, placed on a density axis
+- **Source balance.** Per-channel gains, ±3 stops, where a dichroic head would act.
+- **Per-channel levels.** Black, shadows, midtone, highlights and white, placed on a density axis
   you can read, with the histogram measured before the handles so it does not move under them.
-- **Density ceiling** — how far up the axis is read, to pull separation out of a burnt patch.
-- **Dye separation** — a crosstalk matrix that subtracts each dye's spill into the other two
+- **Density ceiling.** How far up the axis is read, to pull separation out of a burnt patch.
+- **Dye separation.** A crosstalk matrix that subtracts each dye's spill into the other two
   channels, so colours separate while greys stay where they are. Five families (Kodak C-41,
   Fuji C-41, Generic C-41, ECN-2 and E-6), dosed from 0 to 200 %.
-- **Manual curves** — five channels, drawn by hand, on a natural cubic spline.
-- **Flat-field correction** — a mask divided out before anything else, for the lighting of the rig.
+- **Manual curves.** Five channels, drawn by hand, on a natural cubic spline.
+- **Flat-field correction.** A mask divided out before anything else, for the lighting of the rig.
 
 **Grading**
 
-- **Exposure in stops** — ±4 EV with the hue held, so a white stays white in both directions and the
+- **Exposure in stops.** ±4 EV with the hue held, so a white stays white in both directions and the
   mid-tones carry the stop. Then the two end points, shadows, highlights and midtones.
-- **Colour** — temperature and tint as filters, plus colour density, acting after the conversion.
-- **Effects** — contrast, vignette and film fade. The contrast is a normalised logistic, monotone
+- **Colour.** Temperature and tint as filters, plus colour density, acting after the conversion.
+- **Effects.** Contrast, vignette and film fade. The contrast is a normalised logistic, monotone
   and pinned at both ends, so it cannot clip.
-- **Spectrogram finishing** — eight points on a wheel, one per colour range: the angle is that
+- **Spectrogram finishing.** Eight points on a wheel, one per colour range: the angle is that
   colour's hue, the distance from the centre its saturation, and a second point on the same spoke
   its luminance.
-- **Finishing balance** — five zones per channel, black to white, where a middle band is held
+- **Finishing balance.** Five zones per channel, black to white, where a middle band is held
   against the end points rather than allowed to overtake them.
-- **Zone saturation** — saturation split on luminance, shadows to highlights.
+- **Zone saturation.** Saturation split on luminance, shadows to highlights.
 
 **Detail**
 
-- **Chroma denoise** — colour noise only; the luma comes out bit-identical, so grain survives.
-- **Sharpening and texture** — dosed in full-resolution pixels, with a loupe that renders at 1:1
+- **Chroma denoise.** Colour noise only; the luma comes out bit-identical, so grain survives.
+- **Sharpening and texture.** Dosed in full-resolution pixels, with a loupe that renders at 1:1
   because no fitted preview can show what the exported file will get.
 - **The canvas renders in your display's own colour space**, so saturated colours that would clip on
   a wide-gamut screen show. View → Canvas Colour Space puts it back; exports are unchanged either way.
 
 **Correction**
 
-- **Dust and scratches** — a round brush, and nothing scans the photograph looking for defects: your
+- **Dust and scratches.** A round brush, and nothing scans the photograph looking for defects: your
   stroke is the only detector. A classical search on the GPU then finds a matching patch elsewhere
   in the same frame and copies it pixel for pixel. No neural network. Each correction is numbered
   and listed, so you can take one back without taking back the rest.
 
 **Framing**
 
-- **Crop, straighten, quarter turns, two mirrors** — at 3:2, 4:3, 1:1, 6:7, 5:4 or free. The whole
+- **Crop, straighten, quarter turns, two mirrors.** At 3:2, 4:3, 1:1, 6:7, 5:4 or free. The whole
   photograph stays visible under an angle, and a locked ratio is reapplied on every quarter turn.
 - **Copy and paste a framing** over a whole selection, which is what a copy stand wants.
 
 **Archive**
 
-- **Sidecars are the truth** — one JSON beside each original; the index is a cache you can throw
+- **Sidecars are the truth.** One JSON beside each original; the index is a cache you can throw
   away without losing an adjustment, and it rebuilds itself from the sidecars.
-- **Rolls** — group frames with ⇧⌘G and name it; the gallery cuts on rolls, not days. A roll carries
+- **Rolls.** Group frames with ⇧⌘G and name it; the gallery cuts on rolls, not days. A roll carries
   its own film stock, shot date and camera body.
-- **Boxes** — virtual containers that nest above rolls, and never folders on disk.
-- **Projects** — frames pulled across rolls, each photograph sitting in one project.
-- **Medals** — Bronze, Silver and Gold, set on a photograph or a whole selection, with a filter in
+- **Boxes.** Virtual containers that nest above rolls, and never folders on disk.
+- **Projects.** Frames pulled across rolls, each photograph sitting in one project.
+- **Medals.** Bronze, Silver and Gold, set on a photograph or a whole selection, with a filter in
   the top bar that shows one tier and no other.
-- **Drag and drop** — move a photograph into any roll or day by dropping it there, and import by
+- **Drag and drop.** Move a photograph into any roll or day by dropping it there, and import by
   dragging files or a whole folder from the Finder anywhere in the window.
-- **A grid of six or twelve columns** — six because a strip of film is cut into six frames, twelve
+- **A grid of six or twelve columns.** Six because a strip of film is cut into six frames, twelve
   for sorting a roll rather than judging one frame.
 - **The library is read off the main thread**, so the gallery stays usable while the originals are
   read, and the index pass shows on the status bar with its counter.
 - **A moved or unplugged original is found again by its fingerprint**, not by its file name.
-- **Contact sheets** — a selection laid six to a row in one scene-linear TIFF, imported and edited
+- **Contact sheets.** A selection laid six to a row in one scene-linear TIFF, imported and edited
   as one photograph. The balance reads each frame through its own window rather than the sheet as
   one picture, and the gaps export black.
-- **Presets** — one file each, shared by sending it. Five film presets ship with the app: Azure,
+- **Presets.** One file each, shared by sending it. Five film presets ship with the app: Azure,
   Cinestill 800T, Gold 200, Portra 400 and Redscale.
-- **Copy and paste settings** — row by row, over a whole selection. A copy carries only what the
+- **Copy and paste settings.** Row by row, over a whole selection. A copy carries only what the
   source photograph actually moved.
 
 **Exporting**
 
-- **A screen of its own** — one row per photograph, their settings in a panel beside them, the size
+- **A screen of its own.** One row per photograph, their settings in a panel beside them, the size
   each file will weigh estimated from its preview, and a batch you can stop between two files.
 - **16-bit TIFF or JPEG**, in sRGB, Display P3 or Adobe RGB. Exports never enlarge: a size above the
   original is brought back to the original.
-- **Three presets** — Instagram, Display and Print set every row at once and lock nothing.
+- **Three presets.** Instagram, Display and Print set every row at once and lock nothing.
 - **An HDR gain map** on JPEG exports. It changes no pixel: an HDR screen shows the picture up to
   two stops above the white of the page, and every other reader sees exactly the same picture.
-- **Seven EXIF fields per image** — camera, lens, film picked from a catalogue of 41 stocks, ISO,
+- **Seven EXIF fields per image.** Camera, lens, film picked from a catalogue of 41 stocks, ISO,
   date, artist and copyright. The line opens on the scanner's own EXIF so you can see whose facts those are and
   replace them, and nothing of the scanner is written unless you leave it there.
 
@@ -162,7 +162,7 @@ macOS 13 Ventura or later, on Apple Silicon or Intel: one universal build for bo
 
 Open the DMG and drag the app onto the Applications folder beside it. If macOS says it cannot
 verify the app, open **System Settings → Privacy & Security**, scroll to the bottom and click
-**Open Anyway** — right-click → Open no longer does this on recent macOS.
+**Open Anyway**. Right-click then Open no longer does this on recent macOS.
 
 The app looks for updates on its own and never installs one without asking. Release notes are shown
 before you accept, and their first line always says whether a version changes how a photograph you
@@ -172,23 +172,23 @@ have already adjusted will render.
 
 Open an [issue](https://github.com/5e1y/open-negative-initiative-releases/issues). Two things make a
 report usable: **the version**, which the About window reads on its own, and **the RAW file** if it
-is a colour or decoding problem — a screenshot shows the symptom, the file reproduces it.
+is a colour or decoding problem: a screenshot shows the symptom, the file reproduces it.
 
 A picture that opens flat or nearly white is worth reporting even though nothing crashed.
 
 ## Source code
 
-**Not in this repository** — this one holds the builds and the update feed. The app is licensed
+**Not in this repository.** This one holds the builds and the update feed. The app is licensed
 **GPL-3.0**, and **every release carries its own source archive**, attached to that release as
 `OpenNegative-<version>-source.zip`. The versions published before the archive existed have been
 given one too, so there is no build you can install and not read.
 
 **Take the file with `-source` in its name**, not the "Source code (zip)" GitHub attaches on its
-own: that one archives *this* repository — binaries and an update feed — and holds no Swift at all.
+own: that one archives *this* repository, binaries and an update feed, and holds no Swift at all.
 
 Each archive is built in the same pass as the binary it ships with, so what you read is the tree
 that produced the build you are running and not whatever it became afterwards. Inside: the Swift
-sources, the Metal kernels, the resources, the package manifest and the Makefile — and none of the
+sources, the Metal kernels, the resources, the package manifest and the Makefile, and none of the
 tooling that is specific to my own machine.
 
 **One piece is missing, and it is worth knowing before you start.** The keycap button component
