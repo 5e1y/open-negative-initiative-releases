@@ -12,8 +12,6 @@
 <p align="center">
   <a href="https://github.com/5e1y/open-negative-initiative-releases/releases/latest">
     <img src="https://img.shields.io/github/v/release/5e1y/open-negative-initiative-releases?style=flat-square&color=E26D1F&label=version" alt="Latest version"></a>
-  <a href="https://github.com/5e1y/open-negative-initiative-releases/stargazers">
-    <img src="https://img.shields.io/github/stars/5e1y/open-negative-initiative-releases?style=flat-square&color=E26D1F&label=stars" alt="Stars"></a>
   <img src="https://img.shields.io/badge/status-beta-E26D1F?style=flat-square" alt="Beta">
   <img src="https://img.shields.io/badge/macOS-13%2B-E26D1F?style=flat-square" alt="macOS 13 or later">
   <img src="https://img.shields.io/badge/Apple%20Silicon%20%C2%B7%20Intel-universal-E26D1F?style=flat-square" alt="Universal binary">
