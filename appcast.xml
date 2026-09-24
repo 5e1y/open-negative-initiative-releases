@@ -3,6 +3,49 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Thu, 24 Sep 2026 21:12:22 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1147</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Photos already adjusted can look different: a dye separation left at its former 100 % rest now opens at 67 %, the new rest; a dose you chose yourself is kept. The editor now always shows the picture through the working space, Display P3 unless you pick another.</strong></p>
+
+<h2>Much faster, everywhere</h2>
+
+<ul>
+<li>Editing: a slider redraws only itself and the picture, at up to 120 frames a second.</li>
+<li>Library: the grid, the film and project trees and the filmstrip scroll at 120 frames a second, and thumbnails appear at launch without a scroll.</li>
+<li>Memory: opening a large RAW uses about half as much, full resolution is built once and only when the zoom needs it, and walking a roll never decodes the frames it crosses.</li>
+<li>Smoother on smaller Macs: the cache follows the machine's memory and is handed back when the system asks.</li>
+</ul>
+
+<h2>Colour management</h2>
+
+<ul>
+<li>One working space for editing and export, changed from the chip at the top of the picture: sRGB, Display P3, Adobe RGB, or a Custom printer or paper profile, converted in relative colorimetric with black point compensation.</li>
+<li>Paper Profiles: official profiles from several paper makers, listed from their own pages and installed in one click; Load a Profile takes .icc, .icm or a maker's zip.</li>
+<li>A lime key in the bar stripes what this screen cannot show.</li>
+</ul>
+
+<h2>Also</h2>
+
+<ul>
+<li>Presets: share one as a line of text, import, export, duplicate; delete and update ask first.</li>
+<li>Space opens a photo from the library again, and a held Space on the correction tab no longer beeps.</li>
+<li>A frame opened at a zoom that needs full resolution now loads it without another zoom.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.0/OpenNegative-0.2.0.zip" length="15785080" type="application/octet-stream" sparkle:edSignature="tlI5hYI3gM+o5QQJCQvtlY/fIILgizRSDSi6meUlOCHvSG5V84NPNa6kdZhxo6HhZG020ZYBR4QWbbT+J1EACw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.0/OpenNegativeInitiative1147-1032.delta" sparkle:deltaFrom="1032" length="6946430" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="c3hZu7zLjjR2oSg2QbqM2DpaouvlsMIQbMGNiBYdS0/k+sKFF3BlhOi2Hj/PwkYW6X0TqKa+HaUxXtXW7riMAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.0/OpenNegativeInitiative1147-1029.delta" sparkle:deltaFrom="1029" length="6935222" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="pZwgL66LbW4uCRLb3OCTaTGV2SOcrCytTMYxE/+ap30j6m6PePJrJzlJ6+B3I4I8nkOBVEy9eaDwATE9BALqAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.0/OpenNegativeInitiative1147-1025.delta" sparkle:deltaFrom="1025" length="6949506" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="X0qjL4b8DRO1/ZozMIjndJNe92xWdgT3Yvd92yBtoq+a3O95IXet6ZLeKTbXjdzMM2BhQlOXXoOt2VCnip7jAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.0/OpenNegativeInitiative1147-1003.delta" sparkle:deltaFrom="1003" length="7034670" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="r/vnVYUs7vGfy8m8qv9fO6CPdulWXa1q6ZO85HgjFsApCZiD750rX+PNZGn0ed3DK99+Vj4LJ39c0A7COe2zBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.0/OpenNegativeInitiative1147-996.delta" sparkle:deltaFrom="996" length="7059350" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="VFe5Xb9dJxBjXeueh4IfBzBJ1uenLCsP7KcNoWKUTYQDRGOjc6fSlrotwOJaggitn46YBJCnr5hev1TNj9hbCQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.9</title>
             <pubDate>Mon, 14 Sep 2026 23:37:13 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
