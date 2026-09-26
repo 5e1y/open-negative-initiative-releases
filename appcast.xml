@@ -3,6 +3,52 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.2.3</title>
+            <pubDate>Sat, 26 Sep 2026 21:44:10 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1248</sparkle:version>
+            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Photos already adjusted may look different in three cases. Chroma denoise is now on by default (4 px, 20 %): a photo where it had never been touched opens with it on. Paper simulation is gone: a photo that used it loses it. Color cast becomes each channel's own black and white points, and lands very close to its former render.</strong></p>
+
+<h2>Lighting</h2>
+
+<ul>
+<li>New Mids slider, which lifts or lowers the middle of the curve.</li>
+<li>New Black point and White point sliders. They move the ends of the scan itself, as a darkroom black point does, on the RGB curve or on one channel. They replace Color cast.</li>
+<li>Every Lighting slider is finer near the middle and stronger toward its ends, with the same full range.</li>
+<li>New photos start with the black point lifted 6 %, so an automatic balance no longer crushes the deepest shadows. Photos already edited keep their black.</li>
+</ul>
+
+<h2>A simpler panel</h2>
+
+<ul>
+<li>Three tabs: Settings (flat-field and dye separation), Color, and Details (sharpening, chroma denoise, texture). Frame and De-dust open from the header. Every photo opens on Color.</li>
+<li>Blocks fold with the chevron in their title row. Flat-field, Dye separation, Curves, Spectrogram finishing and Zone saturation start folded.</li>
+<li>Spectrogram finishing and Zone saturation now close the Color tab.</li>
+<li>The manual balance opens right under the automatic balance keys with the new SETTINGS key.</li>
+<li>Resets are small keys marked RESET.</li>
+</ul>
+
+<h2>Also</h2>
+
+<ul>
+<li>Flat-field: load your own masks under the Custom tab.</li>
+<li>The measuring window can be copied and pasted onto another photo.</li>
+<li>The custom window key reads Apply window while you draw it.</li>
+<li>Gold seals mark what changed; Help › Show What's New Again brings them back.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.3/OpenNegative-0.2.3.zip" length="16010919" type="application/octet-stream" sparkle:edSignature="U70j0jnvAydFP8u1zb8v2LiUwx49QEx5TS5CxLQGfHnGc/d40omBLaCZII7A/wqdDFY6oYcYpeVfLKBzSMsRAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.3/OpenNegativeInitiative1248-1216.delta" sparkle:deltaFrom="1216" length="2678210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Ifi8NeJR/A0goB0Bfd/rtKi03dte0frhB01dFXWm/m5N8UQ3tdj7m596S8r+XzOHsj9mUVottK/KjKjIk4ARCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.3/OpenNegativeInitiative1248-1148.delta" sparkle:deltaFrom="1148" length="3463958" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FYgUvYmXIO8/kc86EjadR4RlHirdnpMo4g1JtxL+QN+ongANUkIP5aaUBgPL5C16Sjl/PrTQuuN2bZ3Af+ibBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.3/OpenNegativeInitiative1248-1147.delta" sparkle:deltaFrom="1147" length="3514738" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Vdj5r4O3Fy3H2PfjYxqbmnpbVzKVFeUQWzvpwGxE48tPGQdBVl4UXXy4Kh3ZeLzN3FE5jAk5zPbsuJHZp3Y6Cg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.3/OpenNegativeInitiative1248-1032.delta" sparkle:deltaFrom="1032" length="7703498" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MlJHuezX/k7Yx20VOTWXkbsC5MNM0RCJ4KkXQ+E/g53TF9E5MllHfAPkWXT5XbOX22RvNIxDBpoRy/wq9DrNBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.3/OpenNegativeInitiative1248-1029.delta" sparkle:deltaFrom="1029" length="7703846" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="IgV/awrdCmMNT/R783QEPHey6UhaW+Srr8h45aEGN1TQirbfq82Djb75H+ng4N7zZc8+sxxl2n77L48vqtTRAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.2</title>
             <pubDate>Sat, 26 Sep 2026 16:15:39 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
