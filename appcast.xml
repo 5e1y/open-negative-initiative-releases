@@ -3,6 +3,55 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.2.2</title>
+            <pubDate>Sat, 26 Sep 2026 16:15:39 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1216</sparkle:version>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Photos already adjusted will look slightly different. Lighting replaces the former exposure, linked levels and finishing balance: each photo is converted to the new controls as it opens and lands very close to its former render, except a black or white point that clipped, which now stays on pure black or pure white. RAW files are decoded without the decoder's own sharpening and with stronger colour noise reduction, and sharpening now rests at 1.</strong></p>
+
+<h2>Fixed</h2>
+
+<ul>
+<li>Pressing any key in the app crashed it on every Mac but the one that built it, whenever key clicks were on. If 0.2.1 crashed for you, this is the fix.</li>
+</ul>
+
+<h2>Lighting</h2>
+
+<ul>
+<li>One RGB curve shaped by six sliders — Exposure, Contrast, Highlights, Shadows, Whites, Blacks — and the same six on each channel's own curve, picked above the sliders.</li>
+<li>Colour holds as the light changes: a brighter or darker area keeps its saturation, and so does a vignetted corner.</li>
+<li>Blacks and Whites move one end of the curve behind a soft toe or shoulder, leaving the other end where it is.</li>
+<li>Film fade becomes Paper simulation: a paper's white and black, laid on Lighting's curve.</li>
+</ul>
+
+<h2>Grade and flat-field</h2>
+
+<ul>
+<li>Color cast tints the blacks and the whites apart, one channel at a time, and never clips.</li>
+<li>The flat-field mask takes Temperature and Tint to match your light panel, and your last Amount, Temperature and Tint follow every new photo.</li>
+</ul>
+
+<h2>Also</h2>
+
+<ul>
+<li>Contact sheets edit as smoothly as any photo.</li>
+<li>Opening a photo slides the panels in at once while the controls load.</li>
+<li>Medals are small metal discs; a gold seal marks what changed in this version, and Help › Show What's New Again brings the seals back.</li>
+<li>Presets list what they carry by tab, in the order of the panel.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.2/OpenNegative-0.2.2.zip" length="16076407" type="application/octet-stream" sparkle:edSignature="QLGGQmKoqLI7yLIVBdxB/hSu3qd1Ah+ySzwJZOJrpX7i8gnJ3ts1LNEtkJlqO5/IKNTOUNoA+FBTs1OdVYdJAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.2/OpenNegativeInitiative1216-1148.delta" sparkle:deltaFrom="1148" length="2880930" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="neEgZohlNKmqyLU5hryOIEe0RwxB0v0dvko3AP3faazhRM93iVF0l9uvjYBhvspwweQ+fv/9322aEQSI/+QmBg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.2/OpenNegativeInitiative1216-1147.delta" sparkle:deltaFrom="1147" length="3102862" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="x9VR9m+Cvqi54sKPsCxvz9GWL3QLWOiw1Alhe2XY2z2Xs2D95AtlFat5wN968TMlNqIA9TuiFiFxftuEJFT6Aw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.2/OpenNegativeInitiative1216-1032.delta" sparkle:deltaFrom="1032" length="7412094" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MxqYCsnZ0K5nu7fhfTTSIx0ksEl+kf4aD2IFApz6tKuPPugZiOATrhCbT0fBMoxO/xZEWQ5auV8WChmGx2JnAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.2/OpenNegativeInitiative1216-1029.delta" sparkle:deltaFrom="1029" length="7416458" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FDLOLoQHaz7m0ekfV6+NbAr4VJ9/AVr7ktBwTdZack8Ih1R8vA9xu+Bo0CTNVGUFcW4bbBJ9SNx7wpmbCY60BQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.2.2/OpenNegativeInitiative1216-1025.delta" sparkle:deltaFrom="1025" length="7422906" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hrQGl9kp4mdprqeNVRPzpMwh5cpr4yJK5z5ZV2/3Gtexxeg9KRKLVfPnojOcXNUd+Uo6/KxuKE6MFg5kvG+pBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.1</title>
             <pubDate>Thu, 24 Sep 2026 21:38:19 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
