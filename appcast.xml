@@ -3,6 +3,29 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.3.1</title>
+            <pubDate>Sun, 27 Sep 2026 21:54:23 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1267</sparkle:version>
+            <sparkle:shortVersionString>0.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>No change to the rendering of photos already adjusted.</strong></p>
+
+<ul>
+<li>A photo with no white balance yet opens with the custom measuring window drawn, so you can set where the balance reads first. Pressing a balance key closes it. It happens every time such a photo is opened, until it has a balance.</li>
+<li>The header's first key reads EDITOR or GALLERY instead of an icon.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.1/OpenNegative-0.3.1.zip" length="17135414" type="application/octet-stream" sparkle:edSignature="vxBuuce0s8X/mEXbKOtg8Ubwg3Y/w/MI1VR8/77RtQQ/6NArZgDa5kBfI9NHRiwf2Z1rYqkroHce9wGA/QIaCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.1/OpenNegativeInitiative1267-1266.delta" sparkle:deltaFrom="1266" length="774274" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TBbR+g5eVn9lUl9802I1DLeoYcl6R/feNsj2ZCQC5qV3u0Oc9jd7odlNsRUz75pAkKa+E8BbrZ4AkjwCGVbHCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.1/OpenNegativeInitiative1267-1248.delta" sparkle:deltaFrom="1248" length="3799418" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="QVFEl124JlKapiJ54o4Mz1XddeGW6KiQ4/O6axOFMmguoNuYsJbQaS+u4eEhcd3jpf3yMm1D6sup6K969GP2DQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.1/OpenNegativeInitiative1267-1216.delta" sparkle:deltaFrom="1216" length="4421758" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="50QaUsNjecIily2ooOyBR0f/H5UzlNZmVLM2xq3FkEjIlVysfbKEC/Cuk4yIE3UsRF3tLd+hZEjXadVIijAgCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.1/OpenNegativeInitiative1267-1148.delta" sparkle:deltaFrom="1148" length="4961834" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="E518Glxs7IpTqsUQs5oKzw+kym90QP89YvtCRl6xRGbCbyhCL5jdeYH29AhFvlw05KM+hZYVka9UOQosfMlAAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.1/OpenNegativeInitiative1267-1147.delta" sparkle:deltaFrom="1147" length="4983962" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="VHyY7GwGgKZrJi22wvR3cWOVm18H0GHyYiJykXw+MGbOvEJ3Do5yUFsiNXAisSU7jy8bFD1QRbVFSZ33Ym3eAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.0</title>
             <pubDate>Sun, 27 Sep 2026 20:18:45 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
