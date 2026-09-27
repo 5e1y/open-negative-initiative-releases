@@ -3,6 +3,58 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.3.0</title>
+            <pubDate>Sun, 27 Sep 2026 20:18:45 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1266</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Photos already adjusted may look different in three cases. Zone saturation becomes the Saturation curve: its two sliders open as points on the curve and render almost exactly as before. Lighting's Contrast now runs from −0.50 to +0.50: a photo contrasted further opens at the end of the track. Contact sheets are rendered without sharpening and chroma denoise, their values kept.</strong></p>
+
+<h2>Your library follows your disk</h2>
+
+<ul>
+<li>Pick the folder that holds your scans: every image in it and in its subfolders is in the archive, with nothing to import. Pick it wide enough to hold every scan, but not your whole disk.</li>
+<li>The archive tree is that folder's own tree, in the Finder's order. Right-click a folder to make it a roll.</li>
+<li>New Roll from a selection makes a folder beside the photos, named after the earliest capture, and moves them in. ⌘Z in the gallery puts them back.</li>
+<li>Rename a roll and the folder is renamed on your disk. Its stock, date and camera are kept in the folder.</li>
+<li>A library made with an earlier version is shown, once, how to pick its folder and which photos no folder holds yet.</li>
+<li>The library column shows photos as names, two thumbnails a line, or one, and replaces the filmstrip.</li>
+</ul>
+
+<h2>Scanner</h2>
+
+<ul>
+<li>A Scanner face beside Pro, switched from the centre of the header: ONI, Noritsu and Frontier keyboards with their own looks, colour and density keys, framing and flat-field.</li>
+<li>Chrome, a new Effects slider up to 150 %, greys the very ends and keeps colour in the middle. The scanner opens a photo at 50 %, ONI's at 100 %.</li>
+</ul>
+
+<h2>Colour</h2>
+
+<ul>
+<li>The Saturation curve: five points from the black point to the white, placed freely, over the histogram. Brightness and hue never move.</li>
+<li>Pasting settings re-places each channel's black and white points with the balance key the copied photo last used, and carries its gains and middle points as they are, so a roll's look travels frame to frame.</li>
+<li>Automatic balance is now Auto Balance, marked START HERE.</li>
+</ul>
+
+<h2>Also</h2>
+
+<ul>
+<li>Flat-field masks can be renamed, their folder opened, and a mask made from a photo of your library can move that photo out of it.</li>
+<li>The header's reset reads RESET SCAN.</li>
+<li>The app no longer ships presets; the ones it installed are moved to the Trash if you never changed them.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.0/OpenNegative-0.3.0.zip" length="17132629" type="application/octet-stream" sparkle:edSignature="YQMzftg2JW/NamcUyzfnyhlsLVOzWMfu8HeRy+TcKHRzn+9VYYbNDG8eq3ICPALm2sxmiBfFBYMtFUP4OaIQCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.0/OpenNegativeInitiative1266-1248.delta" sparkle:deltaFrom="1248" length="3799934" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Sf6Aw5e9pldjAxp4c6RL5ELUF5Nn04Kq8OugBP+7rNLxOYpJcSKqxzFOn5sl6fTrb2a3r+RsaQIyTwt6fJ9pAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.0/OpenNegativeInitiative1266-1216.delta" sparkle:deltaFrom="1216" length="4412614" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gYHBBZ5w+5JjTlIi7/vhlGAKBaeTTWR3Y0K2ErArTYdYQMDZYVB+YpYqpzLZFLwyLCuQpCE+iet5IhT5P5dqDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.0/OpenNegativeInitiative1266-1148.delta" sparkle:deltaFrom="1148" length="4967270" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AFV0V1HFtQrJXrIWf4SWrgVgpYvhflQ3dIWYLm0bUzgQwGR9TRXYF9Zv0khOqQDkzFvojbesGsg+7YAlrFlDDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.0/OpenNegativeInitiative1266-1147.delta" sparkle:deltaFrom="1147" length="5003462" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ae0wmEQXDQWw0avL8isNIH+u/ZlqLB51L9jNdaO8yx5JG1lzk3J8WREt2JTqsHbTcvVgGr88D0dPnEUjLNNcDA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.0/OpenNegativeInitiative1266-1032.delta" sparkle:deltaFrom="1032" length="8698210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NnaXaAtowLTyZq74xkKh2RmA0v4vcH6RXLj++px3nk5g22Txf8n2rZNpDsdePH2PgbybXCFCGURbXhL6KVr5Bg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.2.3</title>
             <pubDate>Sat, 26 Sep 2026 21:44:10 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
