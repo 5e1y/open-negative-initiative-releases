@@ -3,6 +3,46 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.3.2</title>
+            <pubDate>Sun, 27 Sep 2026 23:07:33 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1268</sparkle:version>
+            <sparkle:shortVersionString>0.3.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>No change to the rendering of photos already adjusted.</strong></p>
+
+<h2>Library column</h2>
+
+<ul>
+<li>A reload key reads your folders again, for what you changed in the Finder.</li>
+<li>A target key brings the selected photo to the middle of the column, in the archive and in Projects. Changing the column's layout does the same.</li>
+<li>The folder field no longer says Root, shows in Projects too, and its menu is as wide as the column.</li>
+</ul>
+
+<h2>Measuring window</h2>
+
+<ul>
+<li>A contact sheet never opens with the measuring window drawn, and when you draw one there it covers the whole sheet.</li>
+<li>Pasting settings that carry a white balance, or applying a preset that does, closes the window. The paste also brings the copied photo's window.</li>
+</ul>
+
+<h2>Also</h2>
+
+<ul>
+<li>The header's EDITOR, GALLERY and RESET SCAN keys open at their right size.</li>
+<li>The Noritsu screen reads C M Y and plain numbers, like the others.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.2/OpenNegative-0.3.2.zip" length="17171619" type="application/octet-stream" sparkle:edSignature="YOL4gPHrzZQs8+Tog0rnUUjYCDlw6KKx/w+IW+UCKDl1wg1kzobeLhxiqRK54evOCzuBLyUczDpy8B6hdJ9XDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.2/OpenNegativeInitiative1268-1267.delta" sparkle:deltaFrom="1267" length="1914570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="R/baeRTVDlOLVAkpIcJg+pKBlw15jUJVhLQsfNqVPiUrhc1TJkBZv8fh8soNzYBX9Kz8eEk+fheCIcufynr4Bg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.2/OpenNegativeInitiative1268-1266.delta" sparkle:deltaFrom="1266" length="1954982" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+x+72E8G5HLxJ5uREqgr/j5vTz0Xb1FIWKH04CdQXgk/EZwAn5CljBUIV87/ltbb2jYhWjvUEmZh6Z9SMYsGBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.2/OpenNegativeInitiative1268-1248.delta" sparkle:deltaFrom="1248" length="3888530" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="nLKINPeWQUlvXL5vBmAZC9tWRa7bV/WLpsfi3sv8aIIZxboKnr7464aDVGhK2jSRRV1ORsXacdJamTPtMaU/Ag=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.2/OpenNegativeInitiative1268-1216.delta" sparkle:deltaFrom="1216" length="4462170" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ekGUnSotqI8lli/dkxGR2YMCnh0WUKcK62bFVVoSJJwRyp9U9KZdEJ/JFzcND3VzIje8Ci3tTVnlQJzO6/imDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.3.2/OpenNegativeInitiative1268-1148.delta" sparkle:deltaFrom="1148" length="5021398" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="zcr5ZbvFzKoWR9afGwhc/ZCYyOt1Nto9CRsHpakR105IJbZiGLKMwdC/uib6oqpy/W8qOsTaRvHqcNps7zmjAA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.1</title>
             <pubDate>Sun, 27 Sep 2026 21:54:23 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
