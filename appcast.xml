@@ -3,6 +3,33 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>0.4.0</title>
+            <pubDate>Wed, 30 Sep 2026 15:11:26 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1333</sparkle:version>
+            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes the rendering of photos already adjusted: camera RAWs decode differently, linear DNGs from VueScan read their colours correctly, and a balance key now keeps the film's own colour.</strong> A RAW frame balanced before keeps the density axis its balance was placed on, and its colour, until a balance key is pressed again.</p>
+
+<ul>
+<li>Every camera decodes the same way: Apple's per-camera shadow bias, lens correction, moiré reduction, luminance noise reduction and highlight recovery are off, and the decoder version is pinned. Frames carrying dust corrections keep the lens correction, so their corrections stay on their specks; on other frames a crop can move by a few pixels.</li>
+<li>A camera RAW negative is read without the knee that made its balance depend on how bright the capture was: the same negative captured two stops apart now balances the same.</li>
+<li>New: Chroma Decompression, beside the per-channel levels. At 0 %, the default, the levels stretch the tones and keep the film's own colour; at 100 % the colour is stretched with them, as before. Every balance key sets it to 0 % unless you moved it by hand.</li>
+<li>A scan that declares no colour profile can be read as sRGB, Linear or Display P3, from the Settings tab.</li>
+<li>The density ceiling of a camera RAW now reaches 4.</li>
+<li>A photo never balanced opens with its orange mask at full strength until a balance key is pressed.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.4.0/OpenNegative-0.4.0.zip" length="20578928" type="application/octet-stream" sparkle:edSignature="uM6usPflj+0YVxL5jonf+RCOWmR2u/j3CD3ArmhR0+qX6Cg2ryJfPpxRQt43Php77ygrOIUmwS87uCdoLcuGAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.4.0/OpenNegativeInitiative1333-1270.delta" sparkle:deltaFrom="1270" length="6547838" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fTLbeTzDruc7lC4zKB66Bn4G8bL6c/L/IV1/CQcMwDjOsgrTXbT2SGQln5RuGLWDT/cf/Gnswp+i1/CsNGBwCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.4.0/OpenNegativeInitiative1333-1269.delta" sparkle:deltaFrom="1269" length="6609670" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rpAZg4Wuymx4o5SNBSCVAMmC7pnV15j4f2byjDTmLIM1Vp8uu+v7xuGx4qsozBm+A/PxKRig1vZCZ6ozFL77Dw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.4.0/OpenNegativeInitiative1333-1268.delta" sparkle:deltaFrom="1268" length="6610630" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WbPxUiZ0CylJGyMNPhexEZqekSOasMK6vYlqxIB/GdeupTi1HK7/U+m1hwGwzSq01U1ZkwK1Sdq2F0BkNGyGDw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.4.0/OpenNegativeInitiative1333-1267.delta" sparkle:deltaFrom="1267" length="6706534" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="aHrhJLQ5eH+2mTys/4Fkbkbfs92ZekWiwqpgPIRxlsiKZ2yR+pfl5/4VtJNRhqc79Cnv02b24M+PPgpLZ1iCAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v0.4.0/OpenNegativeInitiative1333-1266.delta" sparkle:deltaFrom="1266" length="6708610" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wT7ZZxLhcdNI9CUr5SJ2VresjGFYDv5ZnmGhSaSbahN6kI3bSfsePXZhxEVv9+a6brADv5l9SCrqiIBgPUcCCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.3.4</title>
             <pubDate>Tue, 29 Sep 2026 01:55:14 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
