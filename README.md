@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="The editor on the Color tab: an aerial scan of a cliff above a dark blue sea, the roll's frames in the Archive column, and the Color and Lighting blocks with AUTO WHITE BALANCE and AUTO EXPOSURE, with the Curves and Spectrogram Finishing blocks laid over the window's edges">
+  <img src="assets/screenshot.png" alt="The editor on the Color tab: an aerial scan of a cliff above a dark blue sea, the roll's frames in the Archive column, and the Color and Lighting blocks with AUTO WHITE BALANCE and AUTO EXPOSURE, with the Scanner mode's Noritsu face and the Spectrogram Finishing block laid over the window's edges">
 </p>
 
 ---
