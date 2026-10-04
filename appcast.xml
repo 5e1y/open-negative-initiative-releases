@@ -3,6 +3,40 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.0.0</title>
+            <pubDate>Sun, 04 Oct 2026 17:22:44 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1340</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes the rendering of photos already adjusted: colour, Lighting and the balance were rebuilt around the roll, so a photo edited in a beta can open looking different. Opening a frame of a roll not yet measured now starts Prepare the Roll, which brings each frame's colour back to rest on the roll's window; crops and dust corrections are kept.</strong> If you would rather keep a beta's rendering for now, skip this update: every earlier version stays available.</p>
+
+<p>The beta is over. Thank you to every tester who sent a scan, a bug or an idea.</p>
+
+<ul>
+<li><strong>Prepare the Roll.</strong> Each roll is measured as a whole before its frames are edited, from the gallery's PREPARE ROLL key or on opening a frame not yet measured, in four steps: the film type and what digitised it, a flat-field taken from a frame of the empty light panel, the film base picked with a full-resolution loupe, and one measuring frame checked on every scan. Light leaks and extreme shots can be flagged so they take the roll's window without setting it.</li>
+<li><strong>A Roll tab.</strong> The film type, flat-field, manual balance, dye separation and Balance strength belong to the roll: a change there reaches every frame measured with it, and one undo takes it back.</li>
+<li><strong>Auto White Balance and Auto Exposure</strong> replace the former level keys. On a selection, each frame can be corrected on its own or all of them given the average.</li>
+<li><strong>Temperature and Tint</strong> replace Cyan, Magenta and Yellow, and move colour alone, never how light the photo is.</li>
+<li><strong>Lighting</strong> loses Mids, the per-channel points and the compensation slider; Contrast moves to Effects and turns on a middle grey. Black point and White point now keep the colour's saturation as they move.</li>
+<li><strong>Black and white</strong> prints get wider Black point and White point travel and Contrast up to +1.</li>
+<li><strong>Contact sheets</strong> are made for every roll measured and stand on the roll's window; their Auto White Balance and Auto Exposure average the roll's frames. Contact sheets made before keep their settings, but read their frames whole: make them again to give them the roll's measuring window.</li>
+<li><strong>Paste</strong> carries the Color and Details tabs; <strong>Paste to Roll</strong> lays them on the whole roll. Crop is a tab again, with Copy, Paste and Paste to Roll for the framing.</li>
+<li>Both side panels can be put away, sliding back over the photo when the pointer nears their edge.</li>
+<li>A welcome screen, and a launch picture shown on the screen ONI opens on.</li>
+<li>The Latent Image window, an experiment, is gone.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.0.0/OpenNegative-1.0.0.zip" length="19268170" type="application/octet-stream" sparkle:edSignature="StN1JbnQAz7Ca7pGKMWYpkIRqmVOzEolobzyrZvXHD6CfGlciRdGSDMqNDbdjoHSoS8pdaRqBOTl36+aG09ABQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.0.0/OpenNegativeInitiative1340-1337.delta" sparkle:deltaFrom="1337" length="4660686" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="SDSVVFn/CfCKw+m2UWCa6aAYC50RVU90mPiJ92oeAq4lYwPLcwuFflp4/CQAwDD92JMHnaOqHVysWkrJwF9VAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.0.0/OpenNegativeInitiative1340-1335.delta" sparkle:deltaFrom="1335" length="4692066" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AV/LJZqtoAGzk+10Pq7w6bkLDqQSyTQ+JxKphvjQ8XcqcP+JekLnZJBH22Ngky7s4jTJPVoBOZaynBr0ORJtAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.0.0/OpenNegativeInitiative1340-1333.delta" sparkle:deltaFrom="1333" length="4671262" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="OtJt/ADSX5qTFlmyA918XjSTaGUyi43l3W5vNvdO4eOiMs1kQ7Y8xzfnkzjgD6mSbQ7JZOWwBA0gqvPTHN5nDQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.0.0/OpenNegativeInitiative1340-1270.delta" sparkle:deltaFrom="1270" length="6013486" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="qFcZQzM/hlFNxtwcRtnnKpHYApsV4u91Mw342uqqWNUxTBbDea6+RLigridIRMIP63GLUDIL9c3y+P78+/rTBg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.0.0/OpenNegativeInitiative1340-1269.delta" sparkle:deltaFrom="1269" length="6035218" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9EAAG33be9F+6SIEpcu7UknYjJOO2Vr18YBnznwdq0gVBkCzbGQgxce+JWWz5KU2vQ+qdah0aEXwiSxPwjSgDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.4.2</title>
             <pubDate>Thu, 01 Oct 2026 22:03:28 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
