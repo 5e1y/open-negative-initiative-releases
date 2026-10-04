@@ -108,7 +108,7 @@
   written.
 
 <p align="center">
-  <img src="assets/export.png" alt="The Export screen: the frame's EXIF fields on the left, a colour frame of sails in the middle, and the INSTAGRAM, DISPLAY and PRINT presets, Format, Space, Quality, Size and the HDR hack switch on the right, with the working space menu on a paper profile laid over its right edge">
+  <img src="assets/export.png" alt="The Export screen: the frame's EXIF fields on the left, a colour frame of sails in the middle, and the INSTAGRAM, DISPLAY and PRINT presets, Format, Space, Quality, Size and the HDR hack switch on the right, with the EXIF fields laid over its left edge and the working space menu on a paper profile over its right edge">
 </p>
 
 ## Installing
