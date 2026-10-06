@@ -3,6 +3,33 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.2.1</title>
+            <pubDate>Tue, 06 Oct 2026 22:02:46 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1431</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes the colours of photos already adjusted: Dye Separation now rests at 60 % instead of 18 %, so every photo left at the old value moves to it. Reds turn a touch richer and yellows a touch softer; overall saturation is unchanged. A value you set yourself stays where you put it.</strong></p>
+
+<ul>
+<li><strong>Browse your folders.</strong> The sidebar shows the folders on your disks. Click a folder to open it, star the ones you use often, and go up with Parent. Only the folder you open is read, so a huge disk never slows you down. Photos not converted yet show as scanned.</li>
+<li><strong>Prepare the Roll, step by step.</strong> It opens in the editor, in smaller steps with a short video each. Choosing the frames and flagging the odd ones are separate steps, and a roll you leave halfway picks up where you stopped.</li>
+<li><strong>Deleting is reversible.</strong> Delete hides a photo in the ONI Trash, in the sidebar, and Restore brings it back. Nothing on your disk is moved or erased.</li>
+<li><strong>Projects follow your photos</strong> when you move them inside ONI.</li>
+<li><strong>Smoother:</strong> switching between Pro and Scanner, dragging Temperature and Tint, and opening a folder no longer stutter. The Scanner tab now wears ONI's own look.</li>
+<li>The Chroma Decompression block is gone: it no longer acted on any measured roll.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.1/OpenNegative-1.2.1.zip" length="48112633" type="application/octet-stream" sparkle:edSignature="1TzyyEOu744j7bNatpADnEkTx3c0D313qBQpNzeTQjkLf3yOup+i6sJcXQd4Ip6etBBno1F95H8plRWwXB95Cg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.1/OpenNegativeInitiative1431-1374.delta" sparkle:deltaFrom="1374" length="32188626" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="WXHcVIdA3DWF8ht1ydcjgk9rBtskwEx/dO93i+105Pd4iFuvdgVKtK2pslKkP2DBjfCtX8gwzzlDlumiB+u8Dg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.1/OpenNegativeInitiative1431-1343.delta" sparkle:deltaFrom="1343" length="33845486" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bCLyacekpLTj6gyLM6BLXKiGWEyoMB8uYo1AJ1EkAQ0KV5zMECbTQPY0fFLH8EdNwOJDoGF7aNmHqOESWXPLAA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.1/OpenNegativeInitiative1431-1342.delta" sparkle:deltaFrom="1342" length="33836526" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="c9KTk4jikfzAntIneyZcB6/bHX1mG2ys3lPtBpERqo/0teRlLIhHl4yLzk6S2e7YaTlkGrZsu7SUPwAo19MKCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.1/OpenNegativeInitiative1431-1341.delta" sparkle:deltaFrom="1341" length="33874210" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="w9RyCbiXBB1E2LdnHf5aSeEK003pNdYwhhSbV9jiVnRQi4ZIVKW0af4IbQuChM3XBDGWLyqDCt647YCwvFjuBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.1/OpenNegativeInitiative1431-1340.delta" sparkle:deltaFrom="1340" length="33877462" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="dfrGrD5AWlxHuv9pkjdGZ9j0F/HfZpR7o7SVvl58W23B1R4gC4iVBKEmJmkG6vtYZeAPsvdpee352vptSE6eBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Tue, 06 Oct 2026 02:19:27 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
