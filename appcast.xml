@@ -3,6 +3,34 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Tue, 06 Oct 2026 02:19:27 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1374</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes the rendering of photos already adjusted in Pro: Dye Separation no longer adds saturation, so every frame with a separation renders a little less saturated (about 5 % at the 18 % rest, 14 % at 60 %). If you took a strong separation back with Color Density, return Color Density to 0.</strong></p>
+
+<ul>
+<li><strong>Scans read outside the RAW engine keep their own channels.</strong> TIFF, JPEG, PNG and linear DNG files were converted to the working primaries before the inversion, which mixed their channels and cost a film scanner about 40 % of its colour. Rolls measured from this version on render with fuller colour; rolls measured before keep their look until you measure them again.</li>
+<li><strong>RGB passes.</strong> A frame exposed three times, under red, green and blue light, is grouped, registered and read as one negative. Choose RGB Passes in Prepare the Roll: the pass order is read from the first triplet, and dragging the band chips corrects it.</li>
+<li><strong>Scanner tab.</strong> A second edit for every photograph, rendered through a look measured on a lab scanner, with its own keypad: D, C, M and Y in clicks, then warmth (W) and skin (S). Pro and Scanner keep their own settings, so switching loses nothing.</li>
+<li><strong>Reset to Default</strong>, in the gallery's Rolls menu, takes whole rolls back to unconverted, their framing, dust corrections and flat-field kept. A triplet of RGB passes parts into its three shots, each keeping the frame's crop.</li>
+<li><strong>Before/after</strong> now compares against the frame at rest, with the roll's window, its flat-field and the resting exposure, instead of a bare inversion.</li>
+<li><strong>Library:</strong> boxes are gone, dragging in the archive moves files on the disk, and a roll wears its stock as its icon.</li>
+<li>Prepare the Roll no longer decodes the scan again on every hover of the film-base loupe, and a frame whose decode came back with an empty channel is rendered again.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.1.0/OpenNegative-1.1.0.zip" length="19357491" type="application/octet-stream" sparkle:edSignature="eMzCsQ7mICb6y8hcUBiFPpM+ficP3YAjyJRw3cHMvCKRIsa+R8nIBo8RM4+tInLFi77ezq7n+oInGvgCVkTDDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.1.0/OpenNegativeInitiative1374-1343.delta" sparkle:deltaFrom="1343" length="4633954" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KFAfH5xM2ojI3e3UvKvTVkctgWXTzcbccrVCPACDHZ6FIz3sISLUpViSwuhGD21Ew0n+/ucOxUklHJzP1tnaCQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.1.0/OpenNegativeInitiative1374-1342.delta" sparkle:deltaFrom="1342" length="4648078" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0dDElBWskLgCCi5JgvmCa2uzJV4+WQp0N1SxZIlOhF9Ft5GVxDDNnim39veJOuKY8NIJLr6UXKSSwT2kXWcMBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.1.0/OpenNegativeInitiative1374-1341.delta" sparkle:deltaFrom="1341" length="4699930" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1RNNf8CMj1DQUzwHcqsOO+hzLvizxH/XqG55h9SVnM4h/vgsivmMELiwRiAGAhl6DkHWi45eYO8SxSBMtsdlAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.1.0/OpenNegativeInitiative1374-1340.delta" sparkle:deltaFrom="1340" length="4684854" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="d4574EDykN9qdCbrwtQvZnyEZlXJoIsAjUPjFW+VQD4V/t5nD10p6yCbAEjZSLpeDso597HATDAZ9ZjnfFBBAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.1.0/OpenNegativeInitiative1374-1337.delta" sparkle:deltaFrom="1337" length="6069022" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="JvvqgSbn04TljyRO4zjeEh5qiWipHVW7I+92vNEgZMMpdP6i7jY6EcM5mF9UMslchAfrGwrA0yKWzOyVKTTwCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.3</title>
             <pubDate>Sun, 04 Oct 2026 20:55:24 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
