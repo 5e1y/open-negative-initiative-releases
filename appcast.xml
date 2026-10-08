@@ -3,6 +3,35 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.2.2</title>
+            <pubDate>Thu, 08 Oct 2026 13:56:57 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1437</sparkle:version>
+            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes one render of photos already adjusted: a slide left on the Scanner tab used to show Pro's render there, and now goes through the Scanner's own look, as a negative does. Every other photo renders as before.</strong></p>
+
+<ul>
+<li><strong>Folders open at once.</strong> Opening a folder no longer waits for a starred folder still being read, nor for a starred folder that holds it: the folder you open is always read first.</li>
+<li><strong>A folder opened again shows what was added since</strong>, such as the scans your scanner wrote meanwhile: the grid shows what ONI already knew, then the folder is read again.</li>
+<li><strong>A folder that could not be read</strong>, on a disk asleep or unplugged or with access refused, no longer stays empty afterwards: opening it again reads it again, and its photos keep their place in the library.</li>
+<li><strong>A disk that stops answering</strong> no longer holds up the next folder you open.</li>
+<li><strong>A dropped photo opens in the editor straight away</strong>, without waiting for every thumbnail of its folder.</li>
+<li><strong>A scan read while it was still being written</strong> is read again once finished, thumbnail included.</li>
+<li>Right-click, then Open, now opens a roll or a folder holding no other folder.</li>
+<li>The console log now records what the gallery does, folders opened and read, thumbnails, moves, without any folder, file or disk name in it: a report tells more about what went wrong, never where your files are.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.2/OpenNegative-1.2.2.zip" length="48200906" type="application/octet-stream" sparkle:edSignature="TsCkxo0wjVAjZUk+84zHhSM7mq/xDCs1sH8mX4HRd17gyUBO8dPOdgY+Rd8ki0ppeZlzGwjobkvdrLenPWNmCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.2/OpenNegativeInitiative1437-1431.delta" sparkle:deltaFrom="1431" length="2170034" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="fqBJjMqZJTEqlj3gdwmMF48CQ7HMXbXKDzzNzf59ykwSo9YxHH7EuBwcghsGhg8mTws2TekpYALNSnRPNrwJCg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.2/OpenNegativeInitiative1437-1374.delta" sparkle:deltaFrom="1374" length="32288306" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hkmJTabVzXO4L6eWfFK74UbCN2Bfx8lH9kC44Qgm34baQz9NDchHpWCIgVsOh56KW/NjP7fJGRTSZ7R1OE7SCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.2/OpenNegativeInitiative1437-1343.delta" sparkle:deltaFrom="1343" length="33907850" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="4t22OfT/4sxKxI/ahjdt9tASGT2nRevIMzfCbAYvd6qCrPFv1WP3jEpqS2W5MouN/Qn4EFiom9pn5lHte64+Aw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.2/OpenNegativeInitiative1437-1342.delta" sparkle:deltaFrom="1342" length="33917670" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7/MXQHKDPphNBaNMMnxVPdyqXEaJF9a5tAAvZv1TCXqhyJz8gDDg8OJMm+Q+/uYBxj7r7SDLD54a9WFVGL2uAw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.2/OpenNegativeInitiative1437-1341.delta" sparkle:deltaFrom="1341" length="33977194" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="J0y9yX0ccj+yVQbqIXAC1i0ehYkpPQzw9JfAdwU+ZzHox53tQMfZUIJVimX2AqR2f7zc+ysrf3dZZlpCdNKQDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.2.1</title>
             <pubDate>Tue, 06 Oct 2026 22:02:46 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
