@@ -3,6 +3,30 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.2.3</title>
+            <pubDate>Sat, 10 Oct 2026 18:16:31 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1442</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes no render: every photo already adjusted looks as before.</strong></p>
+
+<ul>
+<li><strong>Sliders no longer go dead.</strong> A drag interrupted by the system, by switching to another app, by Mission Control or by the Mac going to sleep, could leave every slider unresponsive until ONI was quit. ONI now notices within a second and lets go.</li>
+<li><strong>The first right-click opens its menu</strong> in the gallery and the sidebar, and a photo in the sidebar offers the same menu as its tile in the grid.</li>
+<li><strong>A sleeping Mac is no longer taken for a frozen app.</strong> The console log no longer records each sleep as a freeze, and reading a real freeze can no longer stall the app itself.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.3/OpenNegative-1.2.3.zip" length="48220499" type="application/octet-stream" sparkle:edSignature="YV9tLGowXS17ONVHfjijWem9O91CdH4exPmXnZOK3NbcvFVcYxe4iSO9Acdo7Of+SP70OII/C82WIzz6TwFuDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.3/OpenNegativeInitiative1442-1437.delta" sparkle:deltaFrom="1437" length="1991974" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="+Oa1yo0TTL7hcrycL5jsc9Hj6VvFW9YavvZ9V0A8VxGgIO6+oCsRWbBsWRgD1OFnMHHheH9QbeSuzQjdTissBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.3/OpenNegativeInitiative1442-1431.delta" sparkle:deltaFrom="1431" length="2464922" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="QHCVCLaPve4313RCLHn/5DsaVu73TwViSbfcEltzkdAHmUv6SyoWCvQzUBd9xKQKIx8U7Qdl8/3f4Kyf5BO/Dg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.3/OpenNegativeInitiative1442-1374.delta" sparkle:deltaFrom="1374" length="32368166" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AenDvPaBxNphkEd7JhQbnzL5ziNL2vYGLjs7tCBUrduwzIqrRr6NbnHf2RNiLINvvZCNxyFuAHq0typ2JFvHBA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.3/OpenNegativeInitiative1442-1343.delta" sparkle:deltaFrom="1343" length="33967474" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9WgPPM4avrnGjrjD8SAUOzJpUEfEfOo0/t6AA54i7fG4AIh8xDqIItqvVRYEFu2nkHmlfzMgDBiF09wS9V8qCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.2.3/OpenNegativeInitiative1442-1342.delta" sparkle:deltaFrom="1342" length="33980554" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="rfXbDzuxy5jZmX3whpCBs+pBar+FKuKi6WVPH/snrG4L9rIdHnIug3LR8dFs2XGB2V6ddiL2YHqF2DNUgUqiAA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.2.2</title>
             <pubDate>Thu, 08 Oct 2026 13:56:57 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
