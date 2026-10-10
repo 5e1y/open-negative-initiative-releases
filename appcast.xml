@@ -3,6 +3,30 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.3.0</title>
+            <pubDate>Sat, 10 Oct 2026 19:32:18 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1446</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version changes no render: every photo already adjusted looks and exports as before. With a paper profile as the working space, the canvas now shows the paper itself, its white and its ink, so it looks bluer and flatter on an OBA paper than it did: that is what the print will look like.</strong></p>
+
+<ul>
+<li><strong>The paper proof simulates the paper.</strong> With a printer or paper profile chosen as the working space, the canvas, the loupe, the thumbnails and the export previews show the paper's own white and its ink's black, as Lightroom's Simulate Paper &amp; Ink does. On a pearl paper whose white is bluish, the canvas used to show that white as pure white; it now shows it as it prints. "Show only color variation" still shows the colours alone.</li>
+<li><strong>Paper Correction.</strong> On a paper profile, a new block in the Color tab holds three gains, laid last on a color or a black and white print alike. Auto Paper Correction reads the paper's white off its profile, never the picture, and sets the gains that print a grey as grey. The gains belong to the photo and act on that paper alone: in sRGB, Display P3 or Adobe RGB they do nothing.</li>
+<li><strong>A warm cast is gone from paper proofs.</strong> macOS read some paper profiles slightly warm, which tinted every grey of the proof; ONI now takes that reading error off. The files sent to the printer were never affected.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.0/OpenNegative-1.3.0.zip" length="48271681" type="application/octet-stream" sparkle:edSignature="wFSbflKTCJu/A2EsqCiokh/zZsR1ABLXmJ9hj2r8i+Q44IrAOFyNid5KdsZIbSj4zz7+gvqxRM7nUBnl9ps4CA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.0/OpenNegativeInitiative1446-1442.delta" sparkle:deltaFrom="1442" length="2152698" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="MrUoigagf/79okJkFvs6gjczuB5dK+BDUAQ98RK3ft1NI8epQbXJcph1VB+l8vxj+kes7wkrPYlZksYPma5JDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.0/OpenNegativeInitiative1446-1437.delta" sparkle:deltaFrom="1437" length="2419786" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="At3Sx9sqJ2WFa7Fh0SJbtJbDuZuKQ1jeG76x6p6QsLC6sbC1zCziZO/71BznrIUsLPPSO9TpGZsDcCPCVFMzBw=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.0/OpenNegativeInitiative1446-1431.delta" sparkle:deltaFrom="1431" length="2721154" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="0Dr/ZHp/Yaaj15O2jU38YcStZv8Idr9VDYGZDZkvVJ34WUuuXs1iJtfKqVxLrwB9p4Mn6s91POb+wiO0RpTbBQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.0/OpenNegativeInitiative1446-1374.delta" sparkle:deltaFrom="1374" length="32529606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ma6+hrv8HnAEIMEXPfxdYH5c4vWNIi6za86GWm1EugB7f7xY2a9GyazFcX3hXHS2esjTJq3rOcRONg6bnES6AA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.0/OpenNegativeInitiative1446-1343.delta" sparkle:deltaFrom="1343" length="34059766" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="XAGwsJtHUhpC3W3WHRRZ5VsObo6eRZ+fyguujd0FYcGkzmHjPKYTZg7saJOoGmD5DU7edPQPc43V5OBUPnNjAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.2.3</title>
             <pubDate>Sat, 10 Oct 2026 18:16:31 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
