@@ -3,6 +3,37 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.3.1</title>
+            <pubDate>Fri, 16 Oct 2026 00:16:08 +0200</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>1523</sparkle:version>
+            <sparkle:shortVersionString>1.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>This version moves some renders. Photos converted on the Scanner face can look different: its finishing now acts on them, the S look is gone, a Frontier roll whose green window is not 1.3 D prints with a slightly different contrast, and Scanner Emulation is folded into each photo's Curves and Color Density, within 0.04 of display values. Every other photo looks and exports as before but for sharpening and chroma denoise, now computed exactly: a pixel can move by up to 2 or 3 levels out of 255, too little to see.</strong></p>
+
+<ul>
+<li><strong>A simpler Scanner face, after your feedback.</strong> It now shares the Pro panel: the machine's screen sits where the histogram stands, and its keypad in the Color tab as three blocks that fold. D, C, M and Y move by half steps, W is named TEMP, and the S look and CMY CANCEL are gone. Contrast, Vignette and Chrome are five keys each, read on the screen, and Curves, Spectrogram and the saturation curve now act after the machine's render.</li>
+<li><strong>ONI's own machine.</strong> Beside the Frontier, the Scanner face offers ONI's machine: Pro's conversion with ONI's look, its keys moving the picture by the Frontier's measured clicks. Photos converted before keep the Frontier.</li>
+<li><strong>A new colour space: ProPhoto RGB.</strong> The widest of the export spaces, in 16-bit TIFF, it keeps the colours Adobe RGB clips.</li>
+<li><strong>Shadows and Highlights reach ±0.50</strong> in Lighting, the curve still rising at the ends. Values within ±0.25 render as before.</li>
+<li><strong>Smoother everywhere.</strong> Sliders follow the hand at the display's rate, the live histogram no longer slows the canvas, a photo opens without freezing the window, and sharpening with chroma denoise costs about a third less on a full-resolution canvas.</li>
+<li><strong>Thumbnails</strong> are kept in a folder macOS does not empty, so the gallery shows them at once and stops redrawing photos at every launch.</li>
+<li><strong>Auto Exposure is removed.</strong> Auto White Balance stays.</li>
+<li><strong>The archive moves nothing by hand.</strong> Photos and folders are no longer dragged between folders or rolls; projects keep their own rearranging, and New Roll stays in the menu.</li>
+<li>Prepare the Roll keeps each frame's own shape, the feedback form links to the public issues, and a new launch picture by fllauh.</li>
+<li>Gold seals mark what changed in the panels; hover one to read what is new.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.1/OpenNegative-1.3.1.zip" length="25583533" type="application/octet-stream" sparkle:edSignature="dKvZfk7Wc9ZN+d6ILqTUWZIuYK8J3NZ9H+DTXrkqHdtTBTTXvH4c6QYBUCaiPBdb9JKYSRbFI/zxB+wQQB/qDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.1/OpenNegativeInitiative1523-1446.delta" sparkle:deltaFrom="1446" length="11741674" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="VVXW11szuWYyvR3iX8ZL5R0bKAxR/Xb4xq/kCC7Z0fr310qzvPwgUwvlSR872xkpkn8zQ6Ebqjb0b4bCWfXGDg=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.1/OpenNegativeInitiative1523-1442.delta" sparkle:deltaFrom="1442" length="11802406" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ValsoivEYOXfJouIvdSTk6jBTSxRmZ/TyZb/abdc3TznqFw/aA5H9GWTTAzCiX7jkCMAJP+YRajgmgMx99JYAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.1/OpenNegativeInitiative1523-1437.delta" sparkle:deltaFrom="1437" length="11809266" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="W8eJm/a0qjBTbE5lALtyPPuuLNKtDMgfv/ejiKKORb95A4hOt8Mv/p1zQVNB5GKaecCGgqWvzuhc/HMFzkWrAQ=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.1/OpenNegativeInitiative1523-1431.delta" sparkle:deltaFrom="1431" length="11879354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="6YcAAVdBVIPD+OnIHl0V3yMta/VUzzET7fPW+Ic+vckME6BAK2+RAWSSAGuzBuLJS3zqKeNbC1iPgypmAGSOCA=="/>
+                <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.3.1/OpenNegativeInitiative1523-1374.delta" sparkle:deltaFrom="1374" length="12752678" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8Brz2Vnjj0tSUESKvyyI3zp6DGppeQt06MGJ47XUYMKDS83vijERDn36ZjPPs8O7wotbRPBJjf0sMUUtaPdcCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.3.0</title>
             <pubDate>Sat, 10 Oct 2026 19:32:18 +0200</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
