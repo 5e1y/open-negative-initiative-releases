@@ -3,6 +3,22 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.4.1</title>
+            <pubDate>Tue, 27 Oct 2026 21:35:56 +0100</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>10616</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>A quick fix for slides, and ONI now runs on Intel Macs as well as Apple Silicon.</strong></p>
+
+<ul>
+<li><strong>Slides: White point</strong> now takes the saturation the right way as it moves; Black point is unchanged.</li>
+<li><strong>Intel Macs</strong>: one download for every Mac, Intel and Apple Silicon.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.4.1/OpenNegative-1.4.1.zip" length="120604688" type="application/octet-stream" sparkle:edSignature="1pLOc2Bsg1vqw2RaDfhltoYD2Z1f55LfNeou9VYoLcG28w1uV/ib8Nf/JTKNJEroXp3DyFSdAorAeTWlADdBDA=="/>
+        </item>
+        <item>
             <title>1.4.0</title>
             <pubDate>Tue, 27 Oct 2026 18:37:07 +0100</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
