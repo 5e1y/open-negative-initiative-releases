@@ -3,6 +3,22 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.4.2</title>
+            <pubDate>Tue, 27 Oct 2026 22:16:28 +0100</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>10617</sparkle:version>
+            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>Updates now install themselves, on Mac and Windows.</strong></p>
+
+<ul>
+<li><strong>One click to update</strong>: ONI downloads the new version, checks its signature, quits, swaps itself and reopens; the old version is removed only once the new one runs.</li>
+<li>Coming from 1.4.0 or 1.4.1, this one update still lands in Downloads: open it once by hand, and every update after installs itself.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.4.2/OpenNegative-1.4.2.zip" length="120612612" type="application/octet-stream" sparkle:edSignature="b+ZwpdItlSaTHfYKrbhdc/d6kZX7F0/uRApzbqYA4s6cgJjYK+saiQ6CzVkZadMI7uQ/60N3DqBav8HrhSMyDA=="/>
+        </item>
+        <item>
             <title>1.4.1</title>
             <pubDate>Tue, 27 Oct 2026 21:35:56 +0100</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
