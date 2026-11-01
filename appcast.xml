@@ -3,6 +3,29 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.5.0</title>
+            <pubDate>Sun, 01 Nov 2026 16:14:02 +0100</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>10650</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>ONI 1.5, the slide film and contact sheet update.</strong></p>
+
+<ul>
+<li><strong>The whole roll, once measured</strong>: after Prepare the Roll, every frame shows together, numbered by its place on the film.</li>
+<li><strong>Contact sheets</strong>: select a few frames, or press the orange key for the whole roll, and they lie together on one sheet.</li>
+<li><strong>Export a contact sheet</strong>: the export panel exports the selection as one sheet, with a preview; the orange EXP. CONTACT SHEET key opens it.</li>
+<li><strong>Slide films</strong>: Prepare the Roll balances a slide roll with one set of gains for every slide, its blacks and whites left as they are.</li>
+<li><strong>Slides on white</strong>: a contact sheet of slides lies on white, numbered in red under a black logo.</li>
+<li><strong>The whole scan in Prepare</strong>: every scan is shown and measured uncropped.</li>
+<li><strong>RESET SCAN keeps your crop</strong>: everything goes back to rest but the framing and the conversion.</li>
+<li><strong>Trash from the editor</strong>: the next frame of the roll opens in its place.</li>
+<li><strong>Select all beside a photo</strong>: the folder's photos show together; a click on one shows it alone again.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.5.0/OpenNegative-1.5.0.zip" length="123474550" type="application/octet-stream" sparkle:edSignature="MarwEKeQacjOcz6VAicJQt8dTLGgluyLY5G3rET2BA0mt8WMQ1TzVtcf0hrO6xwv8un/kW9gqwKsJ7E3szuwAw=="/>
+        </item>
+        <item>
             <title>1.4.2</title>
             <pubDate>Tue, 27 Oct 2026 22:16:28 +0100</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
