@@ -3,6 +3,34 @@
     <channel>
         <title>Open Negative Initiative</title>
         <item>
+            <title>1.5.2</title>
+            <pubDate>Mon, 02 Nov 2026 02:15:55 +0100</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>10660</sparkle:version>
+            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p><strong>ONI 1.5, the slide film and contact sheet update.</strong></p>
+
+<ul>
+<li><strong>The whole roll, once measured</strong>: after Prepare the Roll, every frame shows together, numbered by its place on the film.</li>
+<li><strong>Contact sheets</strong>: select a few frames, or press the orange key for the whole roll, and they lie together on one sheet.</li>
+<li><strong>Export a contact sheet</strong>: the export panel exports the selection as one sheet, with a preview; the orange EXP. CONTACT SHEET key opens it.</li>
+<li><strong>Slide films</strong>: Prepare the Roll balances a slide roll on a white or grey you click, its colour alone; without a click, the slides keep the camera's 5500 K.</li>
+<li><strong>Slides on white</strong>: a contact sheet of slides lies on white, numbered in red under a black logo.</li>
+<li><strong>The whole scan in Prepare</strong>: every scan is shown and measured uncropped.</li>
+<li><strong>RESET SCAN keeps your crop</strong>: everything goes back to rest but the framing and the conversion.</li>
+<li><strong>Trash from the editor</strong>: the next frame of the roll opens in its place.</li>
+<li><strong>Select all beside a photo</strong>: the folder's photos show together; a click on one shows it alone again.</li>
+<li><strong>No more flicker on Windows</strong>: clicking outside the window and back no longer blanks it for an instant.</li>
+<li><strong>Large 16-bit TIFFs</strong>: a 16-bit TIFF of 45 Mpx and more opens, in the editor and in Prepare the Roll.</li>
+<li><strong>A scan that cannot be read says why</strong>: Prepare the Roll no longer waits on it.</li>
+<li><strong>Nikon High Efficiency RAW</strong>: a click converts a folder’s HE and HE* NEF files to lossless DNGs through Adobe DNG Converter, which ONI downloads and installs when it is missing.</li>
+<li><strong>One RAW decoder, the same colours everywhere</strong>: a RAW opens in the same colours on Mac and Windows. The Mac's per-camera matching to the former Apple decoder is gone; photos you already edited keep their look through their Source Balance gains until their roll is measured again.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.5.2/OpenNegative-1.5.2.zip" length="123415475" type="application/octet-stream" sparkle:edSignature="EDRAoEh6X96kCIszYcTVTKbG66DcLvIyQN+DPctAd3A/Rdp/v08WYc/GESHu8WD9lL1VFhhabXdz1N366a4CCQ=="/>
+        </item>
+        <item>
             <title>1.5.1</title>
             <pubDate>Sun, 01 Nov 2026 23:21:06 +0100</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
