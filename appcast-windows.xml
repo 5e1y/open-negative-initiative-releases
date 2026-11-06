@@ -3,6 +3,43 @@
     <channel>
         <title>Open Negative Initiative for Windows</title>
         <item>
+            <title>1.5.6</title>
+            <pubDate>Fri, 06 Nov 2026 02:43:11 +0100</pubDate>
+            <link>https://github.com/5e1y/open-negative-initiative-releases</link>
+            <sparkle:version>10685</sparkle:version>
+            <sparkle:shortVersionString>1.5.6</sparkle:shortVersionString>
+            <description><![CDATA[<p><strong>ONI 1.5, the slide film and contact sheet update.</strong></p>
+
+<ul>
+<li><strong>The whole roll, once measured</strong>: after Prepare the Roll, every frame shows together, numbered by its place on the film.</li>
+<li><strong>Contact sheets</strong>: select a few frames, or press the orange key for the whole roll, and they lie together on one sheet.</li>
+<li><strong>Export a contact sheet</strong>: the export panel exports the selection as one sheet, with a preview; the orange EXP. CONTACT SHEET key opens it.</li>
+<li><strong>Slide films</strong>: Prepare the Roll balances a slide roll on a white or grey you click, its colour alone; without a click, the slides keep the camera's 5500 K.</li>
+<li><strong>Contact sheets on black</strong>: every contact sheet, slides included, lies on black, numbered in orange; the logo shows under a full row of five.</li>
+<li><strong>The whole scan in Prepare</strong>: every scan is shown and measured uncropped.</li>
+<li><strong>RESET SCAN keeps your crop</strong>: everything goes back to rest but the framing and the conversion.</li>
+<li><strong>Trash from the editor</strong>: the next frame of the roll opens in its place.</li>
+<li><strong>Select all beside a photo</strong>: the folder's photos show together; a click on one shows it alone again.</li>
+<li><strong>No more flicker on Windows</strong>: clicking outside the window and back no longer blanks it for an instant.</li>
+<li><strong>Large 16-bit TIFFs</strong>: a 16-bit TIFF of 45 Mpx and more opens, in the editor and in Prepare the Roll.</li>
+<li><strong>A scan that cannot be read says why</strong>: Prepare the Roll no longer waits on it.</li>
+<li><strong>Nikon High Efficiency RAW</strong>: a click converts a folder’s HE and HE* NEF files to lossless DNGs through Adobe DNG Converter, which ONI downloads and installs when it is missing.</li>
+<li><strong>One RAW decoder, the same colours everywhere</strong>: a RAW opens in the same colours on Mac and Windows. The Mac's per-camera matching to the former Apple decoder is gone; photos you already edited keep their look through their Source Balance gains until their roll is measured again.</li>
+<li><strong>Windows updates itself</strong>: from 1.5.3 on, the app finds the next versions and installs them when you ask, as on the Mac; an older copy is updated once by hand.</li>
+<li><strong>Compare on a contact sheet</strong>: Compare Before/After splits the whole sheet, each frame shown on its own before.</li>
+<li><strong>Every frame follows</strong>: on frames shown together, switching to the Scanner face or choosing another proof redraws every frame, not the open one alone.</li>
+<li><strong>Crop and De-dust wait for one frame</strong>: a crop, a measuring window or a dust spot belongs to one photo, so they are greyed while frames show together.</li>
+<li><strong>Take a frame out</strong>: after Select All, a ⌘-click (Ctrl-click on Windows) in the column takes a frame out of the group, and a second puts it back.</li>
+<li><strong>The folded Library shows whole</strong>: slid over the canvas, it no longer cuts its fields and stars at its edge.</li>
+<li><strong>A quieter look</strong>: the raised and sunken surfaces are half as deep, the histogram lies on the scanner screen's black, and the canvas is square where it meets the panel or a folded column.</li>
+<li><strong>A window that stays away</strong>: on some Macs the window could stay hidden until a screen was unplugged and plugged back; its first frame no longer waits for the system to call it visible, and the log now says what the system shows of it.</li>
+<li><strong>A launch you can follow</strong>: the app's own window opens at once on the version's picture, with a band beneath it naming each step of the launch, how long it took and a bar; then the same window grows into the app. The separate splash window is gone.</li>
+<li><strong>Logs without your names</strong>: the log no longer holds any file, folder, disk, account or phone name, so it can be shared as it is.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/5e1y/open-negative-initiative-releases/releases/download/v1.5.6/ONI-windows.zip" length="64871916" type="application/octet-stream" sparkle:os="windows" sparkle:edSignature="SXnHX8jykdGZc3SyXfj/t101khZt9tY146KHLoMowNZ54Gjdj8puQ7J+53xFvxtNGA/KMdXvBMBZvEznGXcbAg=="/>
+        </item>
+        <item>
             <title>1.5.5</title>
             <pubDate>Thu, 05 Nov 2026 11:45:35 +0100</pubDate>
             <link>https://github.com/5e1y/open-negative-initiative-releases</link>
